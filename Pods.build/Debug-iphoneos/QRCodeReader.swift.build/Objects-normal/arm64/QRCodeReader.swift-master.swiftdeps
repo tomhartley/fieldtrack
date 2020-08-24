@@ -1,0 +1,14 @@
+version: "Apple Swift version 5.2.2 (swiftlang-1103.0.32.6 clang-1103.0.32.51)"
+options: "a82ed887ec4b44737a51b5bd8be20626"
+build_time: [1597918036, 431773000]
+inputs:
+  "/Users/tom/Documents/Field Ready/App/fieldready/Pods/QRCodeReader.swift/Sources/QRCodeReader.swift": [1597833942, 413517574]
+  "/Users/tom/Documents/Field Ready/App/fieldready/Pods/QRCodeReader.swift/Sources/QRCodeReaderResult.swift": [1597833942, 414411636]
+  "/Users/tom/Documents/Field Ready/App/fieldready/Pods/QRCodeReader.swift/Sources/QRCodeReaderView.swift": [1597833942, 414142654]
+  "/Users/tom/Documents/Field Ready/App/fieldready/Pods/QRCodeReader.swift/Sources/QRCodeReaderViewContainer.swift": [1597833942, 413872609]
+  "/Users/tom/Documents/Field Ready/App/fieldready/Pods/QRCodeReader.swift/Sources/QRCodeReaderViewController.swift": [1597833942, 415056039]
+  "/Users/tom/Documents/Field Ready/App/fieldready/Pods/QRCodeReader.swift/Sources/QRCodeReaderViewControllerBuilder.swift": [1597833942, 414005934]
+  "/Users/tom/Documents/Field Ready/App/fieldready/Pods/QRCodeReader.swift/Sources/QRCodeReaderViewControllerDelegate.swift": [1597833942, 413739272]
+  "/Users/tom/Documents/Field Ready/App/fieldready/Pods/QRCodeReader.swift/Sources/ReaderOverlayView.swift": [1597833942, 415350231]
+  "/Users/tom/Documents/Field Ready/App/fieldready/Pods/QRCodeReader.swift/Sources/SwitchCameraButton.swift": [1597833942, 414735669]
+  "/Users/tom/Documents/Field Ready/App/fieldready/Pods/QRCodeReader.swift/Sources/ToggleTorchButton.swift": [1597833942, 415214155]
