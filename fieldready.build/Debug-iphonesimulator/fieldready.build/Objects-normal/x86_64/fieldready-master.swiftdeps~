@@ -1,0 +1,9 @@
+version: "Apple Swift version 5.2.2 (swiftlang-1103.0.32.6 clang-1103.0.32.51)"
+options: "eaf98bb94b6becdfb3b8926e2b95eee9"
+build_time: [1598461159, 550797000]
+inputs:
+  "/Users/tom/Documents/Field Ready/App/fieldready/fieldready/DataHandler.swift": [1598460876, 814558367]
+  "/Users/tom/Documents/Field Ready/App/fieldready/fieldready/ViewController.swift": [1598461157, 753289487]
+  "/Users/tom/Documents/Field Ready/App/fieldready/fieldready/AppDelegate.swift": [1597829469, 306928466]
+  "/Users/tom/Documents/Field Ready/App/fieldready/fieldready/SceneDelegate.swift": [1597829469, 317839441]
+  "/Users/tom/Documents/Field Ready/App/fieldready/fieldready/FRBatchStatusView.swift": [1598276892, 642396223]

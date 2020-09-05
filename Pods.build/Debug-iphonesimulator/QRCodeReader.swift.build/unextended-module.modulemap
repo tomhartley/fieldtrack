@@ -1,0 +1,10 @@
+framework module QRCodeReader {
+  umbrella header "QRCodeReader.swift-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module QRCodeReader.__Swift {
+    exclude header "QRCodeReader-Swift.h"
+}

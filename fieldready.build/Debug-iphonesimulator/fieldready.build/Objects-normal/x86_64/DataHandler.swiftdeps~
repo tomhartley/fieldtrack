@@ -1,0 +1,793 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "TrackingItem"
+- "TrackingResponse"
+- "BatchStatus"
+- "DataHandler"
+provides-nominal:
+- "10fieldready12TrackingItemV"
+- "10fieldready12TrackingItemV06FieldsC0V"
+- "10fieldready16TrackingResponseV"
+- "10fieldready11BatchStatusO"
+- "10fieldready11DataHandlerC"
+provides-member:
+- ["So15NSDateFormatterC", ""]
+- ["10fieldready12TrackingItemV", ""]
+- ["10fieldready12TrackingItemV06FieldsC0V", ""]
+- ["10fieldready16TrackingResponseV", ""]
+- ["10fieldready11BatchStatusO", ""]
+- ["10fieldready11DataHandlerC", ""]
+- ["So15NSDateFormatterC", "iso8601Full"]
+provides-dynamic-lookup:
+- "getTrackingForBatch"
+- "iso8601Full"
+depends-top-level:
+- !private "+"
+- "=="
+- !private ">"
+- !private "??"
+- "AssignmentPrecedence"
+- "BatchStatus"
+- !private "Bool"
+- !private "BooleanLiteralType"
+- "Calendar"
+- !private "CastingPrecedence"
+- "Codable"
+- "DataHandler"
+- "Date"
+- "DateFormatter"
+- !private "DispatchQueue"
+- "Error"
+- "FloatLiteralType"
+- "Int"
+- "IntegerLiteralType"
+- !private "JSONDecoder"
+- "Locale"
+- "NSObject"
+- "Result"
+- "String"
+- "StringLiteralType"
+- "TimeZone"
+- "TrackingItem"
+- "TrackingResponse"
+- !private "URL"
+- !private "URLComponents"
+- !private "URLQueryItem"
+- !private "URLRequest"
+- !private "URLSession"
+- !private "UTF8"
+- !private "UnicodeScalarType"
+- "Void"
+- !private "print"
+- !private "~="
+depends-member:
+- !private ["Sa", "sort"]
+- !private ["Sa", "subscript"]
+- ["10fieldready11BatchStatusO", "=="]
+- ["10fieldready11BatchStatusO", "RawValue"]
+- ["10fieldready11BatchStatusO", "_Default_RawValue"]
+- ["10fieldready11BatchStatusO", "_rawHashValue"]
+- ["10fieldready11BatchStatusO", "deinit"]
+- ["10fieldready11BatchStatusO", "delivered"]
+- ["10fieldready11BatchStatusO", "followedup"]
+- ["10fieldready11BatchStatusO", "hash"]
+- ["10fieldready11BatchStatusO", "hashValue"]
+- ["10fieldready11BatchStatusO", "init"]
+- ["10fieldready11BatchStatusO", "manufactured"]
+- ["10fieldready11BatchStatusO", "ordered"]
+- ["10fieldready11BatchStatusO", "rawValue"]
+- ["10fieldready11BatchStatusO", "shipped"]
+- ["10fieldready11BatchStatusO", "tested"]
+- ["10fieldready11BatchStatusO", "unknown"]
+- !private ["SK", "init"]
+- !private ["SK", "sort"]
+- !private ["SK", "subscript"]
+- ["s7CVarArgP", "Calendar"]
+- ["s7CVarArgP", "DateFormatter"]
+- !private ["s7CVarArgP", "DispatchQueue"]
+- !private ["s7CVarArgP", "JSONDecoder"]
+- ["s7CVarArgP", "Locale"]
+- !private ["s7CVarArgP", "String"]
+- ["s7CVarArgP", "TimeZone"]
+- !private ["s7CVarArgP", "TrackingResponse"]
+- !private ["s7CVarArgP", "URL"]
+- !private ["s7CVarArgP", "URLComponents"]
+- !private ["s7CVarArgP", "URLQueryItem"]
+- !private ["s7CVarArgP", "URLRequest"]
+- !private ["s7CVarArgP", "URLSession"]
+- !private ["s7CVarArgP", "UTF8"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "async"]
+- ["s7CVarArgP", "calendar"]
+- !private ["s7CVarArgP", "dataTask"]
+- ["s7CVarArgP", "dateFormat"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "iso8601Full"]
+- ["s7CVarArgP", "locale"]
+- !private ["s7CVarArgP", "main"]
+- !private ["s7CVarArgP", "print"]
+- !private ["s7CVarArgP", "resume"]
+- !private ["s7CVarArgP", "shared"]
+- !private ["s7CVarArgP", "sort"]
+- !private ["s7CVarArgP", "subscript"]
+- ["s7CVarArgP", "timeZone"]
+- ["10Foundation8CalendarV", "init"]
+- ["s9CodingKeyP", "=="]
+- !private ["s9CodingKeyP", ""]
+- ["s9CodingKeyP", "_rawHashValue"]
+- ["s9CodingKeyP", "debugDescription"]
+- ["s9CodingKeyP", "description"]
+- ["s9CodingKeyP", "hash"]
+- ["s9CodingKeyP", "hashValue"]
+- ["s9CodingKeyP", "init"]
+- ["s9CodingKeyP", "intValue"]
+- ["s9CodingKeyP", "stringValue"]
+- !private ["Sl", "init"]
+- !private ["Sl", "sort"]
+- !private ["Sl", "subscript"]
+- !private ["SL", "init"]
+- !private ["10Foundation15ContiguousBytesP", "sort"]
+- !private ["10Foundation15ContiguousBytesP", "subscript"]
+- ["s28CustomDebugStringConvertibleP", "=="]
+- ["s28CustomDebugStringConvertibleP", "Calendar"]
+- ["s28CustomDebugStringConvertibleP", "DateFormatter"]
+- !private ["s28CustomDebugStringConvertibleP", "DispatchQueue"]
+- !private ["s28CustomDebugStringConvertibleP", "JSONDecoder"]
+- ["s28CustomDebugStringConvertibleP", "Locale"]
+- !private ["s28CustomDebugStringConvertibleP", "String"]
+- ["s28CustomDebugStringConvertibleP", "TimeZone"]
+- !private ["s28CustomDebugStringConvertibleP", "TrackingResponse"]
+- !private ["s28CustomDebugStringConvertibleP", "URL"]
+- !private ["s28CustomDebugStringConvertibleP", "URLComponents"]
+- !private ["s28CustomDebugStringConvertibleP", "URLQueryItem"]
+- !private ["s28CustomDebugStringConvertibleP", "URLRequest"]
+- !private ["s28CustomDebugStringConvertibleP", "URLSession"]
+- !private ["s28CustomDebugStringConvertibleP", "UTF8"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- ["s28CustomDebugStringConvertibleP", "_rawHashValue"]
+- !private ["s28CustomDebugStringConvertibleP", "async"]
+- ["s28CustomDebugStringConvertibleP", "calendar"]
+- !private ["s28CustomDebugStringConvertibleP", "dataTask"]
+- ["s28CustomDebugStringConvertibleP", "dateFormat"]
+- ["s28CustomDebugStringConvertibleP", "debugDescription"]
+- ["s28CustomDebugStringConvertibleP", "description"]
+- ["s28CustomDebugStringConvertibleP", "hash"]
+- ["s28CustomDebugStringConvertibleP", "hashValue"]
+- !private ["s28CustomDebugStringConvertibleP", "httpMethod"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "intValue"]
+- !private ["s28CustomDebugStringConvertibleP", "iso8601Full"]
+- ["s28CustomDebugStringConvertibleP", "locale"]
+- !private ["s28CustomDebugStringConvertibleP", "main"]
+- !private ["s28CustomDebugStringConvertibleP", "print"]
+- !private ["s28CustomDebugStringConvertibleP", "queryItems"]
+- !private ["s28CustomDebugStringConvertibleP", "resume"]
+- !private ["s28CustomDebugStringConvertibleP", "setValue"]
+- !private ["s28CustomDebugStringConvertibleP", "shared"]
+- !private ["s28CustomDebugStringConvertibleP", "sort"]
+- ["s28CustomDebugStringConvertibleP", "stringValue"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- ["s28CustomDebugStringConvertibleP", "timeZone"]
+- !private ["s28CustomDebugStringConvertibleP", "url"]
+- !private ["s17CustomReflectableP", "httpMethod"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "queryItems"]
+- !private ["s17CustomReflectableP", "setValue"]
+- !private ["s17CustomReflectableP", "sort"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s17CustomReflectableP", "url"]
+- ["s23CustomStringConvertibleP", "=="]
+- ["s23CustomStringConvertibleP", "Calendar"]
+- ["s23CustomStringConvertibleP", "DateFormatter"]
+- !private ["s23CustomStringConvertibleP", "DispatchQueue"]
+- !private ["s23CustomStringConvertibleP", "JSONDecoder"]
+- ["s23CustomStringConvertibleP", "Locale"]
+- !private ["s23CustomStringConvertibleP", "String"]
+- ["s23CustomStringConvertibleP", "TimeZone"]
+- !private ["s23CustomStringConvertibleP", "TrackingResponse"]
+- !private ["s23CustomStringConvertibleP", "URL"]
+- !private ["s23CustomStringConvertibleP", "URLComponents"]
+- !private ["s23CustomStringConvertibleP", "URLQueryItem"]
+- !private ["s23CustomStringConvertibleP", "URLRequest"]
+- !private ["s23CustomStringConvertibleP", "URLSession"]
+- !private ["s23CustomStringConvertibleP", "UTF8"]
+- ["s23CustomStringConvertibleP", ""]
+- ["s23CustomStringConvertibleP", "_rawHashValue"]
+- !private ["s23CustomStringConvertibleP", "async"]
+- ["s23CustomStringConvertibleP", "calendar"]
+- !private ["s23CustomStringConvertibleP", "dataTask"]
+- ["s23CustomStringConvertibleP", "dateFormat"]
+- ["s23CustomStringConvertibleP", "debugDescription"]
+- ["s23CustomStringConvertibleP", "description"]
+- ["s23CustomStringConvertibleP", "hash"]
+- ["s23CustomStringConvertibleP", "hashValue"]
+- !private ["s23CustomStringConvertibleP", "httpMethod"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "intValue"]
+- !private ["s23CustomStringConvertibleP", "iso8601Full"]
+- ["s23CustomStringConvertibleP", "locale"]
+- !private ["s23CustomStringConvertibleP", "main"]
+- !private ["s23CustomStringConvertibleP", "print"]
+- !private ["s23CustomStringConvertibleP", "queryItems"]
+- !private ["s23CustomStringConvertibleP", "resume"]
+- !private ["s23CustomStringConvertibleP", "setValue"]
+- !private ["s23CustomStringConvertibleP", "shared"]
+- !private ["s23CustomStringConvertibleP", "sort"]
+- ["s23CustomStringConvertibleP", "stringValue"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- ["s23CustomStringConvertibleP", "timeZone"]
+- !private ["s23CustomStringConvertibleP", "url"]
+- !private ["10fieldready11DataHandlerC", "DateFormatter"]
+- !private ["10fieldready11DataHandlerC", "DispatchQueue"]
+- ["10fieldready11DataHandlerC", "Error"]
+- !private ["10fieldready11DataHandlerC", "JSONDecoder"]
+- ["10fieldready11DataHandlerC", "Result"]
+- ["10fieldready11DataHandlerC", "String"]
+- ["10fieldready11DataHandlerC", "TrackingResponse"]
+- !private ["10fieldready11DataHandlerC", "URL"]
+- !private ["10fieldready11DataHandlerC", "URLComponents"]
+- !private ["10fieldready11DataHandlerC", "URLQueryItem"]
+- !private ["10fieldready11DataHandlerC", "URLRequest"]
+- !private ["10fieldready11DataHandlerC", "URLSession"]
+- !private ["10fieldready11DataHandlerC", "UTF8"]
+- ["10fieldready11DataHandlerC", "Void"]
+- ["10fieldready11DataHandlerC", "deinit"]
+- ["10fieldready11DataHandlerC", "getTrackingForBatch"]
+- ["10fieldready11DataHandlerC", "init"]
+- !private ["10fieldready11DataHandlerC", "print"]
+- !private ["10Foundation12DataProtocolP", "sort"]
+- !private ["10Foundation12DataProtocolP", "subscript"]
+- !private ["10Foundation11JSONDecoderC20DateDecodingStrategyO", "formatted"]
+- ["So15NSDateFormatterC", "Calendar"]
+- ["So15NSDateFormatterC", "DateFormatter"]
+- ["So15NSDateFormatterC", "Locale"]
+- ["So15NSDateFormatterC", "TimeZone"]
+- ["So15NSDateFormatterC", "calendar"]
+- ["So15NSDateFormatterC", "dateFormat"]
+- ["So15NSDateFormatterC", "init"]
+- ["So15NSDateFormatterC", "iso8601Full"]
+- ["So15NSDateFormatterC", "locale"]
+- ["So15NSDateFormatterC", "timeZone"]
+- !private ["Se", "BatchNum"]
+- !private ["Se", "BatchNumLookup"]
+- !private ["Se", "Customer"]
+- !private ["Se", "Email"]
+- !private ["Se", "ProductName"]
+- !private ["Se", "Status"]
+- !private ["Se", "Timestamp"]
+- !private ["Se", "TrackingID"]
+- ["Se", ""]
+- !private ["Se", "createdTime"]
+- ["Se", "encode"]
+- !private ["Se", "fields"]
+- !private ["Se", "id"]
+- ["Se", "init"]
+- !private ["Se", "queryItems"]
+- !private ["Se", "records"]
+- !private ["Se", "sort"]
+- !private ["Se", "subscript"]
+- !private ["Se", "url"]
+- !private ["s7DecoderP", "container"]
+- !private ["So18OS_dispatch_objectC", "async"]
+- !private ["So18OS_dispatch_objectC", "main"]
+- !private ["So17OS_dispatch_queueC", "async"]
+- !private ["So17OS_dispatch_queueC", "main"]
+- !private ["SE", "BatchNum"]
+- !private ["SE", "BatchNumLookup"]
+- !private ["SE", "Customer"]
+- !private ["SE", "Email"]
+- !private ["SE", "ProductName"]
+- !private ["SE", "Status"]
+- !private ["SE", "Timestamp"]
+- !private ["SE", "TrackingID"]
+- ["SE", ""]
+- !private ["SE", "createdTime"]
+- ["SE", "encode"]
+- !private ["SE", "fields"]
+- !private ["SE", "id"]
+- ["SE", "init"]
+- !private ["SE", "queryItems"]
+- !private ["SE", "records"]
+- !private ["SE", "sort"]
+- !private ["SE", "subscript"]
+- !private ["SE", "url"]
+- !private ["s7EncoderP", "container"]
+- ["SQ", "=="]
+- ["SQ", "Calendar"]
+- ["SQ", "DateFormatter"]
+- !private ["SQ", "DispatchQueue"]
+- !private ["SQ", "JSONDecoder"]
+- ["SQ", "Locale"]
+- ["SQ", "RawValue"]
+- !private ["SQ", "String"]
+- ["SQ", "TimeZone"]
+- !private ["SQ", "TrackingResponse"]
+- !private ["SQ", "URL"]
+- !private ["SQ", "URLComponents"]
+- !private ["SQ", "URLQueryItem"]
+- !private ["SQ", "URLRequest"]
+- !private ["SQ", "URLSession"]
+- !private ["SQ", "UTF8"]
+- ["SQ", ""]
+- ["SQ", "_Default_RawValue"]
+- ["SQ", "_rawHashValue"]
+- !private ["SQ", "async"]
+- ["SQ", "calendar"]
+- !private ["SQ", "dataTask"]
+- ["SQ", "dateFormat"]
+- ["SQ", "debugDescription"]
+- !private ["SQ", "delivered"]
+- ["SQ", "description"]
+- !private ["SQ", "failure"]
+- !private ["SQ", "followedup"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- !private ["SQ", "httpMethod"]
+- ["SQ", "init"]
+- ["SQ", "intValue"]
+- ["SQ", "iso8601"]
+- !private ["SQ", "iso8601Full"]
+- ["SQ", "locale"]
+- !private ["SQ", "main"]
+- !private ["SQ", "manufactured"]
+- !private ["SQ", "ordered"]
+- !private ["SQ", "print"]
+- !private ["SQ", "queryItems"]
+- ["SQ", "rawValue"]
+- !private ["SQ", "resume"]
+- !private ["SQ", "setValue"]
+- !private ["SQ", "shared"]
+- !private ["SQ", "shipped"]
+- !private ["SQ", "sort"]
+- ["SQ", "stringValue"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "success"]
+- !private ["SQ", "tested"]
+- ["SQ", "timeZone"]
+- !private ["SQ", "unknown"]
+- !private ["SQ", "url"]
+- !private ["s5ErrorP", "localizedDescription"]
+- !private ["s25ExpressibleByArrayLiteralP", "sort"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s32ExpressibleByStringInterpolationP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["10fieldready12TrackingItemV06FieldsC0V", "BatchNum"]
+- ["10fieldready12TrackingItemV06FieldsC0V", "BatchNumLookup"]
+- ["10fieldready12TrackingItemV06FieldsC0V", "Customer"]
+- ["10fieldready12TrackingItemV06FieldsC0V", "Date"]
+- ["10fieldready12TrackingItemV06FieldsC0V", "Email"]
+- ["10fieldready12TrackingItemV06FieldsC0V", "Int"]
+- ["10fieldready12TrackingItemV06FieldsC0V", "ProductName"]
+- ["10fieldready12TrackingItemV06FieldsC0V", "Status"]
+- ["10fieldready12TrackingItemV06FieldsC0V", "String"]
+- ["10fieldready12TrackingItemV06FieldsC0V", "Timestamp"]
+- ["10fieldready12TrackingItemV06FieldsC0V", "TrackingID"]
+- ["10fieldready12TrackingItemV06FieldsC0V", "deinit"]
+- ["10fieldready12TrackingItemV06FieldsC0V", "encode"]
+- ["10fieldready12TrackingItemV06FieldsC0V", "init"]
+- ["So11NSFormatterC", "Calendar"]
+- ["So11NSFormatterC", "DateFormatter"]
+- ["So11NSFormatterC", "Locale"]
+- ["So11NSFormatterC", "TimeZone"]
+- ["So11NSFormatterC", "calendar"]
+- ["So11NSFormatterC", "dateFormat"]
+- ["So11NSFormatterC", "init"]
+- ["So11NSFormatterC", "iso8601Full"]
+- ["So11NSFormatterC", "locale"]
+- ["So11NSFormatterC", "timeZone"]
+- ["SH", "=="]
+- ["SH", "Calendar"]
+- ["SH", "DateFormatter"]
+- !private ["SH", "DispatchQueue"]
+- !private ["SH", "JSONDecoder"]
+- ["SH", "Locale"]
+- ["SH", "RawValue"]
+- !private ["SH", "String"]
+- ["SH", "TimeZone"]
+- !private ["SH", "TrackingResponse"]
+- !private ["SH", "URL"]
+- !private ["SH", "URLComponents"]
+- !private ["SH", "URLQueryItem"]
+- !private ["SH", "URLRequest"]
+- !private ["SH", "URLSession"]
+- !private ["SH", "UTF8"]
+- ["SH", ""]
+- ["SH", "_Default_RawValue"]
+- ["SH", "_rawHashValue"]
+- !private ["SH", "async"]
+- ["SH", "calendar"]
+- !private ["SH", "dataTask"]
+- ["SH", "dateFormat"]
+- ["SH", "debugDescription"]
+- !private ["SH", "delivered"]
+- ["SH", "description"]
+- !private ["SH", "failure"]
+- !private ["SH", "followedup"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- !private ["SH", "httpMethod"]
+- ["SH", "init"]
+- ["SH", "intValue"]
+- ["SH", "iso8601"]
+- !private ["SH", "iso8601Full"]
+- ["SH", "locale"]
+- !private ["SH", "main"]
+- !private ["SH", "manufactured"]
+- !private ["SH", "ordered"]
+- !private ["SH", "print"]
+- !private ["SH", "queryItems"]
+- ["SH", "rawValue"]
+- !private ["SH", "resume"]
+- !private ["SH", "setValue"]
+- !private ["SH", "shared"]
+- !private ["SH", "shipped"]
+- !private ["SH", "sort"]
+- ["SH", "stringValue"]
+- !private ["SH", "subscript"]
+- !private ["SH", "success"]
+- !private ["SH", "tested"]
+- ["SH", "timeZone"]
+- !private ["SH", "unknown"]
+- !private ["SH", "url"]
+- !private ["s6HasherV", "combine"]
+- ["10Foundation8CalendarV10IdentifierO", "iso8601"]
+- !private ["10Foundation11JSONDecoderC", "dateDecodingStrategy"]
+- !private ["10Foundation11JSONDecoderC", "decode"]
+- !private ["10Foundation11JSONDecoderC", "init"]
+- !private ["s22KeyedDecodingContainerV", "decode"]
+- !private ["s30KeyedDecodingContainerProtocolP", "decode"]
+- !private ["s22KeyedEncodingContainerV", "encode"]
+- !private ["s30KeyedEncodingContainerProtocolP", "encode"]
+- ["10Foundation6LocaleV", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["SM", "sort"]
+- !private ["SM", "subscript"]
+- !private ["10Foundation19MutableDataProtocolP", "sort"]
+- !private ["10Foundation19MutableDataProtocolP", "subscript"]
+- ["So8NSCodingP", "Calendar"]
+- ["So8NSCodingP", "DateFormatter"]
+- ["So8NSCodingP", "Locale"]
+- ["So8NSCodingP", "TimeZone"]
+- ["So8NSCodingP", "calendar"]
+- ["So8NSCodingP", "dateFormat"]
+- ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "iso8601Full"]
+- ["So8NSCodingP", "locale"]
+- ["So8NSCodingP", "timeZone"]
+- ["So9NSCopyingP", "Calendar"]
+- ["So9NSCopyingP", "DateFormatter"]
+- ["So9NSCopyingP", "Locale"]
+- ["So9NSCopyingP", "TimeZone"]
+- ["So9NSCopyingP", "calendar"]
+- ["So9NSCopyingP", "dateFormat"]
+- ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "iso8601Full"]
+- ["So9NSCopyingP", "locale"]
+- !private ["So9NSCopyingP", "resume"]
+- ["So9NSCopyingP", "timeZone"]
+- ["So8NSObjectC", "Calendar"]
+- ["So8NSObjectC", "DateFormatter"]
+- !private ["So8NSObjectC", "DispatchQueue"]
+- ["So8NSObjectC", "Error"]
+- !private ["So8NSObjectC", "JSONDecoder"]
+- ["So8NSObjectC", "Locale"]
+- ["So8NSObjectC", "Result"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "TimeZone"]
+- ["So8NSObjectC", "TrackingResponse"]
+- !private ["So8NSObjectC", "URL"]
+- !private ["So8NSObjectC", "URLComponents"]
+- !private ["So8NSObjectC", "URLQueryItem"]
+- !private ["So8NSObjectC", "URLRequest"]
+- !private ["So8NSObjectC", "URLSession"]
+- !private ["So8NSObjectC", "UTF8"]
+- ["So8NSObjectC", "Void"]
+- ["So8NSObjectC", ""]
+- !private ["So8NSObjectC", "async"]
+- ["So8NSObjectC", "calendar"]
+- !private ["So8NSObjectC", "dataTask"]
+- ["So8NSObjectC", "dateFormat"]
+- ["So8NSObjectC", "getTrackingForBatch"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "iso8601Full"]
+- ["So8NSObjectC", "locale"]
+- !private ["So8NSObjectC", "main"]
+- !private ["So8NSObjectC", "print"]
+- !private ["So8NSObjectC", "resume"]
+- !private ["So8NSObjectC", "shared"]
+- ["So8NSObjectC", "timeZone"]
+- ["So8NSObjectP", "Calendar"]
+- ["So8NSObjectP", "DateFormatter"]
+- !private ["So8NSObjectP", "DispatchQueue"]
+- !private ["So8NSObjectP", "JSONDecoder"]
+- ["So8NSObjectP", "Locale"]
+- !private ["So8NSObjectP", "String"]
+- ["So8NSObjectP", "TimeZone"]
+- !private ["So8NSObjectP", "TrackingResponse"]
+- !private ["So8NSObjectP", "URL"]
+- !private ["So8NSObjectP", "URLComponents"]
+- !private ["So8NSObjectP", "URLQueryItem"]
+- !private ["So8NSObjectP", "URLRequest"]
+- !private ["So8NSObjectP", "URLSession"]
+- !private ["So8NSObjectP", "UTF8"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "async"]
+- ["So8NSObjectP", "calendar"]
+- !private ["So8NSObjectP", "dataTask"]
+- ["So8NSObjectP", "dateFormat"]
+- ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "iso8601Full"]
+- ["So8NSObjectP", "locale"]
+- !private ["So8NSObjectP", "main"]
+- !private ["So8NSObjectP", "print"]
+- !private ["So8NSObjectP", "resume"]
+- !private ["So8NSObjectP", "shared"]
+- ["So8NSObjectP", "timeZone"]
+- !private ["So9OS_objectC", "async"]
+- !private ["So9OS_objectC", "main"]
+- !private ["So19NSProgressReportingP", "resume"]
+- !private ["Sk", "sort"]
+- !private ["Sk", "subscript"]
+- !private ["Sm", "init"]
+- !private ["Sm", "sort"]
+- !private ["Sm", "subscript"]
+- ["SY", "=="]
+- ["SY", "RawValue"]
+- ["SY", ""]
+- ["SY", "_Default_RawValue"]
+- ["SY", "_rawHashValue"]
+- !private ["SY", "delivered"]
+- !private ["SY", "followedup"]
+- ["SY", "hash"]
+- ["SY", "hashValue"]
+- ["SY", "init"]
+- !private ["SY", "manufactured"]
+- !private ["SY", "ordered"]
+- ["SY", "rawValue"]
+- !private ["SY", "shipped"]
+- !private ["SY", "tested"]
+- !private ["SY", "unknown"]
+- !private ["10Foundation20ReferenceConvertibleP", "httpMethod"]
+- ["10Foundation20ReferenceConvertibleP", "init"]
+- !private ["10Foundation20ReferenceConvertibleP", "queryItems"]
+- !private ["10Foundation20ReferenceConvertibleP", "setValue"]
+- !private ["10Foundation20ReferenceConvertibleP", "url"]
+- !private ["s6ResultO", "failure"]
+- !private ["s6ResultO", "success"]
+- !private ["7Combine9SchedulerP", "async"]
+- !private ["7Combine9SchedulerP", "main"]
+- !private ["ST", "init"]
+- !private ["ST", "sort"]
+- !private ["ST", "subscript"]
+- !private ["SS", "init"]
+- !private ["Sy", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- ["10Foundation8TimeZoneV", "init"]
+- !private ["7Combine15TopLevelDecoderP", "dateDecodingStrategy"]
+- !private ["7Combine15TopLevelDecoderP", "decode"]
+- !private ["7Combine15TopLevelDecoderP", "init"]
+- ["10fieldready12TrackingItemV", "BatchStatus"]
+- ["10fieldready12TrackingItemV", "Codable"]
+- ["10fieldready12TrackingItemV", "Date"]
+- ["10fieldready12TrackingItemV", "FieldsItem"]
+- ["10fieldready12TrackingItemV", "Int"]
+- ["10fieldready12TrackingItemV", "String"]
+- ["10fieldready12TrackingItemV", "createdTime"]
+- ["10fieldready12TrackingItemV", "deinit"]
+- ["10fieldready12TrackingItemV", "encode"]
+- ["10fieldready12TrackingItemV", "fields"]
+- ["10fieldready12TrackingItemV", "getStatus"]
+- ["10fieldready12TrackingItemV", "id"]
+- ["10fieldready12TrackingItemV", "init"]
+- !private ["10fieldready16TrackingResponseV", "Bool"]
+- ["10fieldready16TrackingResponseV", "TrackingItem"]
+- ["10fieldready16TrackingResponseV", "deinit"]
+- ["10fieldready16TrackingResponseV", "encode"]
+- ["10fieldready16TrackingResponseV", "getLatestTracking"]
+- ["10fieldready16TrackingResponseV", "init"]
+- ["10fieldready16TrackingResponseV", "records"]
+- !private ["10Foundation3URLV", "init"]
+- !private ["10Foundation13URLComponentsV", "init"]
+- !private ["10Foundation13URLComponentsV", "queryItems"]
+- !private ["10Foundation13URLComponentsV", "url"]
+- !private ["10Foundation12URLQueryItemV", "init"]
+- !private ["10Foundation10URLRequestV", "httpMethod"]
+- !private ["10Foundation10URLRequestV", "init"]
+- !private ["10Foundation10URLRequestV", "setValue"]
+- !private ["So12NSURLSessionC", "dataTask"]
+- !private ["So12NSURLSessionC", "shared"]
+- !private ["So20NSURLSessionDataTaskC", "resume"]
+- !private ["So16NSURLSessionTaskC", "resume"]
+- !private ["s14_ArrayProtocolP", "sort"]
+- !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s24_DestructorSafeContainerP", "sort"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s34_ExpressibleByFileReferenceLiteralP", "init"]
+- !private ["s19_HasContiguousBytesP", "init"]
+- !private ["s19_HasContiguousBytesP", "sort"]
+- !private ["s19_HasContiguousBytesP", "subscript"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "sort"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "Calendar"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "DateFormatter"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "DispatchQueue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "JSONDecoder"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "Locale"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "String"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "TimeZone"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "TrackingResponse"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "URL"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "URLComponents"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "URLQueryItem"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "URLRequest"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "URLSession"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UTF8"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "async"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "calendar"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dataTask"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "dateFormat"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "iso8601Full"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "locale"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "resume"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "shared"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "timeZone"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Calendar"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "DateFormatter"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "DispatchQueue"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "JSONDecoder"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Locale"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "String"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "TimeZone"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "TrackingResponse"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "URL"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "URLComponents"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "URLQueryItem"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "URLRequest"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "URLSession"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UTF8"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "async"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "calendar"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "dataTask"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "dateFormat"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "iso8601Full"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "locale"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "main"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "print"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "resume"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "shared"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "timeZone"]
+- !private ["s21_ObjectiveCBridgeableP", "httpMethod"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "queryItems"]
+- !private ["s21_ObjectiveCBridgeableP", "setValue"]
+- !private ["s21_ObjectiveCBridgeableP", "sort"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "url"]
+depends-nominal:
+- !private "Sa"
+- "10fieldready11BatchStatusO"
+- !private "SK"
+- "s7CVarArgP"
+- "10Foundation8CalendarV"
+- "s9CodingKeyP"
+- !private "Sl"
+- !private "SL"
+- !private "10Foundation15ContiguousBytesP"
+- "s28CustomDebugStringConvertibleP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "10fieldready11DataHandlerC"
+- !private "10Foundation12DataProtocolP"
+- !private "10Foundation11JSONDecoderC20DateDecodingStrategyO"
+- "So15NSDateFormatterC"
+- "Se"
+- !private "s7DecoderP"
+- !private "So18OS_dispatch_objectC"
+- !private "So17OS_dispatch_queueC"
+- "SE"
+- !private "s7EncoderP"
+- "SQ"
+- !private "s5ErrorP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s32ExpressibleByStringInterpolationP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "10fieldready12TrackingItemV06FieldsC0V"
+- "So11NSFormatterC"
+- "SH"
+- !private "s6HasherV"
+- "10Foundation8CalendarV10IdentifierO"
+- !private "10Foundation11JSONDecoderC"
+- !private "s22KeyedDecodingContainerV"
+- !private "s30KeyedDecodingContainerProtocolP"
+- !private "s22KeyedEncodingContainerV"
+- !private "s30KeyedEncodingContainerProtocolP"
+- "10Foundation6LocaleV"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- "So8NSCodingP"
+- "So9NSCopyingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "So9OS_objectC"
+- !private "So19NSProgressReportingP"
+- !private "Sk"
+- !private "Sm"
+- "SY"
+- "10Foundation20ReferenceConvertibleP"
+- !private "s6ResultO"
+- !private "7Combine9SchedulerP"
+- !private "ST"
+- !private "SS"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- "10Foundation8TimeZoneV"
+- !private "7Combine15TopLevelDecoderP"
+- "10fieldready12TrackingItemV"
+- "10fieldready16TrackingResponseV"
+- !private "10Foundation3URLV"
+- !private "10Foundation13URLComponentsV"
+- !private "10Foundation12URLQueryItemV"
+- !private "10Foundation10URLRequestV"
+- !private "So12NSURLSessionC"
+- !private "So20NSURLSessionDataTaskC"
+- !private "So16NSURLSessionTaskC"
+- !private "s14_ArrayProtocolP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s34_ExpressibleByFileReferenceLiteralP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreImage.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/QuartzCore.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "cf4e1e4044d8e743259c773261f6d928"

@@ -186,6 +186,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import CoreGraphics;
+@import Foundation;
+@import ObjectiveC;
 @import UIKit;
 #endif
 
@@ -217,6 +220,22 @@ SWIFT_CLASS("_TtC10fieldready11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC10fieldready11DataHandler")
+@interface DataHandler : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+@class NSCoder;
+
+SWIFT_CLASS("_TtC10fieldready17FRBatchStatusView")
+@interface FRBatchStatusView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIWindow;
 @class UIScene;
 
@@ -232,12 +251,20 @@ SWIFT_CLASS("_TtC10fieldready13SceneDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UILabel;
+@class UITextField;
 @class NSBundle;
-@class NSCoder;
 
 SWIFT_CLASS("_TtC10fieldready14ViewController")
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITextFieldDelegate>
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified productName;
+@property (nonatomic, strong) IBOutlet FRBatchStatusView * _Null_unspecified statusView;
+@property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified batchNo;
 - (void)viewDidLoad;
+- (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)scoreText SWIFT_WARN_UNUSED_RESULT;
+- (IBAction)changeStatus:(id _Nonnull)sender;
+- (IBAction)loadBatch:(id _Nonnull)sender;
+- (IBAction)scanAction:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end

@@ -1,17 +1,21 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "TrackingItem"
 - "TrackingResponse"
+- "BatchStatus"
 - "DataHandler"
 provides-nominal:
+- "10fieldready12TrackingItemV"
+- "10fieldready12TrackingItemV06FieldsC0V"
 - "10fieldready16TrackingResponseV"
-- "10fieldready16TrackingResponseV0B4ItemV"
-- "10fieldready16TrackingResponseV0B4ItemV06FieldsD0V"
+- "10fieldready11BatchStatusO"
 - "10fieldready11DataHandlerC"
 provides-member:
 - ["So15NSDateFormatterC", ""]
+- ["10fieldready12TrackingItemV", ""]
+- ["10fieldready12TrackingItemV06FieldsC0V", ""]
 - ["10fieldready16TrackingResponseV", ""]
-- ["10fieldready16TrackingResponseV0B4ItemV", ""]
-- ["10fieldready16TrackingResponseV0B4ItemV06FieldsD0V", ""]
+- ["10fieldready11BatchStatusO", ""]
 - ["10fieldready11DataHandlerC", ""]
 - ["So15NSDateFormatterC", "iso8601Full"]
 provides-dynamic-lookup:
@@ -23,6 +27,7 @@ depends-top-level:
 - !private ">"
 - !private "??"
 - "AssignmentPrecedence"
+- "BatchStatus"
 - !private "Bool"
 - !private "BooleanLiteralType"
 - "Calendar"
@@ -43,6 +48,7 @@ depends-top-level:
 - "String"
 - "StringLiteralType"
 - "TimeZone"
+- "TrackingItem"
 - "TrackingResponse"
 - !private "URL"
 - !private "URLComponents"
@@ -55,8 +61,26 @@ depends-top-level:
 - !private "print"
 - !private "~="
 depends-member:
+- !private ["Sa", "count"]
 - !private ["Sa", "sort"]
 - !private ["Sa", "subscript"]
+- ["10fieldready11BatchStatusO", "=="]
+- ["10fieldready11BatchStatusO", "RawValue"]
+- ["10fieldready11BatchStatusO", "_Default_RawValue"]
+- ["10fieldready11BatchStatusO", "_rawHashValue"]
+- ["10fieldready11BatchStatusO", "deinit"]
+- ["10fieldready11BatchStatusO", "delivered"]
+- ["10fieldready11BatchStatusO", "followedup"]
+- ["10fieldready11BatchStatusO", "hash"]
+- ["10fieldready11BatchStatusO", "hashValue"]
+- ["10fieldready11BatchStatusO", "init"]
+- ["10fieldready11BatchStatusO", "manufactured"]
+- ["10fieldready11BatchStatusO", "ordered"]
+- ["10fieldready11BatchStatusO", "rawValue"]
+- ["10fieldready11BatchStatusO", "shipped"]
+- ["10fieldready11BatchStatusO", "tested"]
+- ["10fieldready11BatchStatusO", "unknown"]
+- !private ["SK", "count"]
 - !private ["SK", "init"]
 - !private ["SK", "sort"]
 - !private ["SK", "subscript"]
@@ -77,6 +101,7 @@ depends-member:
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "async"]
 - ["s7CVarArgP", "calendar"]
+- !private ["s7CVarArgP", "count"]
 - !private ["s7CVarArgP", "dataTask"]
 - ["s7CVarArgP", "dateFormat"]
 - ["s7CVarArgP", "init"]
@@ -100,10 +125,12 @@ depends-member:
 - ["s9CodingKeyP", "init"]
 - ["s9CodingKeyP", "intValue"]
 - ["s9CodingKeyP", "stringValue"]
+- !private ["Sl", "count"]
 - !private ["Sl", "init"]
 - !private ["Sl", "sort"]
 - !private ["Sl", "subscript"]
 - !private ["SL", "init"]
+- !private ["10Foundation15ContiguousBytesP", "count"]
 - !private ["10Foundation15ContiguousBytesP", "sort"]
 - !private ["10Foundation15ContiguousBytesP", "subscript"]
 - ["s28CustomDebugStringConvertibleP", "=="]
@@ -125,6 +152,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "_rawHashValue"]
 - !private ["s28CustomDebugStringConvertibleP", "async"]
 - ["s28CustomDebugStringConvertibleP", "calendar"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
 - !private ["s28CustomDebugStringConvertibleP", "dataTask"]
 - ["s28CustomDebugStringConvertibleP", "dateFormat"]
 - ["s28CustomDebugStringConvertibleP", "debugDescription"]
@@ -147,6 +175,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - ["s28CustomDebugStringConvertibleP", "timeZone"]
 - !private ["s28CustomDebugStringConvertibleP", "url"]
+- !private ["s17CustomReflectableP", "count"]
 - !private ["s17CustomReflectableP", "httpMethod"]
 - ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "queryItems"]
@@ -173,6 +202,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "_rawHashValue"]
 - !private ["s23CustomStringConvertibleP", "async"]
 - ["s23CustomStringConvertibleP", "calendar"]
+- !private ["s23CustomStringConvertibleP", "count"]
 - !private ["s23CustomStringConvertibleP", "dataTask"]
 - ["s23CustomStringConvertibleP", "dateFormat"]
 - ["s23CustomStringConvertibleP", "debugDescription"]
@@ -213,6 +243,7 @@ depends-member:
 - ["10fieldready11DataHandlerC", "getTrackingForBatch"]
 - ["10fieldready11DataHandlerC", "init"]
 - !private ["10fieldready11DataHandlerC", "print"]
+- !private ["10Foundation12DataProtocolP", "count"]
 - !private ["10Foundation12DataProtocolP", "sort"]
 - !private ["10Foundation12DataProtocolP", "subscript"]
 - !private ["10Foundation11JSONDecoderC20DateDecodingStrategyO", "formatted"]
@@ -231,10 +262,12 @@ depends-member:
 - !private ["Se", "Customer"]
 - !private ["Se", "Email"]
 - !private ["Se", "ProductName"]
+- !private ["Se", "Quantity"]
 - !private ["Se", "Status"]
 - !private ["Se", "Timestamp"]
 - !private ["Se", "TrackingID"]
 - ["Se", ""]
+- !private ["Se", "count"]
 - !private ["Se", "createdTime"]
 - ["Se", "encode"]
 - !private ["Se", "fields"]
@@ -255,10 +288,12 @@ depends-member:
 - !private ["SE", "Customer"]
 - !private ["SE", "Email"]
 - !private ["SE", "ProductName"]
+- !private ["SE", "Quantity"]
 - !private ["SE", "Status"]
 - !private ["SE", "Timestamp"]
 - !private ["SE", "TrackingID"]
 - ["SE", ""]
+- !private ["SE", "count"]
 - !private ["SE", "createdTime"]
 - ["SE", "encode"]
 - !private ["SE", "fields"]
@@ -276,6 +311,7 @@ depends-member:
 - !private ["SQ", "DispatchQueue"]
 - !private ["SQ", "JSONDecoder"]
 - ["SQ", "Locale"]
+- ["SQ", "RawValue"]
 - !private ["SQ", "String"]
 - ["SQ", "TimeZone"]
 - !private ["SQ", "TrackingResponse"]
@@ -286,14 +322,18 @@ depends-member:
 - !private ["SQ", "URLSession"]
 - !private ["SQ", "UTF8"]
 - ["SQ", ""]
+- ["SQ", "_Default_RawValue"]
 - ["SQ", "_rawHashValue"]
 - !private ["SQ", "async"]
 - ["SQ", "calendar"]
+- !private ["SQ", "count"]
 - !private ["SQ", "dataTask"]
 - ["SQ", "dateFormat"]
 - ["SQ", "debugDescription"]
+- !private ["SQ", "delivered"]
 - ["SQ", "description"]
 - !private ["SQ", "failure"]
+- !private ["SQ", "followedup"]
 - ["SQ", "hash"]
 - ["SQ", "hashValue"]
 - !private ["SQ", "httpMethod"]
@@ -303,38 +343,46 @@ depends-member:
 - !private ["SQ", "iso8601Full"]
 - ["SQ", "locale"]
 - !private ["SQ", "main"]
+- !private ["SQ", "manufactured"]
+- !private ["SQ", "ordered"]
 - !private ["SQ", "print"]
 - !private ["SQ", "queryItems"]
+- ["SQ", "rawValue"]
 - !private ["SQ", "resume"]
 - !private ["SQ", "setValue"]
 - !private ["SQ", "shared"]
+- !private ["SQ", "shipped"]
 - !private ["SQ", "sort"]
 - ["SQ", "stringValue"]
 - !private ["SQ", "subscript"]
 - !private ["SQ", "success"]
+- !private ["SQ", "tested"]
 - ["SQ", "timeZone"]
+- !private ["SQ", "unknown"]
 - !private ["SQ", "url"]
 - !private ["s5ErrorP", "localizedDescription"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
 - !private ["s25ExpressibleByArrayLiteralP", "sort"]
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s32ExpressibleByStringInterpolationP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- ["10fieldready16TrackingResponseV0B4ItemV06FieldsD0V", "BatchNum"]
-- ["10fieldready16TrackingResponseV0B4ItemV06FieldsD0V", "BatchNumLookup"]
-- ["10fieldready16TrackingResponseV0B4ItemV06FieldsD0V", "Customer"]
-- ["10fieldready16TrackingResponseV0B4ItemV06FieldsD0V", "Date"]
-- ["10fieldready16TrackingResponseV0B4ItemV06FieldsD0V", "Email"]
-- ["10fieldready16TrackingResponseV0B4ItemV06FieldsD0V", "Int"]
-- ["10fieldready16TrackingResponseV0B4ItemV06FieldsD0V", "ProductName"]
-- ["10fieldready16TrackingResponseV0B4ItemV06FieldsD0V", "Status"]
-- ["10fieldready16TrackingResponseV0B4ItemV06FieldsD0V", "String"]
-- ["10fieldready16TrackingResponseV0B4ItemV06FieldsD0V", "Timestamp"]
-- ["10fieldready16TrackingResponseV0B4ItemV06FieldsD0V", "TrackingID"]
-- ["10fieldready16TrackingResponseV0B4ItemV06FieldsD0V", "deinit"]
-- ["10fieldready16TrackingResponseV0B4ItemV06FieldsD0V", "encode"]
-- ["10fieldready16TrackingResponseV0B4ItemV06FieldsD0V", "init"]
+- ["10fieldready12TrackingItemV06FieldsC0V", "BatchNum"]
+- ["10fieldready12TrackingItemV06FieldsC0V", "BatchNumLookup"]
+- ["10fieldready12TrackingItemV06FieldsC0V", "Customer"]
+- ["10fieldready12TrackingItemV06FieldsC0V", "Date"]
+- ["10fieldready12TrackingItemV06FieldsC0V", "Email"]
+- ["10fieldready12TrackingItemV06FieldsC0V", "Int"]
+- ["10fieldready12TrackingItemV06FieldsC0V", "ProductName"]
+- ["10fieldready12TrackingItemV06FieldsC0V", "Quantity"]
+- ["10fieldready12TrackingItemV06FieldsC0V", "Status"]
+- ["10fieldready12TrackingItemV06FieldsC0V", "String"]
+- ["10fieldready12TrackingItemV06FieldsC0V", "Timestamp"]
+- ["10fieldready12TrackingItemV06FieldsC0V", "TrackingID"]
+- ["10fieldready12TrackingItemV06FieldsC0V", "deinit"]
+- ["10fieldready12TrackingItemV06FieldsC0V", "encode"]
+- ["10fieldready12TrackingItemV06FieldsC0V", "init"]
 - ["So11NSFormatterC", "Calendar"]
 - ["So11NSFormatterC", "DateFormatter"]
 - ["So11NSFormatterC", "Locale"]
@@ -351,6 +399,7 @@ depends-member:
 - !private ["SH", "DispatchQueue"]
 - !private ["SH", "JSONDecoder"]
 - ["SH", "Locale"]
+- ["SH", "RawValue"]
 - !private ["SH", "String"]
 - ["SH", "TimeZone"]
 - !private ["SH", "TrackingResponse"]
@@ -361,14 +410,18 @@ depends-member:
 - !private ["SH", "URLSession"]
 - !private ["SH", "UTF8"]
 - ["SH", ""]
+- ["SH", "_Default_RawValue"]
 - ["SH", "_rawHashValue"]
 - !private ["SH", "async"]
 - ["SH", "calendar"]
+- !private ["SH", "count"]
 - !private ["SH", "dataTask"]
 - ["SH", "dateFormat"]
 - ["SH", "debugDescription"]
+- !private ["SH", "delivered"]
 - ["SH", "description"]
 - !private ["SH", "failure"]
+- !private ["SH", "followedup"]
 - ["SH", "hash"]
 - ["SH", "hashValue"]
 - !private ["SH", "httpMethod"]
@@ -378,16 +431,22 @@ depends-member:
 - !private ["SH", "iso8601Full"]
 - ["SH", "locale"]
 - !private ["SH", "main"]
+- !private ["SH", "manufactured"]
+- !private ["SH", "ordered"]
 - !private ["SH", "print"]
 - !private ["SH", "queryItems"]
+- ["SH", "rawValue"]
 - !private ["SH", "resume"]
 - !private ["SH", "setValue"]
 - !private ["SH", "shared"]
+- !private ["SH", "shipped"]
 - !private ["SH", "sort"]
 - ["SH", "stringValue"]
 - !private ["SH", "subscript"]
 - !private ["SH", "success"]
+- !private ["SH", "tested"]
 - ["SH", "timeZone"]
+- !private ["SH", "unknown"]
 - !private ["SH", "url"]
 - !private ["s6HasherV", "combine"]
 - ["10Foundation8CalendarV10IdentifierO", "iso8601"]
@@ -401,8 +460,10 @@ depends-member:
 - ["10Foundation6LocaleV", "init"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
+- !private ["SM", "count"]
 - !private ["SM", "sort"]
 - !private ["SM", "subscript"]
+- !private ["10Foundation19MutableDataProtocolP", "count"]
 - !private ["10Foundation19MutableDataProtocolP", "sort"]
 - !private ["10Foundation19MutableDataProtocolP", "subscript"]
 - ["So8NSCodingP", "Calendar"]
@@ -487,11 +548,29 @@ depends-member:
 - !private ["So9OS_objectC", "async"]
 - !private ["So9OS_objectC", "main"]
 - !private ["So19NSProgressReportingP", "resume"]
+- !private ["Sk", "count"]
 - !private ["Sk", "sort"]
 - !private ["Sk", "subscript"]
+- !private ["Sm", "count"]
 - !private ["Sm", "init"]
 - !private ["Sm", "sort"]
 - !private ["Sm", "subscript"]
+- ["SY", "=="]
+- ["SY", "RawValue"]
+- ["SY", ""]
+- ["SY", "_Default_RawValue"]
+- ["SY", "_rawHashValue"]
+- !private ["SY", "delivered"]
+- !private ["SY", "followedup"]
+- ["SY", "hash"]
+- ["SY", "hashValue"]
+- ["SY", "init"]
+- !private ["SY", "manufactured"]
+- !private ["SY", "ordered"]
+- ["SY", "rawValue"]
+- !private ["SY", "shipped"]
+- !private ["SY", "tested"]
+- !private ["SY", "unknown"]
 - !private ["10Foundation20ReferenceConvertibleP", "httpMethod"]
 - ["10Foundation20ReferenceConvertibleP", "init"]
 - !private ["10Foundation20ReferenceConvertibleP", "queryItems"]
@@ -501,6 +580,7 @@ depends-member:
 - !private ["s6ResultO", "success"]
 - !private ["7Combine9SchedulerP", "async"]
 - !private ["7Combine9SchedulerP", "main"]
+- !private ["ST", "count"]
 - !private ["ST", "init"]
 - !private ["ST", "sort"]
 - !private ["ST", "subscript"]
@@ -512,22 +592,20 @@ depends-member:
 - !private ["7Combine15TopLevelDecoderP", "dateDecodingStrategy"]
 - !private ["7Combine15TopLevelDecoderP", "decode"]
 - !private ["7Combine15TopLevelDecoderP", "init"]
-- ["10fieldready16TrackingResponseV0B4ItemV", "Codable"]
-- ["10fieldready16TrackingResponseV0B4ItemV", "Date"]
-- ["10fieldready16TrackingResponseV0B4ItemV", "FieldsItem"]
-- ["10fieldready16TrackingResponseV0B4ItemV", "Int"]
-- ["10fieldready16TrackingResponseV0B4ItemV", "String"]
-- ["10fieldready16TrackingResponseV0B4ItemV", "createdTime"]
-- ["10fieldready16TrackingResponseV0B4ItemV", "deinit"]
-- ["10fieldready16TrackingResponseV0B4ItemV", "encode"]
-- ["10fieldready16TrackingResponseV0B4ItemV", "fields"]
-- ["10fieldready16TrackingResponseV0B4ItemV", "id"]
-- ["10fieldready16TrackingResponseV0B4ItemV", "init"]
+- ["10fieldready12TrackingItemV", "BatchStatus"]
+- ["10fieldready12TrackingItemV", "Codable"]
+- ["10fieldready12TrackingItemV", "Date"]
+- ["10fieldready12TrackingItemV", "FieldsItem"]
+- ["10fieldready12TrackingItemV", "Int"]
+- ["10fieldready12TrackingItemV", "String"]
+- ["10fieldready12TrackingItemV", "createdTime"]
+- ["10fieldready12TrackingItemV", "deinit"]
+- ["10fieldready12TrackingItemV", "encode"]
+- ["10fieldready12TrackingItemV", "fields"]
+- ["10fieldready12TrackingItemV", "getStatus"]
+- ["10fieldready12TrackingItemV", "id"]
+- ["10fieldready12TrackingItemV", "init"]
 - !private ["10fieldready16TrackingResponseV", "Bool"]
-- ["10fieldready16TrackingResponseV", "Codable"]
-- ["10fieldready16TrackingResponseV", "Date"]
-- ["10fieldready16TrackingResponseV", "Int"]
-- ["10fieldready16TrackingResponseV", "String"]
 - ["10fieldready16TrackingResponseV", "TrackingItem"]
 - ["10fieldready16TrackingResponseV", "deinit"]
 - ["10fieldready16TrackingResponseV", "encode"]
@@ -546,18 +624,22 @@ depends-member:
 - !private ["So12NSURLSessionC", "shared"]
 - !private ["So20NSURLSessionDataTaskC", "resume"]
 - !private ["So16NSURLSessionTaskC", "resume"]
+- !private ["s14_ArrayProtocolP", "count"]
 - !private ["s14_ArrayProtocolP", "sort"]
 - !private ["s14_ArrayProtocolP", "subscript"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s24_DestructorSafeContainerP", "count"]
 - !private ["s24_DestructorSafeContainerP", "sort"]
 - !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s34_ExpressibleByFileReferenceLiteralP", "init"]
+- !private ["s19_HasContiguousBytesP", "count"]
 - !private ["s19_HasContiguousBytesP", "init"]
 - !private ["s19_HasContiguousBytesP", "sort"]
 - !private ["s19_HasContiguousBytesP", "subscript"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "sort"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "Calendar"]
@@ -614,6 +696,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "resume"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "shared"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "timeZone"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
 - !private ["s21_ObjectiveCBridgeableP", "httpMethod"]
 - ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "queryItems"]
@@ -623,6 +706,7 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "url"]
 depends-nominal:
 - !private "Sa"
+- "10fieldready11BatchStatusO"
 - !private "SK"
 - "s7CVarArgP"
 - "10Foundation8CalendarV"
@@ -650,7 +734,7 @@ depends-nominal:
 - !private "s32ExpressibleByStringInterpolationP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
-- "10fieldready16TrackingResponseV0B4ItemV06FieldsD0V"
+- "10fieldready12TrackingItemV06FieldsC0V"
 - "So11NSFormatterC"
 - "SH"
 - !private "s6HasherV"
@@ -673,6 +757,7 @@ depends-nominal:
 - !private "So19NSProgressReportingP"
 - !private "Sk"
 - !private "Sm"
+- "SY"
 - "10Foundation20ReferenceConvertibleP"
 - !private "s6ResultO"
 - !private "7Combine9SchedulerP"
@@ -683,7 +768,7 @@ depends-nominal:
 - !private "s20TextOutputStreamableP"
 - "10Foundation8TimeZoneV"
 - !private "7Combine15TopLevelDecoderP"
-- "10fieldready16TrackingResponseV0B4ItemV"
+- "10fieldready12TrackingItemV"
 - "10fieldready16TrackingResponseV"
 - !private "10Foundation3URLV"
 - !private "10Foundation13URLComponentsV"
@@ -707,29 +792,43 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/ObjectiveC.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreMIDI.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreMedia.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/simd.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreImage.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/QuartzCore.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Dispatch.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Metal.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Darwin.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Foundation.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/AVFoundation.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreFoundation.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreAudio.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreGraphics.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Swift.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/UIKit.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/SwiftOnoneSupport.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Combine.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Users/tom/Documents/Field Ready/App/fieldready/Debug-iphoneos/QRCodeReader.swift/QRCodeReader.framework/Modules/QRCodeReader.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Users/tom/Documents/Field Ready/App/fieldready/Debug-iphoneos/QRCodeReader.swift/QRCodeReader.framework/Headers/QRCodeReader.swift-umbrella.h"
+- "/Users/tom/Documents/Field Ready/App/fieldready/Debug-iphoneos/QRCodeReader.swift/QRCodeReader.framework/Headers/QRCodeReader-Swift.h"
+- "/Users/tom/Documents/Field Ready/App/fieldready/Debug-iphoneos/QRCodeReader.swift/QRCodeReader.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/usr/include/Darwin.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/CoreAudioTypes.framework/Headers/CoreAudioTypes.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "0d36ef88dd61e429a97dad0021af83b2"
+interface-hash: "3078c5034ac58d48329a95511fdf9df5"

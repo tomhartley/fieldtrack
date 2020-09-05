@@ -19,34 +19,69 @@ extension DateFormatter {
   }()
 }
 
-struct TrackingResponse: Codable {
-	struct TrackingItem: Codable {
-		struct FieldsItem: Codable {
-			var BatchNum : [String] //ID
-			var Status : String
-			var Email : String
-			var TrackingID : String
-			var Timestamp : Date
-			var ProductName : [String]
-			var Customer : [String]
-			var BatchNumLookup : [Int]
-		}
-		var id : String
-		var fields : FieldsItem
-		var createdTime : Date
+struct TrackingItem: Codable {
+	struct FieldsItem: Codable {
+		var BatchNum : [String] //ID
+		var Status : String
+		var Email : String
+		var TrackingID : String
+		var Timestamp : Date
+		var ProductName : [String]
+		var Customer : [String]
+		var BatchNumLookup : [Int]
+		var Quantity : [Int]
 	}
+	var id : String
+	var fields : FieldsItem
+	var createdTime : Date
+	
+	func getStatus() -> BatchStatus {
+		switch fields.Status {
+		case "Ordered":
+			return .ordered
+		case "Manufactured":
+			return .manufactured
+		case "Tested":
+			return .tested
+		case "Shipped":
+			return .shipped
+		case "Delivered":
+			return .delivered
+		case "Followed Up":
+			return .followedup
+		default:
+			return .unknown
+		}
+	}
+}
+
+struct TrackingResponse: Codable {
 	
 	var records : [TrackingItem]
 	
-	func getLatestTracking() -> TrackingItem {
+	func getLatestTracking() -> TrackingItem? {
 		var z = self.records
 		z.sort { (a, b) -> Bool in
 			return (a.fields.Timestamp > b.fields.Timestamp)
 		}
-		return z[0]
+		if z.count > 0 {
+			return z[0]
+		} else {
+			return nil
+		}
+
 	}
 }
 
+enum BatchStatus : Int {
+	case ordered = 0
+	case manufactured = 1
+	case tested = 2
+	case shipped = 3
+	case delivered = 4
+	case followedup = 5
+	case unknown = 6
+}
 
 class DataHandler: NSObject {
 	
@@ -70,7 +105,7 @@ class DataHandler: NSObject {
 		var request = URLRequest(url: components.url!)
 		request.httpMethod = "GET"
 		request.setValue("Bearer ***REMOVED***", forHTTPHeaderField: "Authorization")
-
+		
 		let task = URLSession.shared.dataTask(with: request) { data, response, error in
 			guard let data = data, error == nil else {
 				print(error?.localizedDescription ?? "No data")
@@ -100,7 +135,6 @@ class DataHandler: NSObject {
 			
 		}
 		task.resume()
-
 	}
 	
 }

@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/tom/Documents/Field Ready/App/fieldready/Debug-iphonesimulator/QRCodeReader.swift/QRCodeReader.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/tom/Documents/Field Ready/App/fieldready/Pods.build/Debug-iphonesimulator/QRCodeReader.swift.build/unextended-module.modulemap",
+    }]
+  }]
+}

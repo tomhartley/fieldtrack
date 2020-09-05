@@ -4,9 +4,13 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Assets.car</key>
+		<data>
+		uBWip3N5MIXHimB1whyT2NrkUW0=
+		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		auI+O/KfAL1QKF2H7L5loQ6k9Vo=
+		+7TixQsRYUTVW/Zqm5npXdS4HeI=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -14,11 +18,11 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		GpgHmaMMgw06u6OAl3tClvrGxco=
+		7lnP1k26fUiZoEwB6GxTxwtGgxU=
 		</data>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<data>
-		P6Kh4YQYnrekQNeBD9pzQ+/+7cg=
+		62Ml07TQ9vPK5p44Vj/Q3qjBLFo=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -26,7 +30,7 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
 		<data>
-		dgsw+yV2o5a19UIysMjlWoJYOd8=
+		jipAU3lojUulGZ8kc/iIZd7frjs=
 		</data>
 		<key>Frameworks/QRCodeReader.framework/Info.plist</key>
 		<data>
@@ -42,7 +46,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		FsGhCTSvVdxEaSPRUf56Vt+PHu0=
+		1RlxnxtYpLu2NZrAh774NE7Gf9M=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -52,14 +56,29 @@
 		<data>
 		kx/vBMIJt2llKaEAHoYFDhGllBk=
 		</data>
+		<key>scan.pdf</key>
+		<data>
+		4FM4KujGnSnpSMLChF6uV2wcfMo=
+		</data>
+		<key>scan.png</key>
+		<data>
+		lX1DCDPwioX0F3ylUfMuFHsNQio=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Assets.car</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			9LGlYDX3EREEOZNUaXQfuG9aU6uXZwXevIFCRD4PjZ8=
+			</data>
+		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			A3kcL/SN9X2Jg15Nv+xk96I1zFCcLlPnBSVvR19nluc=
+			rmA7cIg+rZ343T587c0DuNfG7G3tkW9OAzq4rf12yUU=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -73,14 +92,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Rcgqtv4oFDhrMSr/sctzTbS9oJOB/monIIgJu7JLjWc=
+			ysuFB/oJHW1I7ZQaVkDF1w0bPnWgmrXGlicgNiolba4=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cei7cSvLZDjptcMR9JF37qUv6iHGjOF+Rbxc+Pc1+jI=
+			LUNKpgWtHJkMDWQnkbc7nQEQEW8M3UiykVV6O2vl+Bw=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -94,7 +113,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pEWO+wQvFRRGFm3+Y4G4NFRG1Fv/6WNooBfQf3fm62M=
+			9q3Fp9zHRso48VE5EmEsG4eR4FEYSyhF7p3qeZMFNsI=
 			</data>
 		</dict>
 		<key>Frameworks/QRCodeReader.framework/Info.plist</key>
@@ -123,6 +142,20 @@
 			<key>hash2</key>
 			<data>
 			HZ2Dy1Dwe61xxGfKF6QIRJPatPeIYGCtTvYMyQrDpIA=
+			</data>
+		</dict>
+		<key>scan.pdf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			J038GPwyxApeUvzYqBFgaEOIvTz7M9Y0Tkd/37N3pGo=
+			</data>
+		</dict>
+		<key>scan.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2vUak8K1YvtLInQEJgKas+w9Q0C/S8e/0tA0G3xRSG0=
 			</data>
 		</dict>
 	</dict>
