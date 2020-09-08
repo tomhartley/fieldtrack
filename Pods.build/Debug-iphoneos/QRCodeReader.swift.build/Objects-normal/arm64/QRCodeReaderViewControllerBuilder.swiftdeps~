@@ -1,0 +1,275 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "QRCodeReaderViewControllerBuilder"
+provides-nominal:
+- "12QRCodeReader0aB21ViewControllerBuilderC"
+provides-member:
+- ["12QRCodeReader0aB21ViewControllerBuilderC", ""]
+provides-dynamic-lookup:
+- "_showSwitchCameraButton"
+- "_showTorchButton"
+- "cancelButtonTitle"
+- "handleOrientationChange"
+- "preferredStatusBarStyle"
+- "reader"
+- "readerView"
+- "rectOfInterest"
+- "showCancelButton"
+- "showOverlayView"
+- "showSwitchCameraButton"
+- "showTorchButton"
+- "startScanningAtLoad"
+depends-top-level:
+- !private "&&"
+- "AssignmentPrecedence"
+- "Bool"
+- "BooleanLiteralType"
+- "CGRect"
+- "FloatLiteralType"
+- "IntegerLiteralType"
+- "QRCodeReader"
+- "QRCodeReaderContainer"
+- "QRCodeReaderView"
+- "QRCodeReaderViewControllerBuilder"
+- "StringLiteralType"
+- "UIStatusBarStyle"
+- "Void"
+- !private "max"
+- !private "min"
+depends-member:
+- !private ["So23AVCaptureMetadataOutputC", "rectOfInterest"]
+- !private ["So38AVCaptureMetadataOutputObjectsDelegateP", "hasFrontDevice"]
+- ["So38AVCaptureMetadataOutputObjectsDelegateP", "init"]
+- !private ["So38AVCaptureMetadataOutputObjectsDelegateP", "isTorchAvailable"]
+- !private ["So38AVCaptureMetadataOutputObjectsDelegateP", "metadataOutput"]
+- !private ["So15AVCaptureOutputC", "rectOfInterest"]
+- ["So15CALayerDelegateP", "init"]
+- !private ["So7CGPointV", "x"]
+- !private ["So7CGPointV", "y"]
+- !private ["So6CGRectV", "height"]
+- ["So6CGRectV", "init"]
+- !private ["So6CGRectV", "origin"]
+- !private ["So6CGRectV", "width"]
+- !private ["s7CVarArgP", "hasFrontDevice"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "isTorchAvailable"]
+- !private ["s7CVarArgP", "metadataOutput"]
+- !private ["s7CVarArgP", "rectOfInterest"]
+- !private ["s28CustomDebugStringConvertibleP", "hasFrontDevice"]
+- !private ["s28CustomDebugStringConvertibleP", "height"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isTorchAvailable"]
+- !private ["s28CustomDebugStringConvertibleP", "metadataOutput"]
+- !private ["s28CustomDebugStringConvertibleP", "origin"]
+- !private ["s28CustomDebugStringConvertibleP", "rectOfInterest"]
+- !private ["s28CustomDebugStringConvertibleP", "width"]
+- !private ["s28CustomDebugStringConvertibleP", "x"]
+- !private ["s28CustomDebugStringConvertibleP", "y"]
+- !private ["s17CustomReflectableP", "height"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "origin"]
+- !private ["s17CustomReflectableP", "width"]
+- !private ["s17CustomReflectableP", "x"]
+- !private ["s17CustomReflectableP", "y"]
+- !private ["s23CustomStringConvertibleP", "hasFrontDevice"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isTorchAvailable"]
+- !private ["s23CustomStringConvertibleP", "metadataOutput"]
+- !private ["s23CustomStringConvertibleP", "rectOfInterest"]
+- !private ["Se", "height"]
+- ["Se", "init"]
+- !private ["Se", "origin"]
+- !private ["Se", "width"]
+- !private ["Se", "x"]
+- !private ["Se", "y"]
+- !private ["SE", "height"]
+- ["SE", "init"]
+- !private ["SE", "origin"]
+- !private ["SE", "width"]
+- !private ["SE", "x"]
+- !private ["SE", "y"]
+- !private ["SQ", "hasFrontDevice"]
+- !private ["SQ", "height"]
+- ["SQ", "init"]
+- !private ["SQ", "isTorchAvailable"]
+- !private ["SQ", "metadataOutput"]
+- !private ["SQ", "origin"]
+- !private ["SQ", "rectOfInterest"]
+- !private ["SQ", "width"]
+- !private ["SQ", "x"]
+- !private ["SQ", "y"]
+- !private ["SH", "hasFrontDevice"]
+- ["SH", "init"]
+- !private ["SH", "isTorchAvailable"]
+- !private ["SH", "metadataOutput"]
+- !private ["SH", "rectOfInterest"]
+- ["So8NSCodingP", "init"]
+- !private ["So8NSObjectC", "hasFrontDevice"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "isTorchAvailable"]
+- !private ["So8NSObjectC", "metadataOutput"]
+- !private ["So8NSObjectC", "rectOfInterest"]
+- !private ["So8NSObjectP", "hasFrontDevice"]
+- ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "isTorchAvailable"]
+- !private ["So8NSObjectP", "metadataOutput"]
+- !private ["So8NSObjectP", "rectOfInterest"]
+- !private ["12QRCodeReaderAAC", "deinit"]
+- !private ["12QRCodeReaderAAC", "hasFrontDevice"]
+- ["12QRCodeReaderAAC", "init"]
+- !private ["12QRCodeReaderAAC", "isTorchAvailable"]
+- !private ["12QRCodeReaderAAC", "metadataOutput"]
+- ["12QRCodeReader0aB9ContainerV", "init"]
+- ["12QRCodeReader0aB11DisplayableP", "init"]
+- ["12QRCodeReader0aB17LifeCycleDelegateP", "init"]
+- ["12QRCodeReader0aB4ViewC", "deinit"]
+- ["12QRCodeReader0aB4ViewC", "init"]
+- ["12QRCodeReader0aB21ViewControllerBuilderC", "Bool"]
+- ["12QRCodeReader0aB21ViewControllerBuilderC", "CGRect"]
+- ["12QRCodeReader0aB21ViewControllerBuilderC", "QRCodeReader"]
+- ["12QRCodeReader0aB21ViewControllerBuilderC", "QRCodeReaderContainer"]
+- ["12QRCodeReader0aB21ViewControllerBuilderC", "QRCodeReaderView"]
+- ["12QRCodeReader0aB21ViewControllerBuilderC", "QRCodeReaderViewControllerBuilder"]
+- ["12QRCodeReader0aB21ViewControllerBuilderC", "QRCodeReaderViewControllerBuilderBlock"]
+- ["12QRCodeReader0aB21ViewControllerBuilderC", "UIStatusBarStyle"]
+- ["12QRCodeReader0aB21ViewControllerBuilderC", "Void"]
+- !private ["12QRCodeReader0aB21ViewControllerBuilderC", "_showSwitchCameraButton"]
+- !private ["12QRCodeReader0aB21ViewControllerBuilderC", "_showTorchButton"]
+- ["12QRCodeReader0aB21ViewControllerBuilderC", "cancelButtonTitle"]
+- ["12QRCodeReader0aB21ViewControllerBuilderC", "deinit"]
+- ["12QRCodeReader0aB21ViewControllerBuilderC", "handleOrientationChange"]
+- ["12QRCodeReader0aB21ViewControllerBuilderC", "init"]
+- !private ["12QRCodeReader0aB21ViewControllerBuilderC", "max"]
+- !private ["12QRCodeReader0aB21ViewControllerBuilderC", "min"]
+- ["12QRCodeReader0aB21ViewControllerBuilderC", "preferredStatusBarStyle"]
+- ["12QRCodeReader0aB21ViewControllerBuilderC", "reader"]
+- ["12QRCodeReader0aB21ViewControllerBuilderC", "readerView"]
+- ["12QRCodeReader0aB21ViewControllerBuilderC", "rectOfInterest"]
+- ["12QRCodeReader0aB21ViewControllerBuilderC", "showCancelButton"]
+- ["12QRCodeReader0aB21ViewControllerBuilderC", "showOverlayView"]
+- ["12QRCodeReader0aB21ViewControllerBuilderC", "showSwitchCameraButton"]
+- ["12QRCodeReader0aB21ViewControllerBuilderC", "showTorchButton"]
+- ["12QRCodeReader0aB21ViewControllerBuilderC", "startScanningAtLoad"]
+- ["So29UIAccessibilityIdentificationP", "init"]
+- ["So12UIAppearanceP", "init"]
+- ["So21UIAppearanceContainerP", "init"]
+- ["So17UICoordinateSpaceP", "init"]
+- ["So13UIDynamicItemP", "init"]
+- ["So18UIFocusEnvironmentP", "init"]
+- ["So11UIFocusItemP", "init"]
+- ["So20UIFocusItemContainerP", "init"]
+- ["So24UILargeContentViewerItemP", "init"]
+- ["So30UIPasteConfigurationSupportingP", "init"]
+- ["So11UIResponderC", "init"]
+- ["So30UIResponderStandardEditActionsP", "init"]
+- ["So18UITraitEnvironmentP", "init"]
+- ["So23UIUserActivityRestoringP", "init"]
+- ["So6UIViewC", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "height"]
+- ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "origin"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "width"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "x"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "y"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "hasFrontDevice"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isTorchAvailable"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "metadataOutput"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "rectOfInterest"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "hasFrontDevice"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "isTorchAvailable"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "metadataOutput"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "rectOfInterest"]
+- !private ["s21_ObjectiveCBridgeableP", "height"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "origin"]
+- !private ["s21_ObjectiveCBridgeableP", "width"]
+- !private ["s21_ObjectiveCBridgeableP", "x"]
+- !private ["s21_ObjectiveCBridgeableP", "y"]
+- ["s38__DefaultCustomPlaygroundQuickLookableP", "init"]
+depends-nominal:
+- !private "So23AVCaptureMetadataOutputC"
+- "So38AVCaptureMetadataOutputObjectsDelegateP"
+- !private "So15AVCaptureOutputC"
+- "So15CALayerDelegateP"
+- !private "So7CGPointV"
+- "So6CGRectV"
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "Se"
+- "SE"
+- "SQ"
+- "SH"
+- "So8NSCodingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- "12QRCodeReaderAAC"
+- "12QRCodeReader0aB9ContainerV"
+- "12QRCodeReader0aB11DisplayableP"
+- "12QRCodeReader0aB17LifeCycleDelegateP"
+- "12QRCodeReader0aB4ViewC"
+- "12QRCodeReader0aB21ViewControllerBuilderC"
+- "So29UIAccessibilityIdentificationP"
+- "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- "So17UICoordinateSpaceP"
+- "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- "So11UIFocusItemP"
+- "So20UIFocusItemContainerP"
+- "So24UILargeContentViewerItemP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
+- "So6UIViewC"
+- "s30_CustomPlaygroundQuickLookableP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- "s21_ObjectiveCBridgeableP"
+- "s38__DefaultCustomPlaygroundQuickLookableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/ObjectiveC.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreMIDI.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreMedia.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/simd.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreImage.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/QuartzCore.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Dispatch.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Metal.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Darwin.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Foundation.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/AVFoundation.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreFoundation.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreAudio.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreGraphics.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Swift.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/UIKit.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/SwiftOnoneSupport.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Combine.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Users/tom/Documents/Field Ready/App/fieldready/Pods/Target Support Files/QRCodeReader.swift/QRCodeReader.swift-umbrella.h"
+- "/Users/tom/Documents/Field Ready/App/fieldready/Pods.build/Debug-iphoneos/QRCodeReader.swift.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/CoreAudioTypes.framework/Headers/CoreAudioTypes.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "05c621fa2fcb1d5c844beba143c2af01"

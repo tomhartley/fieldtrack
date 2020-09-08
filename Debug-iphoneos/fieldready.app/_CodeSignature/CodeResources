@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		uBWip3N5MIXHimB1whyT2NrkUW0=
+		xM9MSK+h/kSqj7ZTzE+piJjBrNg=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<data>
-		62Ml07TQ9vPK5p44Vj/Q3qjBLFo=
+		+5/mu8AyRCbsVr3KZktsMF7t0ko=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -30,31 +30,39 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
 		<data>
-		jipAU3lojUulGZ8kc/iIZd7frjs=
+		/JQKlE8XFuSwd0GvLnIVuTZDNvM=
+		</data>
+		<key>DetailView.nib</key>
+		<data>
+		daM8eml4QDgW6OR+A+dkuVPagl8=
 		</data>
 		<key>Frameworks/QRCodeReader.framework/Info.plist</key>
 		<data>
-		LC4KbqhG8iLM67L8cuFVSDRU4b8=
+		+PxjFBwM97g575UOk1mHY07U59k=
 		</data>
 		<key>Frameworks/QRCodeReader.framework/QRCodeReader</key>
 		<data>
-		VGR9oU2G1eodMqhAxQPr++mlwhA=
+		GKL55bqC086cDtmNals42951qGE=
 		</data>
 		<key>Frameworks/QRCodeReader.framework/_CodeSignature/CodeResources</key>
 		<data>
-		LY4YahX0Naax6OI0RS6Is52PJks=
+		TAav17/rWOIgUifh1Puo9ViGIxw=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		1RlxnxtYpLu2NZrAh774NE7Gf9M=
+		Ek2nq8cAhmyUSN8qLLc6tfdibM0=
 		</data>
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
 		</data>
+		<key>RowView.nib</key>
+		<data>
+		dwylnI4yOOj1iRnbn42SHuhfQ/A=
+		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		kx/vBMIJt2llKaEAHoYFDhGllBk=
+		x3O8FHwW2fuhOJNKLJKzCKqgf7s=
 		</data>
 		<key>scan.pdf</key>
 		<data>
@@ -71,7 +79,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9LGlYDX3EREEOZNUaXQfuG9aU6uXZwXevIFCRD4PjZ8=
+			cP3dP84gmBwidJXN0SmIjDrsQNxoa36LjA2rTWandEU=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
@@ -99,7 +107,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LUNKpgWtHJkMDWQnkbc7nQEQEW8M3UiykVV6O2vl+Bw=
+			1HeRMhraHvrCXZguf8gk5N0iQFO4SP8l6vnIeviuY+4=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -113,35 +121,49 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9q3Fp9zHRso48VE5EmEsG4eR4FEYSyhF7p3qeZMFNsI=
+			Q+uXiDzalCKPmpvnwq0zlYHK4bU1AKIklkcmWWsPpMQ=
+			</data>
+		</dict>
+		<key>DetailView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			k2i/O/Q12wul2buL2Pj64mBqHYAgBkFnkDMrIAx0T34=
 			</data>
 		</dict>
 		<key>Frameworks/QRCodeReader.framework/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			n1kOoBQU8zf7pL95uUGmxT8KX2EHaKJi4AGFKpEYAQ8=
+			hUz0EydiaDqFrGemxhAoXowV8kNdcT46QsRfYSYuxa0=
 			</data>
 		</dict>
 		<key>Frameworks/QRCodeReader.framework/QRCodeReader</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5LcbvXIzbzecQ0S4VHOJWn/nue13KyT2JIJsIlkZ20g=
+			bRSsAVt9Kd21wggaMSce1mDLezb3v96vlF6c22rcbN8=
 			</data>
 		</dict>
 		<key>Frameworks/QRCodeReader.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Wwzi5A5qHy1M793vSyFNNaF5TuDHx5l1sifelx3s/bE=
+			Le3QFNRMU6eJ5WAydcSm2qIXauLyufMiFfCc1hzFvPc=
+			</data>
+		</dict>
+		<key>RowView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			uUgxw/o+gLsT2xTYJJcDLDJVBy12Mzief0vtAYWwOxA=
 			</data>
 		</dict>
 		<key>embedded.mobileprovision</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HZ2Dy1Dwe61xxGfKF6QIRJPatPeIYGCtTvYMyQrDpIA=
+			SBehiF3Xzn7tHx2b6J8FC9uZiXcKke17+SF31zkPgks=
 			</data>
 		</dict>
 		<key>scan.pdf</key>

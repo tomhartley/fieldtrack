@@ -23,7 +23,7 @@ struct TrackingItem: Codable {
 	struct FieldsItem: Codable {
 		var BatchNum : [String] //ID
 		var Status : String
-		var Email : String
+		//var Email : String
 		var TrackingID : String
 		var Timestamp : Date
 		var ProductName : [String]

@@ -12,6 +12,9 @@
 		E267073D24F3C94600017414 /* FRBatchStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E267073C24F3C94600017414 /* FRBatchStatusView.swift */; };
 		E27D4CA924FE5DD60007B730 /* scan.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E27D4CA824FE5DD60007B730 /* scan.pdf */; };
 		E27D4CAB24FE5E500007B730 /* scan.png in Resources */ = {isa = PBXBuildFile; fileRef = E27D4CAA24FE5E500007B730 /* scan.png */; };
+		E2911AE02503DF0900112C8D /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2911ADF2503DF0900112C8D /* RowView.swift */; };
+		E2911AE22503F4B600112C8D /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2911AE12503F4B600112C8D /* DetailView.xib */; };
+		E2911AE42503F4CE00112C8D /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2911AE32503F4CE00112C8D /* DetailView.swift */; };
 		E2D5C94124ED28DD00B5CBD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D5C94024ED28DD00B5CBD1 /* AppDelegate.swift */; };
 		E2D5C94324ED28DD00B5CBD1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D5C94224ED28DD00B5CBD1 /* SceneDelegate.swift */; };
 		E2D5C94524ED28DD00B5CBD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D5C94424ED28DD00B5CBD1 /* ViewController.swift */; };
@@ -29,6 +32,9 @@
 		E267073C24F3C94600017414 /* FRBatchStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRBatchStatusView.swift; sourceTree = "<group>"; };
 		E27D4CA824FE5DD60007B730 /* scan.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = scan.pdf; sourceTree = "<group>"; };
 		E27D4CAA24FE5E500007B730 /* scan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scan.png; sourceTree = "<group>"; };
+		E2911ADF2503DF0900112C8D /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
+		E2911AE12503F4B600112C8D /* DetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
+		E2911AE32503F4CE00112C8D /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		E2D5C93D24ED28DD00B5CBD1 /* fieldready.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fieldready.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D5C94024ED28DD00B5CBD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2D5C94224ED28DD00B5CBD1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +103,9 @@
 				E267073A24EE919900017414 /* DataHandler.swift */,
 				E2D5C94624ED28DD00B5CBD1 /* Main.storyboard */,
 				E2F752882503D353005280F9 /* RowView.xib */,
+				E2911ADF2503DF0900112C8D /* RowView.swift */,
+				E2911AE12503F4B600112C8D /* DetailView.xib */,
+				E2911AE32503F4CE00112C8D /* DetailView.swift */,
 				E267073C24F3C94600017414 /* FRBatchStatusView.swift */,
 				E2D5C94924ED28DF00B5CBD1 /* Assets.xcassets */,
 				E2D5C94B24ED28DF00B5CBD1 /* LaunchScreen.storyboard */,
@@ -180,6 +189,7 @@
 				E2D5C94A24ED28DF00B5CBD1 /* Assets.xcassets in Resources */,
 				E27D4CA924FE5DD60007B730 /* scan.pdf in Resources */,
 				E2D5C94824ED28DD00B5CBD1 /* Main.storyboard in Resources */,
+				E2911AE22503F4B600112C8D /* DetailView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,7 +243,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E267073B24EE919900017414 /* DataHandler.swift in Sources */,
+				E2911AE02503DF0900112C8D /* RowView.swift in Sources */,
 				E2D5C94524ED28DD00B5CBD1 /* ViewController.swift in Sources */,
+				E2911AE42503F4CE00112C8D /* DetailView.swift in Sources */,
 				E2D5C94124ED28DD00B5CBD1 /* AppDelegate.swift in Sources */,
 				E2D5C94324ED28DD00B5CBD1 /* SceneDelegate.swift in Sources */,
 				E267073D24F3C94600017414 /* FRBatchStatusView.swift in Sources */,
@@ -381,6 +393,7 @@
 			baseConfigurationReference = 68B7FDFBFA1F18CD8F5E9D47 /* Pods-fieldready.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V9R5GYRE8D;
 				INFOPLIST_FILE = fieldready/Info.plist;
@@ -391,6 +404,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tl.hr.fieldready;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -401,6 +415,7 @@
 			baseConfigurationReference = 94160A42AD5AC063E25CD786 /* Pods-fieldready.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V9R5GYRE8D;
 				INFOPLIST_FILE = fieldready/Info.plist;
@@ -411,6 +426,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tl.hr.fieldready;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
