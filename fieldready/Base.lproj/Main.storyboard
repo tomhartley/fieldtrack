@@ -149,15 +149,15 @@
                                                             </mask>
                                                         </variation>
                                                     </stackView>
-                                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hW-HX-jZu">
-                                                        <rect key="frame" x="35" y="274" width="220" height="36"/>
+                                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="1hW-HX-jZu">
+                                                        <rect key="frame" x="20" y="274" width="250" height="36"/>
                                                         <color key="backgroundColor" name="FRYellow"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="36" id="K5J-mm-odr"/>
-                                                            <constraint firstAttribute="width" constant="220" id="bQB-ZN-0qn"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="bQB-ZN-0qn"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                        <state key="normal" title="Mark batch as shipped">
+                                                        <state key="normal" title="Mark Batch as Manufactured">
                                                             <color key="titleColor" name="FRWhite"/>
                                                         </state>
                                                         <userDefinedRuntimeAttributes>
@@ -178,6 +178,7 @@
                                                     <constraint firstAttribute="bottom" secondItem="1hW-HX-jZu" secondAttribute="bottom" constant="20" id="JrB-DS-wX6"/>
                                                     <constraint firstAttribute="trailing" secondItem="dI0-GC-aKn" secondAttribute="trailing" constant="18" id="ajU-Yf-n54"/>
                                                     <constraint firstItem="1hW-HX-jZu" firstAttribute="centerX" secondItem="2d9-Pe-qT3" secondAttribute="centerX" id="hQH-fd-LP8"/>
+                                                    <constraint firstItem="1hW-HX-jZu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2d9-Pe-qT3" secondAttribute="leading" constant="5" id="mZj-gu-SAR"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -224,7 +225,13 @@
                                 </textAttributes>
                                 <items>
                                     <navigationItem title="Field Ready" id="yHO-px-6VF">
-                                        <barButtonItem key="rightBarButtonItem" title="Scan" image="scan.png" id="S36-pQ-IpJ">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="settings" id="JK2-cE-BCC">
+                                            <color key="tintColor" name="FRYellow"/>
+                                            <connections>
+                                                <action selector="openSettings:" destination="BYZ-38-t0r" id="bmm-WJ-5zF"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Scan" image="scan" id="S36-pQ-IpJ">
                                             <color key="tintColor" name="FRYellow"/>
                                             <connections>
                                                 <action selector="loadScan:" destination="BYZ-38-t0r" id="BRz-rB-LXi"/>
@@ -236,16 +243,56 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="gGq-Uc-7Az"/>
                                 </connections>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5h-B0-lJs" userLabel="loadingView">
+                                <rect key="frame" x="112.5" y="261" width="95.5" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                <color key="textColor" name="FRWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ujf-jc-6Gn" userLabel="helpView">
+                                <rect key="frame" x="0.0" y="44" width="320" height="956"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="cXW-ZT-enc">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="cXW-ZT-enc" secondAttribute="height" multiplier="16:11" id="bK1-kK-Y9S"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap up here to scan a QR code and get started!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="La2-1b-BU2">
+                                        <rect key="frame" x="40.5" y="220" width="239.5" height="50.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="280" id="fMZ-Ug-o3h"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                        <color key="textColor" name="FRWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="cXW-ZT-enc" secondAttribute="trailing" id="0tR-pm-0Ah"/>
+                                    <constraint firstItem="cXW-ZT-enc" firstAttribute="leading" secondItem="ujf-jc-6Gn" secondAttribute="leading" id="7uP-0d-IrJ"/>
+                                    <constraint firstItem="cXW-ZT-enc" firstAttribute="top" secondItem="ujf-jc-6Gn" secondAttribute="top" id="9EE-uP-HqZ"/>
+                                    <constraint firstItem="La2-1b-BU2" firstAttribute="centerX" secondItem="cXW-ZT-enc" secondAttribute="centerX" id="ekL-Pv-4P0"/>
+                                    <constraint firstItem="La2-1b-BU2" firstAttribute="top" secondItem="cXW-ZT-enc" secondAttribute="bottom" id="x1n-6g-ODl"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" name="FRPurple"/>
                         <constraints>
+                            <constraint firstItem="ujf-jc-6Gn" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="938-mX-Qs8"/>
+                            <constraint firstItem="g5h-B0-lJs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="261" id="FA1-QJ-D9R"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="33b-ui-97z" secondAttribute="trailing" id="JnT-dg-URQ"/>
                             <constraint firstItem="33b-ui-97z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="O34-hi-BiL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="33b-ui-97z" secondAttribute="bottom" id="Ovx-TW-oJB"/>
                             <constraint firstItem="33b-ui-97z" firstAttribute="top" secondItem="SwH-0H-e7h" secondAttribute="bottom" id="ZFU-ev-0Jg"/>
+                            <constraint firstItem="ujf-jc-6Gn" firstAttribute="top" secondItem="SwH-0H-e7h" secondAttribute="bottom" id="aui-j9-Ax3"/>
                             <constraint firstItem="SwH-0H-e7h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ebF-Id-Xe2"/>
                             <constraint firstItem="SwH-0H-e7h" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="eif-Cm-Y2q"/>
+                            <constraint firstItem="ujf-jc-6Gn" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="f8Q-0J-svU"/>
                             <constraint firstItem="SwH-0H-e7h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="g9s-J7-2m4"/>
+                            <constraint firstItem="ujf-jc-6Gn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iw9-Se-cUv"/>
+                            <constraint firstItem="g5h-B0-lJs" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="lCP-WK-laD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -257,6 +304,8 @@
                         <outlet property="batchQuantity" destination="OSw-lm-N9b" id="kae-lT-eK9"/>
                         <outlet property="cardView" destination="UQZ-tY-E3A" id="6I4-3V-zgP"/>
                         <outlet property="distConstraint" destination="9f8-fh-3Eu" id="wjf-sZ-FfI"/>
+                        <outlet property="helpView" destination="ujf-jc-6Gn" id="mKi-A0-tqe"/>
+                        <outlet property="loadingView" destination="g5h-B0-lJs" id="sqb-5s-tPB"/>
                         <outlet property="nextButton" destination="1hW-HX-jZu" id="R2E-rd-d2D"/>
                         <outlet property="productName" destination="gsa-h3-ikW" id="VKF-nj-eQe"/>
                         <outlet property="stackView" destination="dI0-GC-aKn" id="3Ew-H2-TEN"/>
@@ -269,7 +318,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="scan.png" width="24" height="24"/>
+        <image name="arrow" width="640" height="440"/>
+        <image name="scan" width="24" height="24"/>
+        <image name="settings" width="25" height="24"/>
         <namedColor name="FRPurple">
             <color red="0.29019607843137257" green="0.30588235294117649" blue="0.74901960784313726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

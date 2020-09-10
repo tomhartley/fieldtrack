@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/QRCodeReader-Swift.h</key>
 		<data>
-		ml+qBHjwA2+HbTQ95TMfVXaH4Vk=
+		CecYlTR57OZfc3siRkfBbzl0g4I=
 		</data>
 		<key>Headers/QRCodeReader.swift-umbrella.h</key>
 		<data>
@@ -14,31 +14,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		L35zaxxVSlGfzStOiaV0X9tJnO8=
+		T8wvWJCgbR8YcSlA4RVYmHVvJws=
 		</data>
 		<key>Modules/QRCodeReader.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		8EaK7HGjKu2h0nRYEl0khDFnGyM=
+		PeyDAISMJDlDsXf3lYX4Mw/Mwbw=
 		</data>
 		<key>Modules/QRCodeReader.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<data>
-		8EaK7HGjKu2h0nRYEl0khDFnGyM=
+		PeyDAISMJDlDsXf3lYX4Mw/Mwbw=
 		</data>
 		<key>Modules/QRCodeReader.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		1/J6BrpwERWtxihu2VCvdObIj7k=
+		nOfY8l+Bk8rxLxSseQ69KSTRqsA=
 		</data>
 		<key>Modules/QRCodeReader.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		DD+6xyJvZcNfgwcvArzXY4hHeZ8=
+		Y7AGMXWoRiB+uLrvjJFsCzSbbAQ=
 		</data>
 		<key>Modules/QRCodeReader.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		1/J6BrpwERWtxihu2VCvdObIj7k=
+		nOfY8l+Bk8rxLxSseQ69KSTRqsA=
 		</data>
 		<key>Modules/QRCodeReader.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		DD+6xyJvZcNfgwcvArzXY4hHeZ8=
+		Y7AGMXWoRiB+uLrvjJFsCzSbbAQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -51,11 +51,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ml+qBHjwA2+HbTQ95TMfVXaH4Vk=
+			CecYlTR57OZfc3siRkfBbzl0g4I=
 			</data>
 			<key>hash2</key>
 			<data>
-			WznYiLkCx6qAkUFqYhxEiBqm67p2NokjNorLGFPETO0=
+			RdCMAMCyyOfLJBy67cHnGeBZe88SawTtPYnbRjkChnQ=
 			</data>
 		</dict>
 		<key>Headers/QRCodeReader.swift-umbrella.h</key>
@@ -73,66 +73,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8EaK7HGjKu2h0nRYEl0khDFnGyM=
+			PeyDAISMJDlDsXf3lYX4Mw/Mwbw=
 			</data>
 			<key>hash2</key>
 			<data>
-			K9mhTA1XMss96wQhmRdhIxc4VzYb4iv8I/FJqa5WePk=
+			ILrmZcbuDj6m/k9mRnXOgxQxQyZhNITjoBsIFpP/1cU=
 			</data>
 		</dict>
 		<key>Modules/QRCodeReader.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8EaK7HGjKu2h0nRYEl0khDFnGyM=
+			PeyDAISMJDlDsXf3lYX4Mw/Mwbw=
 			</data>
 			<key>hash2</key>
 			<data>
-			K9mhTA1XMss96wQhmRdhIxc4VzYb4iv8I/FJqa5WePk=
+			ILrmZcbuDj6m/k9mRnXOgxQxQyZhNITjoBsIFpP/1cU=
 			</data>
 		</dict>
 		<key>Modules/QRCodeReader.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1/J6BrpwERWtxihu2VCvdObIj7k=
+			nOfY8l+Bk8rxLxSseQ69KSTRqsA=
 			</data>
 			<key>hash2</key>
 			<data>
-			ueTT0AaI9nwiwDxE+K62XxlxHcsjn3urq4CFKleuaPE=
+			60mNG2t2I4qwlLY9TRe5tETHh52wL76wdegG2ylVCMM=
 			</data>
 		</dict>
 		<key>Modules/QRCodeReader.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DD+6xyJvZcNfgwcvArzXY4hHeZ8=
+			Y7AGMXWoRiB+uLrvjJFsCzSbbAQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			rK7FJA+d/B/fkwrOSyp8LAd/Aj23Z4a60GIty7g/Tas=
+			/pQsJ5YUjHSWJEFmmZL4jDAeAIkLN86VcDvYMquHYeM=
 			</data>
 		</dict>
 		<key>Modules/QRCodeReader.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1/J6BrpwERWtxihu2VCvdObIj7k=
+			nOfY8l+Bk8rxLxSseQ69KSTRqsA=
 			</data>
 			<key>hash2</key>
 			<data>
-			ueTT0AaI9nwiwDxE+K62XxlxHcsjn3urq4CFKleuaPE=
+			60mNG2t2I4qwlLY9TRe5tETHh52wL76wdegG2ylVCMM=
 			</data>
 		</dict>
 		<key>Modules/QRCodeReader.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DD+6xyJvZcNfgwcvArzXY4hHeZ8=
+			Y7AGMXWoRiB+uLrvjJFsCzSbbAQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			rK7FJA+d/B/fkwrOSyp8LAd/Aj23Z4a60GIty7g/Tas=
+			/pQsJ5YUjHSWJEFmmZL4jDAeAIkLN86VcDvYMquHYeM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

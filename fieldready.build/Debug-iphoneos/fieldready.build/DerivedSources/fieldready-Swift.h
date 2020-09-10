@@ -187,6 +187,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import CoreGraphics;
+@import CoreLocation;
 @import Foundation;
 @import ObjectiveC;
 @import UIKit;
@@ -220,6 +221,23 @@ SWIFT_CLASS("_TtC10fieldready11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UILabel;
+@class UIView;
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC10fieldready22ConfirmationController")
+@interface ConfirmationController : UIViewController
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified titleLabel;
+@property (nonatomic, strong) IBOutlet UIView * _Null_unspecified pulseView;
+- (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (IBAction)cancelButton:(id _Nonnull)sender;
+- (IBAction)confirmButton:(id _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC10fieldready11DataHandler")
 @interface DataHandler : NSObject
@@ -228,11 +246,17 @@ SWIFT_CLASS("_TtC10fieldready11DataHandler")
 
 
 
-@class NSCoder;
+@class MKMapView;
 
 SWIFT_CLASS("_TtC10fieldready10DetailView")
 @interface DetailView : UIView
 @property (nonatomic, strong) IBOutlet UIView * _Null_unspecified contentView;
+@property (nonatomic, strong) IBOutlet UIView * _Null_unspecified lineView;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified locationLabel;
+@property (nonatomic, strong) IBOutlet MKMapView * _Null_unspecified mapView;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified timeLabel;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified commentsLabel;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified nameLabel;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -245,7 +269,6 @@ SWIFT_CLASS("_TtC10fieldready17FRBatchStatusView")
 @end
 
 @class UIImageView;
-@class UILabel;
 
 SWIFT_CLASS("_TtC10fieldready7RowView")
 @interface RowView : UIView
@@ -274,15 +297,26 @@ SWIFT_CLASS("_TtC10fieldready13SceneDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UITextField;
+
+SWIFT_CLASS("_TtC10fieldready18SettingsController")
+@interface SettingsController : UIViewController
+@property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified textField;
+- (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
+- (IBAction)confirmButton:(id _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIButton;
 @class UIStackView;
 @class NSLayoutConstraint;
 @class UITapGestureRecognizer;
 @protocol UIBarPositioning;
-@class NSBundle;
 
 SWIFT_CLASS("_TtC10fieldready14ViewController")
-@interface ViewController : UIViewController <UINavigationBarDelegate>
+@interface ViewController : UIViewController <CLLocationManagerDelegate, UINavigationBarDelegate>
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified productName;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified batchQuantity;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified batchNum;
@@ -292,10 +326,14 @@ SWIFT_CLASS("_TtC10fieldready14ViewController")
 @property (nonatomic, strong) IBOutlet UIStackView * _Null_unspecified stackView;
 @property (nonatomic, strong) IBOutlet NSLayoutConstraint * _Null_unspecified distConstraint;
 @property (nonatomic, strong) IBOutlet NSLayoutConstraint * _Null_unspecified topConstraint;
+@property (nonatomic, strong) IBOutlet UIView * _Null_unspecified helpView;
+@property (nonatomic, strong) IBOutlet UIView * _Null_unspecified loadingView;
 - (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
 - (void)showDetailViewForRow:(NSInteger)forRow;
 - (void)rowTappedWithRecognizer:(UITapGestureRecognizer * _Nonnull)recognizer;
 - (IBAction)changeStatus:(id _Nonnull)sender;
+- (IBAction)openSettings:(id _Nonnull)sender;
 - (IBAction)loadScan:(id _Nonnull)sender;
 - (UIBarPosition)positionForBar:(id <UIBarPositioning> _Nonnull)bar SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;

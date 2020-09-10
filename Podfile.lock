@@ -1,16 +1,20 @@
 PODS:
   - QRCodeReader.swift (10.1.0)
+  - ShowTime (2.5.2)
 
 DEPENDENCIES:
   - QRCodeReader.swift (~> 10.1.0)
+  - ShowTime
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - QRCodeReader.swift
+    - ShowTime
 
 SPEC CHECKSUMS:
   QRCodeReader.swift: 373a389fe9a22d513c879a32a6f647c58f4ef572
+  ShowTime: 5cb2c5314da2983cec44f27123a15473cf29306f
 
-PODFILE CHECKSUM: 709cb3fd9d16db7d296b2ee6104d9feea77f1aec
+PODFILE CHECKSUM: 84a2cf663f573a830d3b67a64516f8ad29d0f465
 
 COCOAPODS: 1.9.3

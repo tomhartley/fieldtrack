@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-fieldready/Pods-fieldready-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/QRCodeReader.swift/QRCodeReader.framework
+${BUILT_PRODUCTS_DIR}/ShowTime/ShowTime.framework

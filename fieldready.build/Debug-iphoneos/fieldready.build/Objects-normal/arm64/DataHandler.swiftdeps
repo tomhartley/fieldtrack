@@ -1,47 +1,60 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "TrackingItem"
-- "TrackingResponse"
 - "BatchStatus"
+- "TrackingItem"
+- "TrackingSubmission"
+- "BatchItem"
 - "DataHandler"
 provides-nominal:
-- "10fieldready12TrackingItemV"
-- "10fieldready12TrackingItemV06FieldsC0V"
-- "10fieldready16TrackingResponseV"
 - "10fieldready11BatchStatusO"
+- "10fieldready12TrackingItemV"
+- "10fieldready18TrackingSubmissionV"
+- "10fieldready18TrackingSubmissionV10FieldsItemV"
+- "10fieldready9BatchItemV"
 - "10fieldready11DataHandlerC"
 provides-member:
 - ["So15NSDateFormatterC", ""]
-- ["10fieldready12TrackingItemV", ""]
-- ["10fieldready12TrackingItemV06FieldsC0V", ""]
-- ["10fieldready16TrackingResponseV", ""]
 - ["10fieldready11BatchStatusO", ""]
+- ["10fieldready12TrackingItemV", ""]
+- ["10fieldready18TrackingSubmissionV", ""]
+- ["10fieldready18TrackingSubmissionV10FieldsItemV", ""]
+- ["10fieldready9BatchItemV", ""]
 - ["10fieldready11DataHandlerC", ""]
 - ["So15NSDateFormatterC", "iso8601Full"]
 provides-dynamic-lookup:
+- "downloadURL"
+- "getBatch"
 - "getTrackingForBatch"
 - "iso8601Full"
+- "submitTracking"
 depends-top-level:
 - !private "+"
 - "=="
 - !private ">"
 - !private "??"
 - "AssignmentPrecedence"
+- "BatchItem"
+- "BatchResponse"
 - "BatchStatus"
 - !private "Bool"
 - !private "BooleanLiteralType"
+- "CLLocationCoordinate2D"
+- !private "CLLocationDegrees"
 - "Calendar"
-- !private "CastingPrecedence"
 - "Codable"
+- "Data"
 - "DataHandler"
 - "Date"
 - "DateFormatter"
 - !private "DispatchQueue"
+- !private "Double"
 - "Error"
+- !private "ExtendedGraphemeClusterType"
 - "FloatLiteralType"
 - "Int"
 - "IntegerLiteralType"
 - !private "JSONDecoder"
+- !private "JSONEncoder"
 - "Locale"
 - "NSObject"
 - "Result"
@@ -50,7 +63,8 @@ depends-top-level:
 - "TimeZone"
 - "TrackingItem"
 - "TrackingResponse"
-- !private "URL"
+- "TrackingSubmission"
+- "URL"
 - !private "URLComponents"
 - !private "URLQueryItem"
 - !private "URLRequest"
@@ -61,13 +75,42 @@ depends-top-level:
 - !private "print"
 - !private "~="
 depends-member:
+- !private ["s18AdditiveArithmeticP", "init"]
+- !private ["Sa", "append"]
 - !private ["Sa", "count"]
+- !private ["Sa", "firstIndex"]
 - !private ["Sa", "sort"]
 - !private ["Sa", "subscript"]
+- ["10fieldready9BatchItemV", "BatchResponse"]
+- ["10fieldready9BatchItemV", "Date"]
+- ["10fieldready9BatchItemV", "Int"]
+- ["10fieldready9BatchItemV", "String"]
+- ["10fieldready9BatchItemV", "airtableID"]
+- ["10fieldready9BatchItemV", "batchNum"]
+- ["10fieldready9BatchItemV", "createdTime"]
+- ["10fieldready9BatchItemV", "customerName"]
+- !private ["10fieldready9BatchItemV", "init"]
+- !private ["10fieldready9BatchItemV", "originalData"]
+- ["10fieldready9BatchItemV", "productName"]
+- ["10fieldready9BatchItemV", "quantity"]
+- ["10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "Codable"]
+- ["10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "Date"]
+- ["10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "FieldsItem"]
+- ["10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "Int"]
+- ["10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "String"]
+- ["10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "createdTime"]
+- ["10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "deinit"]
+- ["10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "encode"]
+- ["10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "fields"]
+- ["10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "id"]
+- ["10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "init"]
 - ["10fieldready11BatchStatusO", "=="]
 - ["10fieldready11BatchStatusO", "RawValue"]
+- ["10fieldready11BatchStatusO", "String"]
 - ["10fieldready11BatchStatusO", "_Default_RawValue"]
 - ["10fieldready11BatchStatusO", "_rawHashValue"]
+- ["10fieldready11BatchStatusO", "airtableRepresentation"]
+- ["10fieldready11BatchStatusO", "completedRepresentation"]
 - ["10fieldready11BatchStatusO", "deinit"]
 - ["10fieldready11BatchStatusO", "delivered"]
 - ["10fieldready11BatchStatusO", "followedup"]
@@ -79,18 +122,30 @@ depends-member:
 - ["10fieldready11BatchStatusO", "rawValue"]
 - ["10fieldready11BatchStatusO", "shipped"]
 - ["10fieldready11BatchStatusO", "tested"]
+- ["10fieldready11BatchStatusO", "textRepresentation"]
 - ["10fieldready11BatchStatusO", "unknown"]
+- !private ["SK", "append"]
 - !private ["SK", "count"]
+- !private ["SK", "firstIndex"]
 - !private ["SK", "init"]
 - !private ["SK", "sort"]
+- !private ["SK", "split"]
 - !private ["SK", "subscript"]
+- !private ["SB", "init"]
+- !private ["So22CLLocationCoordinate2DV", "init"]
+- !private ["So22CLLocationCoordinate2DV", "latitude"]
+- !private ["So22CLLocationCoordinate2DV", "longitude"]
+- !private ["s7CVarArgP", "BatchItem"]
+- !private ["s7CVarArgP", "BatchResponse"]
 - ["s7CVarArgP", "Calendar"]
 - ["s7CVarArgP", "DateFormatter"]
 - !private ["s7CVarArgP", "DispatchQueue"]
 - !private ["s7CVarArgP", "JSONDecoder"]
+- !private ["s7CVarArgP", "JSONEncoder"]
 - ["s7CVarArgP", "Locale"]
 - !private ["s7CVarArgP", "String"]
 - ["s7CVarArgP", "TimeZone"]
+- !private ["s7CVarArgP", "TrackingItem"]
 - !private ["s7CVarArgP", "TrackingResponse"]
 - !private ["s7CVarArgP", "URL"]
 - !private ["s7CVarArgP", "URLComponents"]
@@ -99,11 +154,14 @@ depends-member:
 - !private ["s7CVarArgP", "URLSession"]
 - !private ["s7CVarArgP", "UTF8"]
 - ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "append"]
 - !private ["s7CVarArgP", "async"]
 - ["s7CVarArgP", "calendar"]
 - !private ["s7CVarArgP", "count"]
 - !private ["s7CVarArgP", "dataTask"]
 - ["s7CVarArgP", "dateFormat"]
+- !private ["s7CVarArgP", "downloadURL"]
+- !private ["s7CVarArgP", "firstIndex"]
 - ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "iso8601Full"]
 - ["s7CVarArgP", "locale"]
@@ -112,6 +170,7 @@ depends-member:
 - !private ["s7CVarArgP", "resume"]
 - !private ["s7CVarArgP", "shared"]
 - !private ["s7CVarArgP", "sort"]
+- !private ["s7CVarArgP", "split"]
 - !private ["s7CVarArgP", "subscript"]
 - ["s7CVarArgP", "timeZone"]
 - ["10Foundation8CalendarV", "init"]
@@ -125,22 +184,32 @@ depends-member:
 - ["s9CodingKeyP", "init"]
 - ["s9CodingKeyP", "intValue"]
 - ["s9CodingKeyP", "stringValue"]
+- !private ["Sl", "append"]
 - !private ["Sl", "count"]
+- !private ["Sl", "firstIndex"]
 - !private ["Sl", "init"]
 - !private ["Sl", "sort"]
+- !private ["Sl", "split"]
 - !private ["Sl", "subscript"]
 - !private ["SL", "init"]
+- !private ["SL", "split"]
+- !private ["10Foundation15ContiguousBytesP", "append"]
 - !private ["10Foundation15ContiguousBytesP", "count"]
+- !private ["10Foundation15ContiguousBytesP", "firstIndex"]
 - !private ["10Foundation15ContiguousBytesP", "sort"]
 - !private ["10Foundation15ContiguousBytesP", "subscript"]
 - ["s28CustomDebugStringConvertibleP", "=="]
+- !private ["s28CustomDebugStringConvertibleP", "BatchItem"]
+- !private ["s28CustomDebugStringConvertibleP", "BatchResponse"]
 - ["s28CustomDebugStringConvertibleP", "Calendar"]
 - ["s28CustomDebugStringConvertibleP", "DateFormatter"]
 - !private ["s28CustomDebugStringConvertibleP", "DispatchQueue"]
 - !private ["s28CustomDebugStringConvertibleP", "JSONDecoder"]
+- !private ["s28CustomDebugStringConvertibleP", "JSONEncoder"]
 - ["s28CustomDebugStringConvertibleP", "Locale"]
 - !private ["s28CustomDebugStringConvertibleP", "String"]
 - ["s28CustomDebugStringConvertibleP", "TimeZone"]
+- !private ["s28CustomDebugStringConvertibleP", "TrackingItem"]
 - !private ["s28CustomDebugStringConvertibleP", "TrackingResponse"]
 - !private ["s28CustomDebugStringConvertibleP", "URL"]
 - !private ["s28CustomDebugStringConvertibleP", "URLComponents"]
@@ -150,6 +219,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "UTF8"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - ["s28CustomDebugStringConvertibleP", "_rawHashValue"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
 - !private ["s28CustomDebugStringConvertibleP", "async"]
 - ["s28CustomDebugStringConvertibleP", "calendar"]
 - !private ["s28CustomDebugStringConvertibleP", "count"]
@@ -157,8 +227,11 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "dateFormat"]
 - ["s28CustomDebugStringConvertibleP", "debugDescription"]
 - ["s28CustomDebugStringConvertibleP", "description"]
+- !private ["s28CustomDebugStringConvertibleP", "downloadURL"]
+- !private ["s28CustomDebugStringConvertibleP", "firstIndex"]
 - ["s28CustomDebugStringConvertibleP", "hash"]
 - ["s28CustomDebugStringConvertibleP", "hashValue"]
+- !private ["s28CustomDebugStringConvertibleP", "httpBody"]
 - !private ["s28CustomDebugStringConvertibleP", "httpMethod"]
 - ["s28CustomDebugStringConvertibleP", "init"]
 - ["s28CustomDebugStringConvertibleP", "intValue"]
@@ -171,26 +244,35 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "setValue"]
 - !private ["s28CustomDebugStringConvertibleP", "shared"]
 - !private ["s28CustomDebugStringConvertibleP", "sort"]
+- !private ["s28CustomDebugStringConvertibleP", "split"]
 - ["s28CustomDebugStringConvertibleP", "stringValue"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - ["s28CustomDebugStringConvertibleP", "timeZone"]
 - !private ["s28CustomDebugStringConvertibleP", "url"]
+- !private ["s17CustomReflectableP", "append"]
 - !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "firstIndex"]
+- !private ["s17CustomReflectableP", "httpBody"]
 - !private ["s17CustomReflectableP", "httpMethod"]
 - ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "queryItems"]
 - !private ["s17CustomReflectableP", "setValue"]
 - !private ["s17CustomReflectableP", "sort"]
+- !private ["s17CustomReflectableP", "split"]
 - !private ["s17CustomReflectableP", "subscript"]
 - !private ["s17CustomReflectableP", "url"]
 - ["s23CustomStringConvertibleP", "=="]
+- !private ["s23CustomStringConvertibleP", "BatchItem"]
+- !private ["s23CustomStringConvertibleP", "BatchResponse"]
 - ["s23CustomStringConvertibleP", "Calendar"]
 - ["s23CustomStringConvertibleP", "DateFormatter"]
 - !private ["s23CustomStringConvertibleP", "DispatchQueue"]
 - !private ["s23CustomStringConvertibleP", "JSONDecoder"]
+- !private ["s23CustomStringConvertibleP", "JSONEncoder"]
 - ["s23CustomStringConvertibleP", "Locale"]
 - !private ["s23CustomStringConvertibleP", "String"]
 - ["s23CustomStringConvertibleP", "TimeZone"]
+- !private ["s23CustomStringConvertibleP", "TrackingItem"]
 - !private ["s23CustomStringConvertibleP", "TrackingResponse"]
 - !private ["s23CustomStringConvertibleP", "URL"]
 - !private ["s23CustomStringConvertibleP", "URLComponents"]
@@ -200,6 +282,9 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "UTF8"]
 - ["s23CustomStringConvertibleP", ""]
 - ["s23CustomStringConvertibleP", "_rawHashValue"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
 - !private ["s23CustomStringConvertibleP", "async"]
 - ["s23CustomStringConvertibleP", "calendar"]
 - !private ["s23CustomStringConvertibleP", "count"]
@@ -207,8 +292,11 @@ depends-member:
 - ["s23CustomStringConvertibleP", "dateFormat"]
 - ["s23CustomStringConvertibleP", "debugDescription"]
 - ["s23CustomStringConvertibleP", "description"]
+- !private ["s23CustomStringConvertibleP", "downloadURL"]
+- !private ["s23CustomStringConvertibleP", "firstIndex"]
 - ["s23CustomStringConvertibleP", "hash"]
 - ["s23CustomStringConvertibleP", "hashValue"]
+- !private ["s23CustomStringConvertibleP", "httpBody"]
 - !private ["s23CustomStringConvertibleP", "httpMethod"]
 - ["s23CustomStringConvertibleP", "init"]
 - ["s23CustomStringConvertibleP", "intValue"]
@@ -221,18 +309,25 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "setValue"]
 - !private ["s23CustomStringConvertibleP", "shared"]
 - !private ["s23CustomStringConvertibleP", "sort"]
+- !private ["s23CustomStringConvertibleP", "split"]
 - ["s23CustomStringConvertibleP", "stringValue"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - ["s23CustomStringConvertibleP", "timeZone"]
 - !private ["s23CustomStringConvertibleP", "url"]
+- ["10fieldready11DataHandlerC", "BatchItem"]
+- !private ["10fieldready11DataHandlerC", "BatchResponse"]
+- ["10fieldready11DataHandlerC", "Data"]
 - !private ["10fieldready11DataHandlerC", "DateFormatter"]
 - !private ["10fieldready11DataHandlerC", "DispatchQueue"]
 - ["10fieldready11DataHandlerC", "Error"]
 - !private ["10fieldready11DataHandlerC", "JSONDecoder"]
+- !private ["10fieldready11DataHandlerC", "JSONEncoder"]
 - ["10fieldready11DataHandlerC", "Result"]
 - ["10fieldready11DataHandlerC", "String"]
-- ["10fieldready11DataHandlerC", "TrackingResponse"]
-- !private ["10fieldready11DataHandlerC", "URL"]
+- ["10fieldready11DataHandlerC", "TrackingItem"]
+- !private ["10fieldready11DataHandlerC", "TrackingResponse"]
+- ["10fieldready11DataHandlerC", "TrackingSubmission"]
+- ["10fieldready11DataHandlerC", "URL"]
 - !private ["10fieldready11DataHandlerC", "URLComponents"]
 - !private ["10fieldready11DataHandlerC", "URLQueryItem"]
 - !private ["10fieldready11DataHandlerC", "URLRequest"]
@@ -240,10 +335,15 @@ depends-member:
 - !private ["10fieldready11DataHandlerC", "UTF8"]
 - ["10fieldready11DataHandlerC", "Void"]
 - ["10fieldready11DataHandlerC", "deinit"]
+- ["10fieldready11DataHandlerC", "downloadURL"]
+- ["10fieldready11DataHandlerC", "getBatch"]
 - ["10fieldready11DataHandlerC", "getTrackingForBatch"]
 - ["10fieldready11DataHandlerC", "init"]
 - !private ["10fieldready11DataHandlerC", "print"]
+- ["10fieldready11DataHandlerC", "submitTracking"]
+- !private ["10Foundation12DataProtocolP", "append"]
 - !private ["10Foundation12DataProtocolP", "count"]
+- !private ["10Foundation12DataProtocolP", "firstIndex"]
 - !private ["10Foundation12DataProtocolP", "sort"]
 - !private ["10Foundation12DataProtocolP", "subscript"]
 - !private ["10Foundation11JSONDecoderC20DateDecodingStrategyO", "formatted"]
@@ -257,61 +357,94 @@ depends-member:
 - ["So15NSDateFormatterC", "iso8601Full"]
 - ["So15NSDateFormatterC", "locale"]
 - ["So15NSDateFormatterC", "timeZone"]
+- ["Se", "BatchItemOG"]
 - !private ["Se", "BatchNum"]
 - !private ["Se", "BatchNumLookup"]
+- !private ["Se", "BatchStatus"]
+- !private ["Se", "Batch_Num"]
 - !private ["Se", "Customer"]
-- !private ["Se", "ProductName"]
+- !private ["Se", "FieldsItem"]
+- !private ["Se", "Location"]
+- !private ["Se", "Notes"]
+- !private ["Se", "Person"]
+- !private ["Se", "PersonName"]
+- !private ["Se", "Product_Name"]
 - !private ["Se", "Quantity"]
 - !private ["Se", "Status"]
-- !private ["Se", "Timestamp"]
 - !private ["Se", "TrackingID"]
+- ["Se", "TrackingItemOG"]
 - ["Se", ""]
+- !private ["Se", "append"]
 - !private ["Se", "count"]
 - !private ["Se", "createdTime"]
 - ["Se", "encode"]
 - !private ["Se", "fields"]
+- !private ["Se", "firstIndex"]
+- !private ["Se", "getStatus"]
 - !private ["Se", "id"]
 - ["Se", "init"]
+- !private ["Se", "print"]
 - !private ["Se", "queryItems"]
 - !private ["Se", "records"]
 - !private ["Se", "sort"]
+- !private ["Se", "split"]
 - !private ["Se", "subscript"]
 - !private ["Se", "url"]
 - !private ["s7DecoderP", "container"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
 - !private ["So18OS_dispatch_objectC", "async"]
 - !private ["So18OS_dispatch_objectC", "main"]
 - !private ["So17OS_dispatch_queueC", "async"]
 - !private ["So17OS_dispatch_queueC", "main"]
+- !private ["Sd", "init"]
+- ["SE", "BatchItemOG"]
 - !private ["SE", "BatchNum"]
 - !private ["SE", "BatchNumLookup"]
+- !private ["SE", "BatchStatus"]
+- !private ["SE", "Batch_Num"]
 - !private ["SE", "Customer"]
-- !private ["SE", "ProductName"]
+- !private ["SE", "FieldsItem"]
+- !private ["SE", "Location"]
+- !private ["SE", "Notes"]
+- !private ["SE", "Person"]
+- !private ["SE", "PersonName"]
+- !private ["SE", "Product_Name"]
 - !private ["SE", "Quantity"]
 - !private ["SE", "Status"]
-- !private ["SE", "Timestamp"]
 - !private ["SE", "TrackingID"]
+- ["SE", "TrackingItemOG"]
 - ["SE", ""]
+- !private ["SE", "append"]
 - !private ["SE", "count"]
 - !private ["SE", "createdTime"]
 - ["SE", "encode"]
 - !private ["SE", "fields"]
+- !private ["SE", "firstIndex"]
+- !private ["SE", "getStatus"]
 - !private ["SE", "id"]
 - ["SE", "init"]
+- !private ["SE", "print"]
 - !private ["SE", "queryItems"]
 - !private ["SE", "records"]
 - !private ["SE", "sort"]
+- !private ["SE", "split"]
 - !private ["SE", "subscript"]
 - !private ["SE", "url"]
 - !private ["s7EncoderP", "container"]
 - ["SQ", "=="]
+- !private ["SQ", "BatchItem"]
+- !private ["SQ", "BatchResponse"]
 - ["SQ", "Calendar"]
 - ["SQ", "DateFormatter"]
 - !private ["SQ", "DispatchQueue"]
 - !private ["SQ", "JSONDecoder"]
+- !private ["SQ", "JSONEncoder"]
 - ["SQ", "Locale"]
 - ["SQ", "RawValue"]
 - !private ["SQ", "String"]
 - ["SQ", "TimeZone"]
+- !private ["SQ", "TrackingItem"]
 - !private ["SQ", "TrackingResponse"]
 - !private ["SQ", "URL"]
 - !private ["SQ", "URLComponents"]
@@ -322,18 +455,21 @@ depends-member:
 - ["SQ", ""]
 - ["SQ", "_Default_RawValue"]
 - ["SQ", "_rawHashValue"]
+- !private ["SQ", "airtableRepresentation"]
+- !private ["SQ", "append"]
 - !private ["SQ", "async"]
 - ["SQ", "calendar"]
 - !private ["SQ", "count"]
 - !private ["SQ", "dataTask"]
 - ["SQ", "dateFormat"]
 - ["SQ", "debugDescription"]
-- !private ["SQ", "delivered"]
 - ["SQ", "description"]
+- !private ["SQ", "downloadURL"]
 - !private ["SQ", "failure"]
-- !private ["SQ", "followedup"]
+- !private ["SQ", "firstIndex"]
 - ["SQ", "hash"]
 - ["SQ", "hashValue"]
+- !private ["SQ", "httpBody"]
 - !private ["SQ", "httpMethod"]
 - ["SQ", "init"]
 - ["SQ", "intValue"]
@@ -341,7 +477,6 @@ depends-member:
 - !private ["SQ", "iso8601Full"]
 - ["SQ", "locale"]
 - !private ["SQ", "main"]
-- !private ["SQ", "manufactured"]
 - !private ["SQ", "ordered"]
 - !private ["SQ", "print"]
 - !private ["SQ", "queryItems"]
@@ -349,37 +484,61 @@ depends-member:
 - !private ["SQ", "resume"]
 - !private ["SQ", "setValue"]
 - !private ["SQ", "shared"]
-- !private ["SQ", "shipped"]
 - !private ["SQ", "sort"]
+- !private ["SQ", "split"]
 - ["SQ", "stringValue"]
 - !private ["SQ", "subscript"]
 - !private ["SQ", "success"]
-- !private ["SQ", "tested"]
 - ["SQ", "timeZone"]
 - !private ["SQ", "unknown"]
 - !private ["SQ", "url"]
 - !private ["s5ErrorP", "localizedDescription"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
+- !private ["s25ExpressibleByArrayLiteralP", "firstIndex"]
 - !private ["s25ExpressibleByArrayLiteralP", "sort"]
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "split"]
+- !private ["s25ExpressibleByFloatLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
 - !private ["s32ExpressibleByStringInterpolationP", "init"]
+- !private ["s32ExpressibleByStringInterpolationP", "split"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "split"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- ["10fieldready12TrackingItemV06FieldsC0V", "BatchNum"]
-- ["10fieldready12TrackingItemV06FieldsC0V", "BatchNumLookup"]
-- ["10fieldready12TrackingItemV06FieldsC0V", "Customer"]
-- ["10fieldready12TrackingItemV06FieldsC0V", "Date"]
-- ["10fieldready12TrackingItemV06FieldsC0V", "Int"]
-- ["10fieldready12TrackingItemV06FieldsC0V", "ProductName"]
-- ["10fieldready12TrackingItemV06FieldsC0V", "Quantity"]
-- ["10fieldready12TrackingItemV06FieldsC0V", "Status"]
-- ["10fieldready12TrackingItemV06FieldsC0V", "String"]
-- ["10fieldready12TrackingItemV06FieldsC0V", "Timestamp"]
-- ["10fieldready12TrackingItemV06FieldsC0V", "TrackingID"]
-- ["10fieldready12TrackingItemV06FieldsC0V", "deinit"]
-- ["10fieldready12TrackingItemV06FieldsC0V", "encode"]
-- ["10fieldready12TrackingItemV06FieldsC0V", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "split"]
+- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V", "BatchNum"]
+- ["10fieldready18TrackingSubmissionV10FieldsItemV", "BatchNum"]
+- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V", "BatchNumLookup"]
+- ["10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V", "Batch_Num"]
+- ["10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V", "Customer"]
+- ["10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V", "Int"]
+- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V", "Location"]
+- ["10fieldready18TrackingSubmissionV10FieldsItemV", "Location"]
+- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V", "Notes"]
+- ["10fieldready18TrackingSubmissionV10FieldsItemV", "Notes"]
+- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V", "Person"]
+- ["10fieldready18TrackingSubmissionV10FieldsItemV", "Person"]
+- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V", "PersonName"]
+- ["10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V", "Product_Name"]
+- ["10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V", "Quantity"]
+- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V", "Status"]
+- ["10fieldready18TrackingSubmissionV10FieldsItemV", "Status"]
+- ["10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V", "String"]
+- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V", "String"]
+- ["10fieldready18TrackingSubmissionV10FieldsItemV", "String"]
+- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V", "TrackingID"]
+- ["10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V", "deinit"]
+- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V", "deinit"]
+- ["10fieldready18TrackingSubmissionV10FieldsItemV", "deinit"]
+- ["10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V", "encode"]
+- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V", "encode"]
+- ["10fieldready18TrackingSubmissionV10FieldsItemV", "encode"]
+- ["10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V", "init"]
+- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V", "init"]
+- ["10fieldready18TrackingSubmissionV10FieldsItemV", "init"]
+- !private ["SF", "init"]
 - ["So11NSFormatterC", "Calendar"]
 - ["So11NSFormatterC", "DateFormatter"]
 - ["So11NSFormatterC", "Locale"]
@@ -391,14 +550,18 @@ depends-member:
 - ["So11NSFormatterC", "locale"]
 - ["So11NSFormatterC", "timeZone"]
 - ["SH", "=="]
+- !private ["SH", "BatchItem"]
+- !private ["SH", "BatchResponse"]
 - ["SH", "Calendar"]
 - ["SH", "DateFormatter"]
 - !private ["SH", "DispatchQueue"]
 - !private ["SH", "JSONDecoder"]
+- !private ["SH", "JSONEncoder"]
 - ["SH", "Locale"]
 - ["SH", "RawValue"]
 - !private ["SH", "String"]
 - ["SH", "TimeZone"]
+- !private ["SH", "TrackingItem"]
 - !private ["SH", "TrackingResponse"]
 - !private ["SH", "URL"]
 - !private ["SH", "URLComponents"]
@@ -409,18 +572,21 @@ depends-member:
 - ["SH", ""]
 - ["SH", "_Default_RawValue"]
 - ["SH", "_rawHashValue"]
+- !private ["SH", "airtableRepresentation"]
+- !private ["SH", "append"]
 - !private ["SH", "async"]
 - ["SH", "calendar"]
 - !private ["SH", "count"]
 - !private ["SH", "dataTask"]
 - ["SH", "dateFormat"]
 - ["SH", "debugDescription"]
-- !private ["SH", "delivered"]
 - ["SH", "description"]
+- !private ["SH", "downloadURL"]
 - !private ["SH", "failure"]
-- !private ["SH", "followedup"]
+- !private ["SH", "firstIndex"]
 - ["SH", "hash"]
 - ["SH", "hashValue"]
+- !private ["SH", "httpBody"]
 - !private ["SH", "httpMethod"]
 - ["SH", "init"]
 - ["SH", "intValue"]
@@ -428,7 +594,6 @@ depends-member:
 - !private ["SH", "iso8601Full"]
 - ["SH", "locale"]
 - !private ["SH", "main"]
-- !private ["SH", "manufactured"]
 - !private ["SH", "ordered"]
 - !private ["SH", "print"]
 - !private ["SH", "queryItems"]
@@ -436,12 +601,11 @@ depends-member:
 - !private ["SH", "resume"]
 - !private ["SH", "setValue"]
 - !private ["SH", "shared"]
-- !private ["SH", "shipped"]
 - !private ["SH", "sort"]
+- !private ["SH", "split"]
 - ["SH", "stringValue"]
 - !private ["SH", "subscript"]
 - !private ["SH", "success"]
-- !private ["SH", "tested"]
 - ["SH", "timeZone"]
 - !private ["SH", "unknown"]
 - !private ["SH", "url"]
@@ -450,17 +614,29 @@ depends-member:
 - !private ["10Foundation11JSONDecoderC", "dateDecodingStrategy"]
 - !private ["10Foundation11JSONDecoderC", "decode"]
 - !private ["10Foundation11JSONDecoderC", "init"]
+- !private ["10Foundation11JSONEncoderC", "encode"]
+- !private ["10Foundation11JSONEncoderC", "init"]
 - !private ["s22KeyedDecodingContainerV", "decode"]
+- !private ["s22KeyedDecodingContainerV", "decodeIfPresent"]
 - !private ["s30KeyedDecodingContainerProtocolP", "decode"]
+- !private ["s30KeyedDecodingContainerProtocolP", "decodeIfPresent"]
 - !private ["s22KeyedEncodingContainerV", "encode"]
+- !private ["s22KeyedEncodingContainerV", "encodeIfPresent"]
 - !private ["s30KeyedEncodingContainerProtocolP", "encode"]
+- !private ["s30KeyedEncodingContainerProtocolP", "encodeIfPresent"]
 - ["10Foundation6LocaleV", "init"]
 - !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "split"]
 - !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "split"]
+- !private ["SM", "append"]
 - !private ["SM", "count"]
+- !private ["SM", "firstIndex"]
 - !private ["SM", "sort"]
 - !private ["SM", "subscript"]
+- !private ["10Foundation19MutableDataProtocolP", "append"]
 - !private ["10Foundation19MutableDataProtocolP", "count"]
+- !private ["10Foundation19MutableDataProtocolP", "firstIndex"]
 - !private ["10Foundation19MutableDataProtocolP", "sort"]
 - !private ["10Foundation19MutableDataProtocolP", "subscript"]
 - ["So8NSCodingP", "Calendar"]
@@ -472,6 +648,7 @@ depends-member:
 - ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "iso8601Full"]
 - ["So8NSCodingP", "locale"]
+- !private ["So8NSCodingP", "split"]
 - ["So8NSCodingP", "timeZone"]
 - ["So9NSCopyingP", "Calendar"]
 - ["So9NSCopyingP", "DateFormatter"]
@@ -483,18 +660,28 @@ depends-member:
 - !private ["So9NSCopyingP", "iso8601Full"]
 - ["So9NSCopyingP", "locale"]
 - !private ["So9NSCopyingP", "resume"]
+- !private ["So9NSCopyingP", "split"]
 - ["So9NSCopyingP", "timeZone"]
+- !private ["So21NSItemProviderReadingP", "split"]
+- !private ["So21NSItemProviderWritingP", "split"]
+- !private ["So16NSMutableCopyingP", "split"]
+- ["So8NSObjectC", "BatchItem"]
+- !private ["So8NSObjectC", "BatchResponse"]
 - ["So8NSObjectC", "Calendar"]
+- ["So8NSObjectC", "Data"]
 - ["So8NSObjectC", "DateFormatter"]
 - !private ["So8NSObjectC", "DispatchQueue"]
 - ["So8NSObjectC", "Error"]
 - !private ["So8NSObjectC", "JSONDecoder"]
+- !private ["So8NSObjectC", "JSONEncoder"]
 - ["So8NSObjectC", "Locale"]
 - ["So8NSObjectC", "Result"]
 - ["So8NSObjectC", "String"]
 - ["So8NSObjectC", "TimeZone"]
-- ["So8NSObjectC", "TrackingResponse"]
-- !private ["So8NSObjectC", "URL"]
+- ["So8NSObjectC", "TrackingItem"]
+- !private ["So8NSObjectC", "TrackingResponse"]
+- ["So8NSObjectC", "TrackingSubmission"]
+- ["So8NSObjectC", "URL"]
 - !private ["So8NSObjectC", "URLComponents"]
 - !private ["So8NSObjectC", "URLQueryItem"]
 - !private ["So8NSObjectC", "URLRequest"]
@@ -506,6 +693,8 @@ depends-member:
 - ["So8NSObjectC", "calendar"]
 - !private ["So8NSObjectC", "dataTask"]
 - ["So8NSObjectC", "dateFormat"]
+- ["So8NSObjectC", "downloadURL"]
+- ["So8NSObjectC", "getBatch"]
 - ["So8NSObjectC", "getTrackingForBatch"]
 - ["So8NSObjectC", "init"]
 - ["So8NSObjectC", "iso8601Full"]
@@ -514,14 +703,20 @@ depends-member:
 - !private ["So8NSObjectC", "print"]
 - !private ["So8NSObjectC", "resume"]
 - !private ["So8NSObjectC", "shared"]
+- !private ["So8NSObjectC", "split"]
+- ["So8NSObjectC", "submitTracking"]
 - ["So8NSObjectC", "timeZone"]
+- !private ["So8NSObjectP", "BatchItem"]
+- !private ["So8NSObjectP", "BatchResponse"]
 - ["So8NSObjectP", "Calendar"]
 - ["So8NSObjectP", "DateFormatter"]
 - !private ["So8NSObjectP", "DispatchQueue"]
 - !private ["So8NSObjectP", "JSONDecoder"]
+- !private ["So8NSObjectP", "JSONEncoder"]
 - ["So8NSObjectP", "Locale"]
 - !private ["So8NSObjectP", "String"]
 - ["So8NSObjectP", "TimeZone"]
+- !private ["So8NSObjectP", "TrackingItem"]
 - !private ["So8NSObjectP", "TrackingResponse"]
 - !private ["So8NSObjectP", "URL"]
 - !private ["So8NSObjectP", "URLComponents"]
@@ -534,6 +729,7 @@ depends-member:
 - ["So8NSObjectP", "calendar"]
 - !private ["So8NSObjectP", "dataTask"]
 - ["So8NSObjectP", "dateFormat"]
+- !private ["So8NSObjectP", "downloadURL"]
 - ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "iso8601Full"]
 - ["So8NSObjectP", "locale"]
@@ -541,33 +737,39 @@ depends-member:
 - !private ["So8NSObjectP", "print"]
 - !private ["So8NSObjectP", "resume"]
 - !private ["So8NSObjectP", "shared"]
+- !private ["So8NSObjectP", "split"]
 - ["So8NSObjectP", "timeZone"]
+- !private ["So14NSSecureCodingP", "split"]
+- !private ["So8NSStringC", "split"]
+- !private ["Sj", "init"]
 - !private ["So9OS_objectC", "async"]
 - !private ["So9OS_objectC", "main"]
 - !private ["So19NSProgressReportingP", "resume"]
+- !private ["Sk", "append"]
 - !private ["Sk", "count"]
+- !private ["Sk", "firstIndex"]
 - !private ["Sk", "sort"]
 - !private ["Sk", "subscript"]
+- !private ["Sm", "append"]
 - !private ["Sm", "count"]
+- !private ["Sm", "firstIndex"]
 - !private ["Sm", "init"]
 - !private ["Sm", "sort"]
+- !private ["Sm", "split"]
 - !private ["Sm", "subscript"]
 - ["SY", "=="]
 - ["SY", "RawValue"]
 - ["SY", ""]
 - ["SY", "_Default_RawValue"]
 - ["SY", "_rawHashValue"]
-- !private ["SY", "delivered"]
-- !private ["SY", "followedup"]
+- !private ["SY", "airtableRepresentation"]
 - ["SY", "hash"]
 - ["SY", "hashValue"]
 - ["SY", "init"]
-- !private ["SY", "manufactured"]
 - !private ["SY", "ordered"]
 - ["SY", "rawValue"]
-- !private ["SY", "shipped"]
-- !private ["SY", "tested"]
 - !private ["SY", "unknown"]
+- !private ["10Foundation20ReferenceConvertibleP", "httpBody"]
 - !private ["10Foundation20ReferenceConvertibleP", "httpMethod"]
 - ["10Foundation20ReferenceConvertibleP", "init"]
 - !private ["10Foundation20ReferenceConvertibleP", "queryItems"]
@@ -575,45 +777,81 @@ depends-member:
 - !private ["10Foundation20ReferenceConvertibleP", "url"]
 - !private ["s6ResultO", "failure"]
 - !private ["s6ResultO", "success"]
+- !private ["s10SIMDScalarP", "init"]
 - !private ["7Combine9SchedulerP", "async"]
 - !private ["7Combine9SchedulerP", "main"]
+- !private ["ST", "append"]
 - !private ["ST", "count"]
+- !private ["ST", "firstIndex"]
 - !private ["ST", "init"]
 - !private ["ST", "sort"]
+- !private ["ST", "split"]
 - !private ["ST", "subscript"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["Sx", "init"]
 - !private ["SS", "init"]
+- !private ["SS", "split"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
 - !private ["Sy", "init"]
+- !private ["Sy", "split"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
 - !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "split"]
 - !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "split"]
 - ["10Foundation8TimeZoneV", "init"]
 - !private ["7Combine15TopLevelDecoderP", "dateDecodingStrategy"]
 - !private ["7Combine15TopLevelDecoderP", "decode"]
 - !private ["7Combine15TopLevelDecoderP", "init"]
+- !private ["7Combine15TopLevelEncoderP", "encode"]
+- !private ["7Combine15TopLevelEncoderP", "init"]
+- ["10fieldready12TrackingItemV", "BatchItem"]
 - ["10fieldready12TrackingItemV", "BatchStatus"]
-- ["10fieldready12TrackingItemV", "Codable"]
+- ["10fieldready12TrackingItemV", "CLLocationCoordinate2D"]
+- !private ["10fieldready12TrackingItemV", "CLLocationDegrees"]
 - ["10fieldready12TrackingItemV", "Date"]
-- ["10fieldready12TrackingItemV", "FieldsItem"]
-- ["10fieldready12TrackingItemV", "Int"]
+- !private ["10fieldready12TrackingItemV", "Double"]
 - ["10fieldready12TrackingItemV", "String"]
+- ["10fieldready12TrackingItemV", "TrackingResponse"]
+- ["10fieldready12TrackingItemV", "airtableID"]
+- ["10fieldready12TrackingItemV", "batchNum"]
+- ["10fieldready12TrackingItemV", "comments"]
 - ["10fieldready12TrackingItemV", "createdTime"]
-- ["10fieldready12TrackingItemV", "deinit"]
-- ["10fieldready12TrackingItemV", "encode"]
-- ["10fieldready12TrackingItemV", "fields"]
-- ["10fieldready12TrackingItemV", "getStatus"]
-- ["10fieldready12TrackingItemV", "id"]
 - ["10fieldready12TrackingItemV", "init"]
-- !private ["10fieldready16TrackingResponseV", "Bool"]
-- ["10fieldready16TrackingResponseV", "TrackingItem"]
-- ["10fieldready16TrackingResponseV", "deinit"]
-- ["10fieldready16TrackingResponseV", "encode"]
-- ["10fieldready16TrackingResponseV", "getLatestTracking"]
-- ["10fieldready16TrackingResponseV", "init"]
-- ["10fieldready16TrackingResponseV", "records"]
+- ["10fieldready12TrackingItemV", "location"]
+- !private ["10fieldready12TrackingItemV", "originalData"]
+- ["10fieldready12TrackingItemV", "personName"]
+- ["10fieldready12TrackingItemV", "status"]
+- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "BatchStatus"]
+- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "Codable"]
+- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "Date"]
+- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "FieldsItem"]
+- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "String"]
+- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "createdTime"]
+- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "deinit"]
+- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "encode"]
+- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "fields"]
+- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "getStatus"]
+- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "id"]
+- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "init"]
+- !private ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "print"]
+- ["10fieldready18TrackingSubmissionV", "BatchStatus"]
+- ["10fieldready18TrackingSubmissionV", "CLLocationCoordinate2D"]
+- ["10fieldready18TrackingSubmissionV", "Codable"]
+- ["10fieldready18TrackingSubmissionV", "FieldsItem"]
+- ["10fieldready18TrackingSubmissionV", "String"]
+- ["10fieldready18TrackingSubmissionV", "deinit"]
+- ["10fieldready18TrackingSubmissionV", "encode"]
+- ["10fieldready18TrackingSubmissionV", "fields"]
+- ["10fieldready18TrackingSubmissionV", "init"]
 - !private ["10Foundation3URLV", "init"]
 - !private ["10Foundation13URLComponentsV", "init"]
 - !private ["10Foundation13URLComponentsV", "queryItems"]
 - !private ["10Foundation13URLComponentsV", "url"]
 - !private ["10Foundation12URLQueryItemV", "init"]
+- !private ["10Foundation10URLRequestV", "httpBody"]
 - !private ["10Foundation10URLRequestV", "httpMethod"]
 - !private ["10Foundation10URLRequestV", "init"]
 - !private ["10Foundation10URLRequestV", "setValue"]
@@ -621,31 +859,54 @@ depends-member:
 - !private ["So12NSURLSessionC", "shared"]
 - !private ["So20NSURLSessionDataTaskC", "resume"]
 - !private ["So16NSURLSessionTaskC", "resume"]
+- !private ["s14_ArrayProtocolP", "append"]
 - !private ["s14_ArrayProtocolP", "count"]
+- !private ["s14_ArrayProtocolP", "firstIndex"]
 - !private ["s14_ArrayProtocolP", "sort"]
 - !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s15_CVarArgAlignedP", "init"]
+- !private ["s22_CVarArgPassedAsDoubleP", "init"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "split"]
+- !private ["s24_DestructorSafeContainerP", "append"]
 - !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s24_DestructorSafeContainerP", "firstIndex"]
 - !private ["s24_DestructorSafeContainerP", "sort"]
 - !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "split"]
+- !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "split"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "split"]
 - !private ["s34_ExpressibleByFileReferenceLiteralP", "init"]
+- !private ["s19_HasContiguousBytesP", "append"]
 - !private ["s19_HasContiguousBytesP", "count"]
+- !private ["s19_HasContiguousBytesP", "firstIndex"]
 - !private ["s19_HasContiguousBytesP", "init"]
 - !private ["s19_HasContiguousBytesP", "sort"]
+- !private ["s19_HasContiguousBytesP", "split"]
 - !private ["s19_HasContiguousBytesP", "subscript"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "firstIndex"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "sort"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "split"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "BatchItem"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "BatchResponse"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "Calendar"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "DateFormatter"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "DispatchQueue"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "JSONDecoder"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "JSONEncoder"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "Locale"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "String"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "TimeZone"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "TrackingItem"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "TrackingResponse"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "URL"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "URLComponents"]
@@ -658,6 +919,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "calendar"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dataTask"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "dateFormat"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "downloadURL"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "iso8601Full"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "locale"]
@@ -665,14 +927,19 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "resume"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "shared"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "split"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "timeZone"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "BatchItem"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "BatchResponse"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Calendar"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "DateFormatter"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "DispatchQueue"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "JSONDecoder"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "JSONEncoder"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Locale"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "String"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "TimeZone"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "TrackingItem"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "TrackingResponse"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "URL"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "URLComponents"]
@@ -685,6 +952,7 @@ depends-member:
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "calendar"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "dataTask"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "dateFormat"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "downloadURL"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "iso8601Full"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "locale"]
@@ -692,19 +960,31 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "print"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "resume"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "shared"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "split"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "timeZone"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "firstIndex"]
+- !private ["s21_ObjectiveCBridgeableP", "httpBody"]
 - !private ["s21_ObjectiveCBridgeableP", "httpMethod"]
 - ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "latitude"]
+- !private ["s21_ObjectiveCBridgeableP", "longitude"]
 - !private ["s21_ObjectiveCBridgeableP", "queryItems"]
 - !private ["s21_ObjectiveCBridgeableP", "setValue"]
 - !private ["s21_ObjectiveCBridgeableP", "sort"]
+- !private ["s21_ObjectiveCBridgeableP", "split"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "url"]
 depends-nominal:
+- !private "s18AdditiveArithmeticP"
 - !private "Sa"
+- "10fieldready9BatchItemV"
+- "10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV"
 - "10fieldready11BatchStatusO"
 - !private "SK"
+- !private "SB"
+- !private "So22CLLocationCoordinate2DV"
 - "s7CVarArgP"
 - "10Foundation8CalendarV"
 - "s9CodingKeyP"
@@ -720,23 +1000,55 @@ depends-nominal:
 - "So15NSDateFormatterC"
 - "Se"
 - !private "s7DecoderP"
+- !private "s26DefaultStringInterpolationV"
 - !private "So18OS_dispatch_objectC"
 - !private "So17OS_dispatch_queueC"
+- !private "Sd"
 - "SE"
 - !private "s7EncoderP"
 - "SQ"
 - !private "s5ErrorP"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
 - !private "s32ExpressibleByStringInterpolationP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
-- "10fieldready12TrackingItemV06FieldsC0V"
+- "10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V"
+- "10fieldready18TrackingSubmissionV10FieldsItemV"
+- "10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V"
+- "10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V"
+- "10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V"
+- "10fieldready18TrackingSubmissionV10FieldsItemV"
+- "10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V"
+- "10fieldready18TrackingSubmissionV10FieldsItemV"
+- "10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V"
+- "10fieldready18TrackingSubmissionV10FieldsItemV"
+- "10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V"
+- "10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V"
+- "10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V"
+- "10fieldready18TrackingSubmissionV10FieldsItemV"
+- "10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V"
+- "10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V"
+- "10fieldready18TrackingSubmissionV10FieldsItemV"
+- "10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V"
+- "10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V"
+- "10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V"
+- "10fieldready18TrackingSubmissionV10FieldsItemV"
+- "10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V"
+- "10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V"
+- "10fieldready18TrackingSubmissionV10FieldsItemV"
+- "10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V"
+- "10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V"
+- "10fieldready18TrackingSubmissionV10FieldsItemV"
+- !private "SF"
 - "So11NSFormatterC"
 - "SH"
 - !private "s6HasherV"
 - "10Foundation8CalendarV10IdentifierO"
 - !private "10Foundation11JSONDecoderC"
+- !private "10Foundation11JSONEncoderC"
 - !private "s22KeyedDecodingContainerV"
 - !private "s30KeyedDecodingContainerProtocolP"
 - !private "s22KeyedEncodingContainerV"
@@ -748,8 +1060,14 @@ depends-nominal:
 - !private "10Foundation19MutableDataProtocolP"
 - "So8NSCodingP"
 - "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
 - "So8NSObjectC"
 - "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "Sj"
 - !private "So9OS_objectC"
 - !private "So19NSProgressReportingP"
 - !private "Sk"
@@ -757,16 +1075,22 @@ depends-nominal:
 - "SY"
 - "10Foundation20ReferenceConvertibleP"
 - !private "s6ResultO"
+- !private "s10SIMDScalarP"
 - !private "7Combine9SchedulerP"
 - !private "ST"
+- !private "s13SignedNumericP"
+- !private "Sx"
 - !private "SS"
+- !private "s27StringInterpolationProtocolP"
 - !private "Sy"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
 - "10Foundation8TimeZoneV"
 - !private "7Combine15TopLevelDecoderP"
+- !private "7Combine15TopLevelEncoderP"
 - "10fieldready12TrackingItemV"
-- "10fieldready16TrackingResponseV"
+- "10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV"
+- "10fieldready18TrackingSubmissionV"
 - !private "10Foundation3URLV"
 - !private "10Foundation13URLComponentsV"
 - !private "10Foundation12URLQueryItemV"
@@ -775,9 +1099,13 @@ depends-nominal:
 - !private "So20NSURLSessionDataTaskC"
 - !private "So16NSURLSessionTaskC"
 - !private "s14_ArrayProtocolP"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
 - !private "s30_CustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s33_ExpressibleByBuiltinFloatLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s34_ExpressibleByFileReferenceLiteralP"
@@ -797,6 +1125,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Dispatch.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Metal.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Darwin.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreLocation.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Foundation.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/AVFoundation.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreFoundation.swiftmodule/arm64.swiftmodule"
@@ -804,6 +1133,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreGraphics.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Swift.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/UIKit.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/MapKit.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/SwiftOnoneSupport.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Combine.swiftmodule/arm64-apple-ios.swiftmodule"
 - "/Users/tom/Documents/Field Ready/App/fieldready/Debug-iphoneos/QRCodeReader.swift/QRCodeReader.framework/Modules/QRCodeReader.swiftmodule/arm64-apple-ios.swiftmodule"
@@ -818,14 +1148,16 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/CoreAudioTypes.framework/Headers/CoreAudioTypes.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "2e720860bf479b9136e2329b7aa02c65"
+interface-hash: "b5ec77281496fbcdd92f6651b20de5bf"

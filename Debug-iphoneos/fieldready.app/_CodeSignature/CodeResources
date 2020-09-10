@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		xM9MSK+h/kSqj7ZTzE+piJjBrNg=
+		bkWl8VyVf9P4M9zeqAyW9BY/pU4=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<data>
-		+5/mu8AyRCbsVr3KZktsMF7t0ko=
+		g/pjPRRcP+GG4Z3h2s7jm7HWlz4=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -30,11 +30,15 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
 		<data>
-		/JQKlE8XFuSwd0GvLnIVuTZDNvM=
+		LUxpvs6GCoj6dQ44AAr7cDmGL1U=
+		</data>
+		<key>ConfirmationController.nib</key>
+		<data>
+		/g8FRVC5/4EKOrdf6CA6Q92oDlw=
 		</data>
 		<key>DetailView.nib</key>
 		<data>
-		daM8eml4QDgW6OR+A+dkuVPagl8=
+		RDGCZ/Vak2QrjpcAWRp36LaLwd0=
 		</data>
 		<key>Frameworks/QRCodeReader.framework/Info.plist</key>
 		<data>
@@ -42,7 +46,7 @@
 		</data>
 		<key>Frameworks/QRCodeReader.framework/QRCodeReader</key>
 		<data>
-		GKL55bqC086cDtmNals42951qGE=
+		3PXqUPeWZW7Qcr9ztOZbVM619Rs=
 		</data>
 		<key>Frameworks/QRCodeReader.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -50,7 +54,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Ek2nq8cAhmyUSN8qLLc6tfdibM0=
+		95kfzVTGeoa5tGVgN22KiER6A74=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -58,7 +62,11 @@
 		</data>
 		<key>RowView.nib</key>
 		<data>
-		dwylnI4yOOj1iRnbn42SHuhfQ/A=
+		CHtjMxjg4ltfEmYvm1kic7qyYqc=
+		</data>
+		<key>SettingsController.nib</key>
+		<data>
+		+7RSdt+CWs7aiZVrmfVgzz7f5k0=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
@@ -79,7 +87,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cP3dP84gmBwidJXN0SmIjDrsQNxoa36LjA2rTWandEU=
+			5YPQFdEaKkFoEhNB9/leM12RFLkNLHSW6msTac5sE+E=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
@@ -107,7 +115,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1HeRMhraHvrCXZguf8gk5N0iQFO4SP8l6vnIeviuY+4=
+			NVFxj2iX10EpJarN2oat88W3JUm3sYCf3JDrUtXEI7k=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -121,14 +129,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q+uXiDzalCKPmpvnwq0zlYHK4bU1AKIklkcmWWsPpMQ=
+			1UOwhyjWRRffVoEwJvyLYcx863qT5psAyv1B7GehIPk=
+			</data>
+		</dict>
+		<key>ConfirmationController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YJ6O9ZJWkl8RNRde64wRKdvs7cfkHJESQaEtKXukOkA=
 			</data>
 		</dict>
 		<key>DetailView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			k2i/O/Q12wul2buL2Pj64mBqHYAgBkFnkDMrIAx0T34=
+			Gz2aGQHp0LzNUDi+L6i3VtNVQCWPRyXDsSShXs31Vzc=
 			</data>
 		</dict>
 		<key>Frameworks/QRCodeReader.framework/Info.plist</key>
@@ -142,7 +157,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bRSsAVt9Kd21wggaMSce1mDLezb3v96vlF6c22rcbN8=
+			FjGKRF+tWYV36CuSPM6cYmuztl16K05KOQizcoh2bJs=
 			</data>
 		</dict>
 		<key>Frameworks/QRCodeReader.framework/_CodeSignature/CodeResources</key>
@@ -156,7 +171,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uUgxw/o+gLsT2xTYJJcDLDJVBy12Mzief0vtAYWwOxA=
+			ErVXwCU9uTsP7Anv8UtSCLYO7GqBfuhX9MglYNICmHI=
+			</data>
+		</dict>
+		<key>SettingsController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			dRj8AMO8iMVOkJ+Z1wm3nu3BOJ7pU6eCU1Bf+jt3zcw=
 			</data>
 		</dict>
 		<key>embedded.mobileprovision</key>
