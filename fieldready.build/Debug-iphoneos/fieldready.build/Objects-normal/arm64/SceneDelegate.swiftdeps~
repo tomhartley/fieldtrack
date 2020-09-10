@@ -6,24 +6,13 @@ provides-nominal:
 provides-member:
 - ["10fieldready13SceneDelegateC", ""]
 provides-dynamic-lookup:
-- "scene"
-- "sceneDidBecomeActive"
-- "sceneDidDisconnect"
-- "sceneDidEnterBackground"
-- "sceneWillEnterForeground"
-- "sceneWillResignActive"
 - "window"
 depends-top-level:
-- "CastingPrecedence"
 - "SceneDelegate"
 - "UIResponder"
-- "UIScene"
-- "UISceneSession"
 - "UIWindow"
-- !private "UIWindowScene"
 - "UIWindowSceneDelegate"
 depends-member:
-- ["s7CVarArgP", "ConnectionOptions"]
 - ["s7CVarArgP", ""]
 - ["s7CVarArgP", "scene"]
 - ["s7CVarArgP", "sceneDidBecomeActive"]
@@ -35,7 +24,6 @@ depends-member:
 - ["s7CVarArgP", "stateRestorationActivityForScene"]
 - ["s7CVarArgP", "window"]
 - ["s7CVarArgP", "windowScene"]
-- ["s28CustomDebugStringConvertibleP", "ConnectionOptions"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - ["s28CustomDebugStringConvertibleP", "scene"]
 - ["s28CustomDebugStringConvertibleP", "sceneDidBecomeActive"]
@@ -47,7 +35,6 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "stateRestorationActivityForScene"]
 - ["s28CustomDebugStringConvertibleP", "window"]
 - ["s28CustomDebugStringConvertibleP", "windowScene"]
-- ["s23CustomStringConvertibleP", "ConnectionOptions"]
 - ["s23CustomStringConvertibleP", ""]
 - ["s23CustomStringConvertibleP", "scene"]
 - ["s23CustomStringConvertibleP", "sceneDidBecomeActive"]
@@ -59,7 +46,6 @@ depends-member:
 - ["s23CustomStringConvertibleP", "stateRestorationActivityForScene"]
 - ["s23CustomStringConvertibleP", "window"]
 - ["s23CustomStringConvertibleP", "windowScene"]
-- ["SQ", "ConnectionOptions"]
 - ["SQ", ""]
 - ["SQ", "scene"]
 - ["SQ", "sceneDidBecomeActive"]
@@ -71,7 +57,6 @@ depends-member:
 - ["SQ", "stateRestorationActivityForScene"]
 - ["SQ", "window"]
 - ["SQ", "windowScene"]
-- ["SH", "ConnectionOptions"]
 - ["SH", ""]
 - ["SH", "scene"]
 - ["SH", "sceneDidBecomeActive"]
@@ -83,11 +68,7 @@ depends-member:
 - ["SH", "stateRestorationActivityForScene"]
 - ["SH", "window"]
 - ["SH", "windowScene"]
-- ["So8NSObjectC", "ConnectionOptions"]
-- ["So8NSObjectC", "UIScene"]
-- ["So8NSObjectC", "UISceneSession"]
 - ["So8NSObjectC", "UIWindow"]
-- !private ["So8NSObjectC", "UIWindowScene"]
 - ["So8NSObjectC", "init"]
 - ["So8NSObjectC", "scene"]
 - ["So8NSObjectC", "sceneDidBecomeActive"]
@@ -99,7 +80,6 @@ depends-member:
 - ["So8NSObjectC", "stateRestorationActivityForScene"]
 - ["So8NSObjectC", "window"]
 - ["So8NSObjectC", "windowScene"]
-- ["So8NSObjectP", "ConnectionOptions"]
 - ["So8NSObjectP", ""]
 - ["So8NSObjectP", "scene"]
 - ["So8NSObjectP", "sceneDidBecomeActive"]
@@ -111,10 +91,7 @@ depends-member:
 - ["So8NSObjectP", "stateRestorationActivityForScene"]
 - ["So8NSObjectP", "window"]
 - ["So8NSObjectP", "windowScene"]
-- ["10fieldready13SceneDelegateC", "UIScene"]
-- ["10fieldready13SceneDelegateC", "UISceneSession"]
 - ["10fieldready13SceneDelegateC", "UIWindow"]
-- !private ["10fieldready13SceneDelegateC", "UIWindowScene"]
 - ["10fieldready13SceneDelegateC", "deinit"]
 - ["10fieldready13SceneDelegateC", "init"]
 - ["10fieldready13SceneDelegateC", "scene"]
@@ -127,7 +104,6 @@ depends-member:
 - ["10fieldready13SceneDelegateC", "stateRestorationActivityForScene"]
 - ["10fieldready13SceneDelegateC", "window"]
 - ["10fieldready13SceneDelegateC", "windowScene"]
-- ["So30UIPasteConfigurationSupportingP", "ConnectionOptions"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - ["So30UIPasteConfigurationSupportingP", "scene"]
 - ["So30UIPasteConfigurationSupportingP", "sceneDidBecomeActive"]
@@ -139,11 +115,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "stateRestorationActivityForScene"]
 - ["So30UIPasteConfigurationSupportingP", "window"]
 - ["So30UIPasteConfigurationSupportingP", "windowScene"]
-- ["So11UIResponderC", "ConnectionOptions"]
-- ["So11UIResponderC", "UIScene"]
-- ["So11UIResponderC", "UISceneSession"]
 - ["So11UIResponderC", "UIWindow"]
-- !private ["So11UIResponderC", "UIWindowScene"]
 - ["So11UIResponderC", ""]
 - ["So11UIResponderC", "init"]
 - ["So11UIResponderC", "scene"]
@@ -156,7 +128,6 @@ depends-member:
 - ["So11UIResponderC", "stateRestorationActivityForScene"]
 - ["So11UIResponderC", "window"]
 - ["So11UIResponderC", "windowScene"]
-- ["So30UIResponderStandardEditActionsP", "ConnectionOptions"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - ["So30UIResponderStandardEditActionsP", "scene"]
 - ["So30UIResponderStandardEditActionsP", "sceneDidBecomeActive"]
@@ -168,7 +139,6 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "stateRestorationActivityForScene"]
 - ["So30UIResponderStandardEditActionsP", "window"]
 - ["So30UIResponderStandardEditActionsP", "windowScene"]
-- ["So7UISceneC", "ConnectionOptions"]
 - ["So15UISceneDelegateP", ""]
 - ["So15UISceneDelegateP", "scene"]
 - ["So15UISceneDelegateP", "sceneDidBecomeActive"]
@@ -180,7 +150,6 @@ depends-member:
 - ["So15UISceneDelegateP", "stateRestorationActivityForScene"]
 - ["So15UISceneDelegateP", "window"]
 - ["So15UISceneDelegateP", "windowScene"]
-- ["So23UIUserActivityRestoringP", "ConnectionOptions"]
 - ["So23UIUserActivityRestoringP", ""]
 - ["So23UIUserActivityRestoringP", "scene"]
 - ["So23UIUserActivityRestoringP", "sceneDidBecomeActive"]
@@ -203,7 +172,6 @@ depends-member:
 - ["So21UIWindowSceneDelegateP", "stateRestorationActivityForScene"]
 - ["So21UIWindowSceneDelegateP", "window"]
 - ["So21UIWindowSceneDelegateP", "windowScene"]
-- ["10Foundation27_KeyValueCodingAndObservingP", "ConnectionOptions"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - ["10Foundation27_KeyValueCodingAndObservingP", "scene"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "sceneDidBecomeActive"]
@@ -215,7 +183,6 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "stateRestorationActivityForScene"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "window"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "windowScene"]
-- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ConnectionOptions"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scene"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "sceneDidBecomeActive"]
@@ -239,7 +206,6 @@ depends-nominal:
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
-- "So7UISceneC"
 - "So15UISceneDelegateP"
 - "So23UIUserActivityRestoringP"
 - "So21UIWindowSceneDelegateP"
@@ -291,4 +257,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "127201c8c716b7030f8c10092b30daff"
+interface-hash: "faf3c5e0583d3ede236ce2af48cc447b"

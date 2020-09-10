@@ -281,11 +281,16 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate, UINa
 		if case let unwrapped?? = track {
 			detailView.nameLabel.text = "by " + unwrapped.personName
 			
-			let formatter = DateFormatter()
-			formatter.dateStyle = .short
-			formatter.timeStyle = .short
-			detailView.timeLabel.text = formatter.string(from: unwrapped.createdTime)
-			
+			if (Date().addingTimeInterval(-172800) > unwrapped.createdTime) {
+				let formatter = DateFormatter()
+				formatter.dateStyle = .short
+				detailView.timeLabel.text = formatter.string(from: unwrapped.createdTime)
+			} else {
+				//if date is more than 1.5 days ago = 60*60*24*2 = 172,800
+				let formatter = RelativeDateTimeFormatter()
+				detailView.timeLabel.text = formatter.localizedString(for: unwrapped.createdTime, relativeTo: Date())
+			}
+
 			if let loc = unwrapped.location {
 				detailView.refreshMapTo(loc: loc, title: forStatus.textRepresentation())
 				detailView.locationLabel.text = "-"

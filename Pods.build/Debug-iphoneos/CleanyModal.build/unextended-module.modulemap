@@ -1,0 +1,10 @@
+framework module CleanyModal {
+  umbrella header "CleanyModal-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module CleanyModal.__Swift {
+    exclude header "CleanyModal-Swift.h"
+}

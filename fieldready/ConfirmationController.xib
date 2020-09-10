@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConfirmationController" customModule="fieldready" customModuleProvider="target">
+            <connections>
+                <outlet property="pulseView" destination="snE-pJ-Ylg" id="atQ-XP-OFO"/>
+                <outlet property="textView" destination="LhT-c4-qFV" id="5TY-YA-b4T"/>
+                <outlet property="titleLabel" destination="dGH-s1-OY2" id="Z3D-d6-gdc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mark batch as completed manufacturing" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGH-s1-OY2">
+                    <rect key="frame" x="30" y="37" width="260" height="50.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                    <color key="textColor" name="FRPurple"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="gEC-Xx-xdw">
+                    <rect key="frame" x="180" y="220" width="110" height="36"/>
+                    <color key="backgroundColor" name="FRYellow"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="iiC-Co-kSz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="Confirm">
+                        <color key="titleColor" name="FRWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="18"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="confirmButton:" destination="-1" eventType="touchUpInside" id="6sv-uq-uCj"/>
+                    </connections>
+                </button>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="UpD-Lu-MLj">
+                    <rect key="frame" x="30" y="220" width="110" height="36"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="rvi-x3-F4Y"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="Cancel">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="18"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="cancelButton:" destination="-1" eventType="touchUpInside" id="BN3-Ha-T1h"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LhT-c4-qFV">
+                    <rect key="frame" x="16" y="135" width="288" height="80"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="TBM-Ri-bXW"/>
+                    </constraints>
+                    <color key="textColor" name="FRPurple"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comments" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uXn-Hl-95V">
+                    <rect key="frame" x="30" y="99.5" width="79" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" name="FRPurple"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="snE-pJ-Ylg">
+                    <rect key="frame" x="303" y="10" width="7" height="7"/>
+                    <color key="backgroundColor" name="FRLightestPurple"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="7" id="gRs-yC-KUD"/>
+                        <constraint firstAttribute="height" constant="7" id="qR1-ux-5U9"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" name="FRWhite"/>
+            <constraints>
+                <constraint firstItem="UpD-Lu-MLj" firstAttribute="top" secondItem="gEC-Xx-xdw" secondAttribute="top" id="0ij-7N-yWy"/>
+                <constraint firstItem="LhT-c4-qFV" firstAttribute="trailing" secondItem="dGH-s1-OY2" secondAttribute="trailing" id="4Cd-0J-qYh"/>
+                <constraint firstItem="gEC-Xx-xdw" firstAttribute="leading" secondItem="UpD-Lu-MLj" secondAttribute="trailing" constant="40" id="76W-dI-vWb"/>
+                <constraint firstItem="UpD-Lu-MLj" firstAttribute="bottom" secondItem="gEC-Xx-xdw" secondAttribute="bottom" id="8Kq-QT-EkB"/>
+                <constraint firstItem="LhT-c4-qFV" firstAttribute="top" secondItem="uXn-Hl-95V" secondAttribute="bottom" constant="8" id="BWq-sR-m0p"/>
+                <constraint firstItem="dGH-s1-OY2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Df2-Rb-ZJ4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="snE-pJ-Ylg" secondAttribute="trailing" constant="10" id="Pj5-Um-kMN"/>
+                <constraint firstItem="UpD-Lu-MLj" firstAttribute="width" secondItem="gEC-Xx-xdw" secondAttribute="width" id="Qcg-Rz-2gv"/>
+                <constraint firstItem="UpD-Lu-MLj" firstAttribute="top" secondItem="LhT-c4-qFV" secondAttribute="bottom" constant="18" id="bCQ-Ct-qmF"/>
+                <constraint firstItem="LhT-c4-qFV" firstAttribute="leading" secondItem="dGH-s1-OY2" secondAttribute="leading" id="cgi-i2-VDT"/>
+                <constraint firstItem="uXn-Hl-95V" firstAttribute="leading" secondItem="dGH-s1-OY2" secondAttribute="leading" id="hCi-SF-f8H"/>
+                <constraint firstItem="dGH-s1-OY2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="js7-ph-o42"/>
+                <constraint firstItem="gEC-Xx-xdw" firstAttribute="trailing" secondItem="LhT-c4-qFV" secondAttribute="trailing" id="kW9-5l-lS7"/>
+                <constraint firstItem="snE-pJ-Ylg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="lW4-XR-CRz"/>
+                <constraint firstItem="dGH-s1-OY2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="37" id="pys-In-xFz"/>
+                <constraint firstItem="UpD-Lu-MLj" firstAttribute="leading" secondItem="LhT-c4-qFV" secondAttribute="leading" id="wky-e4-efd"/>
+                <constraint firstItem="uXn-Hl-95V" firstAttribute="top" secondItem="dGH-s1-OY2" secondAttribute="bottom" constant="12" id="ywI-wH-8h8"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-228.75" y="78.16901408450704"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="FRLightestPurple">
+            <color red="0.70588235294117652" green="0.70980392156862748" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="FRPurple">
+            <color red="0.29019607843137257" green="0.30588235294117649" blue="0.74901960784313726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="FRWhite">
+            <color red="0.95686274509803926" green="0.95294117647058818" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="FRYellow">
+            <color red="0.92941176470588238" green="0.65098039215686276" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

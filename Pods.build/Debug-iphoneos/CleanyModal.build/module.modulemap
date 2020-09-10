@@ -1,0 +1,11 @@
+framework module CleanyModal {
+  umbrella header "CleanyModal-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module CleanyModal.Swift {
+    header "CleanyModal-Swift.h"
+    requires objc
+}

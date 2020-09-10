@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsController" customModule="fieldready" customModuleProvider="target">
+            <connections>
+                <outlet property="textField" destination="dR6-3i-whY" id="qRb-hu-NFO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your User ID to get started" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ef6-pu-WBf">
+                    <rect key="frame" x="30" y="45" width="260" height="50.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                    <color key="textColor" name="FRPurple"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can find your ID on Airtable" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEy-ll-hpf">
+                    <rect key="frame" x="30" y="115.5" width="260" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" name="FRPurple"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dR6-3i-whY">
+                    <rect key="frame" x="30" y="155" width="260" height="34"/>
+                    <color key="textColor" name="FRPurple"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="continue" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                </textField>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="MoU-Lh-JEI">
+                    <rect key="frame" x="76" y="219" width="168" height="36"/>
+                    <color key="backgroundColor" name="FRYellow"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="168" id="Atv-yw-Fry"/>
+                        <constraint firstAttribute="height" constant="36" id="Vjb-FB-M14"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="Continue">
+                        <color key="titleColor" name="FRWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="18"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="confirmButton:" destination="-1" eventType="touchUpInside" id="u7k-Fm-AIE"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" name="FRWhite"/>
+            <constraints>
+                <constraint firstItem="ef6-pu-WBf" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="45" id="BwT-ru-Ppk"/>
+                <constraint firstItem="ef6-pu-WBf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="FAP-zH-ryj"/>
+                <constraint firstItem="ef6-pu-WBf" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Igu-7C-cFq"/>
+                <constraint firstItem="CEy-ll-hpf" firstAttribute="leading" secondItem="ef6-pu-WBf" secondAttribute="leading" id="LfB-n5-CKg"/>
+                <constraint firstItem="dR6-3i-whY" firstAttribute="top" secondItem="CEy-ll-hpf" secondAttribute="bottom" constant="20" id="MHN-xN-b3l"/>
+                <constraint firstItem="MoU-Lh-JEI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="PjX-vY-U1s"/>
+                <constraint firstItem="CEy-ll-hpf" firstAttribute="top" secondItem="ef6-pu-WBf" secondAttribute="bottom" constant="20" id="SmQ-Zw-Hbj"/>
+                <constraint firstItem="ef6-pu-WBf" firstAttribute="trailing" secondItem="CEy-ll-hpf" secondAttribute="trailing" id="Z0y-Dt-l5P"/>
+                <constraint firstItem="MoU-Lh-JEI" firstAttribute="top" secondItem="dR6-3i-whY" secondAttribute="bottom" constant="30" id="bcV-v6-rBD"/>
+                <constraint firstItem="ef6-pu-WBf" firstAttribute="trailing" secondItem="dR6-3i-whY" secondAttribute="trailing" id="hbH-lO-kcV"/>
+                <constraint firstItem="ef6-pu-WBf" firstAttribute="leading" secondItem="dR6-3i-whY" secondAttribute="leading" id="n1J-iT-e1Q"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="125.625" y="137.32394366197184"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="FRPurple">
+            <color red="0.29019607843137257" green="0.30588235294117649" blue="0.74901960784313726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="FRWhite">
+            <color red="0.95686274509803926" green="0.95294117647058818" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="FRYellow">
+            <color red="0.92941176470588238" green="0.65098039215686276" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

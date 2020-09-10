@@ -13,7 +13,6 @@
 		E22C5A71250A6BC500FF36B7 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22C5A6F250A6BC500FF36B7 /* SettingsController.swift */; };
 		E22C5A72250A6BC500FF36B7 /* SettingsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E22C5A70250A6BC500FF36B7 /* SettingsController.xib */; };
 		E267073B24EE919900017414 /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E267073A24EE919900017414 /* DataHandler.swift */; };
-		E267073D24F3C94600017414 /* FRBatchStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E267073C24F3C94600017414 /* FRBatchStatusView.swift */; };
 		E27D4CA924FE5DD60007B730 /* scan.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E27D4CA824FE5DD60007B730 /* scan.pdf */; };
 		E27D4CAB24FE5E500007B730 /* scan.png in Resources */ = {isa = PBXBuildFile; fileRef = E27D4CAA24FE5E500007B730 /* scan.png */; };
 		E2911AE02503DF0900112C8D /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2911ADF2503DF0900112C8D /* RowView.swift */; };
@@ -37,7 +36,6 @@
 		E22C5A6F250A6BC500FF36B7 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		E22C5A70250A6BC500FF36B7 /* SettingsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsController.xib; sourceTree = "<group>"; };
 		E267073A24EE919900017414 /* DataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHandler.swift; sourceTree = "<group>"; };
-		E267073C24F3C94600017414 /* FRBatchStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRBatchStatusView.swift; sourceTree = "<group>"; };
 		E27D4CA824FE5DD60007B730 /* scan.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = scan.pdf; sourceTree = "<group>"; };
 		E27D4CAA24FE5E500007B730 /* scan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scan.png; sourceTree = "<group>"; };
 		E2911ADF2503DF0900112C8D /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
@@ -118,7 +116,6 @@
 				E22C5A6F250A6BC500FF36B7 /* SettingsController.swift */,
 				E22C5A70250A6BC500FF36B7 /* SettingsController.xib */,
 				E2911AE32503F4CE00112C8D /* DetailView.swift */,
-				E267073C24F3C94600017414 /* FRBatchStatusView.swift */,
 				E2D5C94924ED28DF00B5CBD1 /* Assets.xcassets */,
 				E2D5C94B24ED28DF00B5CBD1 /* LaunchScreen.storyboard */,
 				E2D5C94E24ED28DF00B5CBD1 /* Info.plist */,
@@ -264,7 +261,6 @@
 				E22C5A6D250A35C200FF36B7 /* ConfirmationController.swift in Sources */,
 				E2D5C94124ED28DD00B5CBD1 /* AppDelegate.swift in Sources */,
 				E2D5C94324ED28DD00B5CBD1 /* SceneDelegate.swift in Sources */,
-				E267073D24F3C94600017414 /* FRBatchStatusView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

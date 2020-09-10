@@ -1,0 +1,10 @@
+framework module ShowTime {
+  umbrella header "ShowTime-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module ShowTime.__Swift {
+    exclude header "ShowTime-Swift.h"
+}

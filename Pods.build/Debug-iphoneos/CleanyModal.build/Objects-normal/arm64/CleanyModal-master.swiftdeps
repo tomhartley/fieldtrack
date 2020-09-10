@@ -1,0 +1,11 @@
+version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+options: "a093dcf99e7f2234c7d28f37705c155f"
+build_time: [1599728336, 870250000]
+inputs:
+  "/Users/tom/Documents/Field Ready/App/fieldready/Pods/CleanyModal/CleanyModal/Classes/Model/AlertModel.swift": [1599728333, 5203875]
+  "/Users/tom/Documents/Field Ready/App/fieldready/Pods/CleanyModal/CleanyModal/Classes/CleanyAlertActionTableViewCell.swift": [1599728333, 4460494]
+  "/Users/tom/Documents/Field Ready/App/fieldready/Pods/CleanyModal/CleanyModal/Classes/CleanyAlertViewController.swift": [1599728333, 4312179]
+  "/Users/tom/Documents/Field Ready/App/fieldready/Pods/CleanyModal/CleanyModal/Classes/CleanyConfig.swift": [1599728333, 4004927]
+  "/Users/tom/Documents/Field Ready/App/fieldready/Pods/CleanyModal/CleanyModal/Classes/CleanyModalTransitionDelegates.swift": [1599728333, 4599044]
+  "/Users/tom/Documents/Field Ready/App/fieldready/Pods/CleanyModal/CleanyModal/Classes/CleanyModalViewController.swift": [1599728333, 4153623]
+  "/Users/tom/Documents/Field Ready/App/fieldready/Pods/CleanyModal/CleanyModal/Classes/Helper/NSLayoutConstraint+Extension.swift": [1599728333, 5488741]

@@ -261,13 +261,6 @@ SWIFT_CLASS("_TtC10fieldready10DetailView")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-
-SWIFT_CLASS("_TtC10fieldready17FRBatchStatusView")
-@interface FRBatchStatusView : UIView
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
 @class UIImageView;
 
 SWIFT_CLASS("_TtC10fieldready7RowView")

@@ -1,13 +1,12 @@
 version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
-options: "5609437011a673188587d1c6df0f275f"
-build_time: [1599750810, 432080000]
+options: "ef747706c95f66b05edf2c859aced091"
+build_time: [1599754973, 993379000]
 inputs:
-  "/Users/tom/Documents/Field Ready/App/fieldready/fieldready/SettingsController.swift": [1599750808, 805851307]
+  "/Users/tom/Documents/Field Ready/App/fieldready/fieldready/SettingsController.swift": [1599751656, 645675234]
   "/Users/tom/Documents/Field Ready/App/fieldready/fieldready/DataHandler.swift": [1599749119, 88067830]
   "/Users/tom/Documents/Field Ready/App/fieldready/fieldready/RowView.swift": [1599318819, 791271438]
-  "/Users/tom/Documents/Field Ready/App/fieldready/fieldready/ViewController.swift": [1599750564, 911035972]
+  "/Users/tom/Documents/Field Ready/App/fieldready/fieldready/ViewController.swift": [1599754972, 374452018]
   "/Users/tom/Documents/Field Ready/App/fieldready/fieldready/DetailView.swift": [1599749434, 45340253]
-  "/Users/tom/Documents/Field Ready/App/fieldready/fieldready/ConfirmationController.swift": [1599745997, 100080229]
-  "/Users/tom/Documents/Field Ready/App/fieldready/fieldready/AppDelegate.swift": [1599322443, 838716769]
-  "/Users/tom/Documents/Field Ready/App/fieldready/fieldready/SceneDelegate.swift": [1597829469, 317839441]
-  "/Users/tom/Documents/Field Ready/App/fieldready/fieldready/FRBatchStatusView.swift": [1599056626, 697802768]
+  "/Users/tom/Documents/Field Ready/App/fieldready/fieldready/ConfirmationController.swift": [1599751605, 16554102]
+  "/Users/tom/Documents/Field Ready/App/fieldready/fieldready/AppDelegate.swift": [1599752144, 897811232]
+  "/Users/tom/Documents/Field Ready/App/fieldready/fieldready/SceneDelegate.swift": [1599752175, 87461861]

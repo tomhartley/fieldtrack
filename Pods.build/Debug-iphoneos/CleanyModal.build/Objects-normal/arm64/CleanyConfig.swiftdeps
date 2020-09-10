@@ -1,0 +1,364 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "CleanyAlertConfig"
+- "=="
+provides-nominal:
+- "11CleanyModal0A11AlertConfigV"
+- "11CleanyModal0A11AlertConfigV13StyleSettingsC"
+- "11CleanyModal0A11AlertConfigV9StyleKeysC"
+- "11CleanyModal0A11AlertConfigV8StyleKeyC"
+provides-member:
+- ["11CleanyModal0A11AlertConfigV", ""]
+- ["11CleanyModal0A11AlertConfigV13StyleSettingsC", ""]
+- ["11CleanyModal0A11AlertConfigV9StyleKeysC", ""]
+- ["11CleanyModal0A11AlertConfigV8StyleKeyC", ""]
+- ["11CleanyModal0A11AlertConfigV", "getDefaultStyleSettings"]
+- ["11CleanyModal0A11AlertConfigV", "StyleSettings"]
+- ["11CleanyModal0A11AlertConfigV", "StyleKeys"]
+- ["11CleanyModal0A11AlertConfigV", "StyleKey"]
+- ["11CleanyModal0A11AlertConfigV9StyleKeysC", "tintColor"]
+- ["11CleanyModal0A11AlertConfigV9StyleKeysC", "cornerRadius"]
+- ["11CleanyModal0A11AlertConfigV9StyleKeysC", "textColor"]
+- ["11CleanyModal0A11AlertConfigV9StyleKeysC", "defaultActionColor"]
+- ["11CleanyModal0A11AlertConfigV9StyleKeysC", "destructiveColor"]
+- ["11CleanyModal0A11AlertConfigV9StyleKeysC", "actionCellHeight"]
+- ["11CleanyModal0A11AlertConfigV9StyleKeysC", "titleFont"]
+- ["11CleanyModal0A11AlertConfigV9StyleKeysC", "messageFont"]
+- ["11CleanyModal0A11AlertConfigV9StyleKeysC", "actionsFont"]
+provides-dynamic-lookup:
+- "=="
+- "actionCellHeight"
+- "actionsFont"
+- "cornerRadius"
+- "defaultActionColor"
+- "destructiveColor"
+- "get"
+- "hash"
+- "hashValue"
+- "key"
+- "messageFont"
+- "set"
+- "subscript"
+- "textColor"
+- "tintColor"
+- "titleFont"
+- "values"
+depends-top-level:
+- "=="
+- "AssignmentPrecedence"
+- "Bool"
+- "CGFloat"
+- "CastingPrecedence"
+- "CleanyAlertConfig"
+- !private "FloatLiteralType"
+- "Hashable"
+- "Hasher"
+- !private "IntegerLiteralType"
+- "String"
+- "StringLiteralType"
+- "UIColor"
+- "UIFont"
+depends-member:
+- !private ["s7CVarArgP", "black"]
+- !private ["s7CVarArgP", "blue"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "label"]
+- !private ["s7CVarArgP", "red"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "systemBlue"]
+- !private ["s7CVarArgP", "systemRed"]
+- ["11CleanyModal0A11AlertConfigV", "Bool"]
+- ["11CleanyModal0A11AlertConfigV", "CleanyAlertConfig"]
+- ["11CleanyModal0A11AlertConfigV", "Hashable"]
+- ["11CleanyModal0A11AlertConfigV", "Hasher"]
+- ["11CleanyModal0A11AlertConfigV", "String"]
+- ["11CleanyModal0A11AlertConfigV", "StyleKey"]
+- ["11CleanyModal0A11AlertConfigV", "StyleKeys"]
+- ["11CleanyModal0A11AlertConfigV", "StyleSettings"]
+- ["11CleanyModal0A11AlertConfigV", "getDefaultStyleSettings"]
+- ["11CleanyModal0A11AlertConfigV", "init"]
+- ["Sl", "init"]
+- !private ["Sl", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "black"]
+- !private ["s28CustomDebugStringConvertibleP", "blue"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "label"]
+- !private ["s28CustomDebugStringConvertibleP", "red"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "systemBlue"]
+- !private ["s28CustomDebugStringConvertibleP", "systemRed"]
+- !private ["s17CustomReflectableP", "black"]
+- !private ["s17CustomReflectableP", "blue"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "label"]
+- !private ["s17CustomReflectableP", "red"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s17CustomReflectableP", "systemBlue"]
+- !private ["s17CustomReflectableP", "systemRed"]
+- !private ["s23CustomStringConvertibleP", "black"]
+- !private ["s23CustomStringConvertibleP", "blue"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "label"]
+- !private ["s23CustomStringConvertibleP", "red"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "systemBlue"]
+- !private ["s23CustomStringConvertibleP", "systemRed"]
+- !private ["Se", "black"]
+- !private ["Se", "blue"]
+- ["Se", "init"]
+- !private ["Se", "label"]
+- !private ["Se", "red"]
+- !private ["Se", "subscript"]
+- !private ["Se", "systemBlue"]
+- !private ["Se", "systemRed"]
+- ["SD", "init"]
+- !private ["SD", "subscript"]
+- !private ["SE", "black"]
+- !private ["SE", "blue"]
+- ["SE", "init"]
+- !private ["SE", "label"]
+- !private ["SE", "red"]
+- !private ["SE", "subscript"]
+- !private ["SE", "systemBlue"]
+- !private ["SE", "systemRed"]
+- ["SQ", "=="]
+- ["SQ", "CleanyAlertConfig"]
+- ["SQ", ""]
+- ["SQ", "_rawHashValue"]
+- !private ["SQ", "actionCellHeight"]
+- !private ["SQ", "black"]
+- !private ["SQ", "blue"]
+- !private ["SQ", "cornerRadius"]
+- !private ["SQ", "defaultActionColor"]
+- !private ["SQ", "destructiveColor"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- ["SQ", "init"]
+- !private ["SQ", "key"]
+- !private ["SQ", "label"]
+- !private ["SQ", "red"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "systemBlue"]
+- !private ["SQ", "systemRed"]
+- !private ["SQ", "textColor"]
+- !private ["SQ", "tintColor"]
+- ["s30ExpressibleByDictionaryLiteralP", "init"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- !private ["s23ExpressibleByNilLiteralP", "black"]
+- !private ["s23ExpressibleByNilLiteralP", "blue"]
+- !private ["s23ExpressibleByNilLiteralP", "label"]
+- !private ["s23ExpressibleByNilLiteralP", "red"]
+- !private ["s23ExpressibleByNilLiteralP", "systemBlue"]
+- !private ["s23ExpressibleByNilLiteralP", "systemRed"]
+- ["SH", "=="]
+- ["SH", "CleanyAlertConfig"]
+- ["SH", ""]
+- ["SH", "_rawHashValue"]
+- !private ["SH", "actionCellHeight"]
+- !private ["SH", "black"]
+- !private ["SH", "blue"]
+- !private ["SH", "cornerRadius"]
+- !private ["SH", "defaultActionColor"]
+- !private ["SH", "destructiveColor"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- ["SH", "init"]
+- !private ["SH", "key"]
+- !private ["SH", "label"]
+- !private ["SH", "red"]
+- !private ["SH", "subscript"]
+- !private ["SH", "systemBlue"]
+- !private ["SH", "systemRed"]
+- !private ["SH", "textColor"]
+- !private ["SH", "tintColor"]
+- !private ["s6HasherV", "combine"]
+- !private ["So8NSCodingP", "black"]
+- !private ["So8NSCodingP", "blue"]
+- !private ["So8NSCodingP", "label"]
+- !private ["So8NSCodingP", "red"]
+- !private ["So8NSCodingP", "systemBlue"]
+- !private ["So8NSCodingP", "systemRed"]
+- !private ["So9NSCopyingP", "black"]
+- !private ["So9NSCopyingP", "blue"]
+- !private ["So9NSCopyingP", "label"]
+- !private ["So9NSCopyingP", "red"]
+- !private ["So9NSCopyingP", "systemBlue"]
+- !private ["So9NSCopyingP", "systemRed"]
+- !private ["So21NSItemProviderReadingP", "black"]
+- !private ["So21NSItemProviderReadingP", "blue"]
+- !private ["So21NSItemProviderReadingP", "label"]
+- !private ["So21NSItemProviderReadingP", "red"]
+- !private ["So21NSItemProviderReadingP", "systemBlue"]
+- !private ["So21NSItemProviderReadingP", "systemRed"]
+- !private ["So21NSItemProviderWritingP", "black"]
+- !private ["So21NSItemProviderWritingP", "blue"]
+- !private ["So21NSItemProviderWritingP", "label"]
+- !private ["So21NSItemProviderWritingP", "red"]
+- !private ["So21NSItemProviderWritingP", "systemBlue"]
+- !private ["So21NSItemProviderWritingP", "systemRed"]
+- !private ["So8NSObjectC", "black"]
+- !private ["So8NSObjectC", "blue"]
+- !private ["So8NSObjectC", "label"]
+- !private ["So8NSObjectC", "red"]
+- !private ["So8NSObjectC", "systemBlue"]
+- !private ["So8NSObjectC", "systemRed"]
+- !private ["So8NSObjectP", "black"]
+- !private ["So8NSObjectP", "blue"]
+- !private ["So8NSObjectP", "label"]
+- !private ["So8NSObjectP", "red"]
+- !private ["So8NSObjectP", "systemBlue"]
+- !private ["So8NSObjectP", "systemRed"]
+- !private ["So14NSSecureCodingP", "black"]
+- !private ["So14NSSecureCodingP", "blue"]
+- !private ["So14NSSecureCodingP", "label"]
+- !private ["So14NSSecureCodingP", "red"]
+- !private ["So14NSSecureCodingP", "systemBlue"]
+- !private ["So14NSSecureCodingP", "systemRed"]
+- !private ["Sq", "black"]
+- !private ["Sq", "blue"]
+- !private ["Sq", "label"]
+- !private ["Sq", "red"]
+- !private ["Sq", "systemBlue"]
+- !private ["Sq", "systemRed"]
+- ["ST", "init"]
+- !private ["ST", "subscript"]
+- !private ["11CleanyModal0A11AlertConfigV8StyleKeyC", "actionCellHeight"]
+- !private ["11CleanyModal0A11AlertConfigV8StyleKeyC", "cornerRadius"]
+- !private ["11CleanyModal0A11AlertConfigV8StyleKeyC", "defaultActionColor"]
+- ["11CleanyModal0A11AlertConfigV8StyleKeyC", "deinit"]
+- !private ["11CleanyModal0A11AlertConfigV8StyleKeyC", "destructiveColor"]
+- ["11CleanyModal0A11AlertConfigV8StyleKeyC", "init"]
+- !private ["11CleanyModal0A11AlertConfigV8StyleKeyC", "key"]
+- !private ["11CleanyModal0A11AlertConfigV8StyleKeyC", "textColor"]
+- !private ["11CleanyModal0A11AlertConfigV8StyleKeyC", "tintColor"]
+- ["11CleanyModal0A11AlertConfigV9StyleKeysC", "=="]
+- ["11CleanyModal0A11AlertConfigV9StyleKeysC", "Bool"]
+- ["11CleanyModal0A11AlertConfigV9StyleKeysC", "CGFloat"]
+- ["11CleanyModal0A11AlertConfigV9StyleKeysC", "CleanyAlertConfig"]
+- ["11CleanyModal0A11AlertConfigV9StyleKeysC", "Hasher"]
+- ["11CleanyModal0A11AlertConfigV9StyleKeysC", "String"]
+- ["11CleanyModal0A11AlertConfigV9StyleKeysC", "StyleKeys"]
+- ["11CleanyModal0A11AlertConfigV9StyleKeysC", "UIColor"]
+- ["11CleanyModal0A11AlertConfigV9StyleKeysC", "UIFont"]
+- ["11CleanyModal0A11AlertConfigV9StyleKeysC", ""]
+- ["11CleanyModal0A11AlertConfigV9StyleKeysC", "_rawHashValue"]
+- ["11CleanyModal0A11AlertConfigV9StyleKeysC", "actionCellHeight"]
+- ["11CleanyModal0A11AlertConfigV9StyleKeysC", "actionsFont"]
+- ["11CleanyModal0A11AlertConfigV9StyleKeysC", "cornerRadius"]
+- ["11CleanyModal0A11AlertConfigV9StyleKeysC", "defaultActionColor"]
+- ["11CleanyModal0A11AlertConfigV9StyleKeysC", "deinit"]
+- ["11CleanyModal0A11AlertConfigV9StyleKeysC", "destructiveColor"]
+- ["11CleanyModal0A11AlertConfigV9StyleKeysC", "hash"]
+- ["11CleanyModal0A11AlertConfigV9StyleKeysC", "hashValue"]
+- ["11CleanyModal0A11AlertConfigV9StyleKeysC", "init"]
+- ["11CleanyModal0A11AlertConfigV9StyleKeysC", "key"]
+- ["11CleanyModal0A11AlertConfigV9StyleKeysC", "messageFont"]
+- ["11CleanyModal0A11AlertConfigV9StyleKeysC", "textColor"]
+- ["11CleanyModal0A11AlertConfigV9StyleKeysC", "tintColor"]
+- ["11CleanyModal0A11AlertConfigV9StyleKeysC", "titleFont"]
+- ["11CleanyModal0A11AlertConfigV13StyleSettingsC", "CleanyAlertConfig"]
+- ["11CleanyModal0A11AlertConfigV13StyleSettingsC", "String"]
+- ["11CleanyModal0A11AlertConfigV13StyleSettingsC", "deinit"]
+- !private ["11CleanyModal0A11AlertConfigV13StyleSettingsC", "get"]
+- ["11CleanyModal0A11AlertConfigV13StyleSettingsC", "init"]
+- !private ["11CleanyModal0A11AlertConfigV13StyleSettingsC", "set"]
+- ["11CleanyModal0A11AlertConfigV13StyleSettingsC", "subscript"]
+- !private ["11CleanyModal0A11AlertConfigV13StyleSettingsC", "values"]
+- !private ["So7UIColorC", "black"]
+- !private ["So7UIColorC", "blue"]
+- !private ["So7UIColorC", "label"]
+- !private ["So7UIColorC", "red"]
+- !private ["So7UIColorC", "systemBlue"]
+- !private ["So7UIColorC", "systemRed"]
+- !private ["s26_ExpressibleByColorLiteralP", "black"]
+- !private ["s26_ExpressibleByColorLiteralP", "blue"]
+- !private ["s26_ExpressibleByColorLiteralP", "label"]
+- !private ["s26_ExpressibleByColorLiteralP", "red"]
+- !private ["s26_ExpressibleByColorLiteralP", "systemBlue"]
+- !private ["s26_ExpressibleByColorLiteralP", "systemRed"]
+- ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "black"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "blue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "label"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "red"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "systemBlue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "systemRed"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "black"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "blue"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "label"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "red"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "systemBlue"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "systemRed"]
+- !private ["s21_ObjectiveCBridgeableP", "black"]
+- !private ["s21_ObjectiveCBridgeableP", "blue"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "label"]
+- !private ["s21_ObjectiveCBridgeableP", "red"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "systemBlue"]
+- !private ["s21_ObjectiveCBridgeableP", "systemRed"]
+depends-nominal:
+- "s7CVarArgP"
+- "11CleanyModal0A11AlertConfigV"
+- "Sl"
+- "s28CustomDebugStringConvertibleP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "Se"
+- "SD"
+- "SE"
+- "SQ"
+- "s30ExpressibleByDictionaryLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- "SH"
+- !private "s6HasherV"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "Sq"
+- "ST"
+- "11CleanyModal0A11AlertConfigV8StyleKeyC"
+- "11CleanyModal0A11AlertConfigV9StyleKeysC"
+- "11CleanyModal0A11AlertConfigV13StyleSettingsC"
+- !private "So7UIColorC"
+- !private "s26_ExpressibleByColorLiteralP"
+- "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/ObjectiveC.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreImage.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/QuartzCore.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Dispatch.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Metal.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Darwin.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Foundation.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreFoundation.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreGraphics.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Swift.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/UIKit.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/SwiftOnoneSupport.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Combine.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Users/tom/Documents/Field Ready/App/fieldready/Pods/Target Support Files/CleanyModal/CleanyModal-umbrella.h"
+- "/Users/tom/Documents/Field Ready/App/fieldready/Pods.build/Debug-iphoneos/CleanyModal.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "38b0e8e203ea3dfd491928ea10aa005f"
