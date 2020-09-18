@@ -37,8 +37,8 @@ class DetailView: UIView {
 		addSubview(contentView)
 		contentView.frame = self.bounds
 		contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-		mapView.layer.borderWidth = 1
-		mapView.layer.borderColor = UIColor(white: 0.78, alpha: 1.0).cgColor
+		//mapView.layer.borderWidth = 0
+		//mapView.layer.borderColor = UIColor(white: 0.78, alpha: 1.0).cgColor
 	}
 	
 	func reset() {

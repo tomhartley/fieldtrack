@@ -1,0 +1,5 @@
+version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+options: "8771f4822ad1c721dd30ef3aa2a471fa"
+build_time: [1600362844, 507439000]
+inputs:
+  "/Users/tom/Documents/Field Ready/App/fieldready/Pods/ShowTime/Sources/ShowTime/ShowTime.swift": [1599751260, 580458894]

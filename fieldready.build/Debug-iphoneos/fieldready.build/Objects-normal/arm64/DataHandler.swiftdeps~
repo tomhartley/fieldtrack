@@ -6,20 +6,20 @@ provides-top-level:
 - "BatchItem"
 - "DataHandler"
 provides-nominal:
-- "10fieldready11BatchStatusO"
-- "10fieldready12TrackingItemV"
-- "10fieldready18TrackingSubmissionV"
-- "10fieldready18TrackingSubmissionV10FieldsItemV"
-- "10fieldready9BatchItemV"
-- "10fieldready11DataHandlerC"
+- "10FieldTrack11BatchStatusO"
+- "10FieldTrack12TrackingItemV"
+- "10FieldTrack18TrackingSubmissionV"
+- "10FieldTrack18TrackingSubmissionV10FieldsItemV"
+- "10FieldTrack9BatchItemV"
+- "10FieldTrack11DataHandlerC"
 provides-member:
 - ["So15NSDateFormatterC", ""]
-- ["10fieldready11BatchStatusO", ""]
-- ["10fieldready12TrackingItemV", ""]
-- ["10fieldready18TrackingSubmissionV", ""]
-- ["10fieldready18TrackingSubmissionV10FieldsItemV", ""]
-- ["10fieldready9BatchItemV", ""]
-- ["10fieldready11DataHandlerC", ""]
+- ["10FieldTrack11BatchStatusO", ""]
+- ["10FieldTrack12TrackingItemV", ""]
+- ["10FieldTrack18TrackingSubmissionV", ""]
+- ["10FieldTrack18TrackingSubmissionV10FieldsItemV", ""]
+- ["10FieldTrack9BatchItemV", ""]
+- ["10FieldTrack11DataHandlerC", ""]
 - ["So15NSDateFormatterC", "iso8601Full"]
 provides-dynamic-lookup:
 - "downloadURL"
@@ -81,49 +81,49 @@ depends-member:
 - !private ["Sa", "firstIndex"]
 - !private ["Sa", "sort"]
 - !private ["Sa", "subscript"]
-- ["10fieldready9BatchItemV", "BatchResponse"]
-- ["10fieldready9BatchItemV", "Date"]
-- ["10fieldready9BatchItemV", "Int"]
-- ["10fieldready9BatchItemV", "String"]
-- ["10fieldready9BatchItemV", "airtableID"]
-- ["10fieldready9BatchItemV", "batchNum"]
-- ["10fieldready9BatchItemV", "createdTime"]
-- ["10fieldready9BatchItemV", "customerName"]
-- !private ["10fieldready9BatchItemV", "init"]
-- !private ["10fieldready9BatchItemV", "originalData"]
-- ["10fieldready9BatchItemV", "productName"]
-- ["10fieldready9BatchItemV", "quantity"]
-- ["10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "Codable"]
-- ["10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "Date"]
-- ["10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "FieldsItem"]
-- ["10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "Int"]
-- ["10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "String"]
-- ["10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "createdTime"]
-- ["10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "deinit"]
-- ["10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "encode"]
-- ["10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "fields"]
-- ["10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "id"]
-- ["10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "init"]
-- ["10fieldready11BatchStatusO", "=="]
-- ["10fieldready11BatchStatusO", "RawValue"]
-- ["10fieldready11BatchStatusO", "String"]
-- ["10fieldready11BatchStatusO", "_Default_RawValue"]
-- ["10fieldready11BatchStatusO", "_rawHashValue"]
-- ["10fieldready11BatchStatusO", "airtableRepresentation"]
-- ["10fieldready11BatchStatusO", "completedRepresentation"]
-- ["10fieldready11BatchStatusO", "deinit"]
-- ["10fieldready11BatchStatusO", "delivered"]
-- ["10fieldready11BatchStatusO", "followedup"]
-- ["10fieldready11BatchStatusO", "hash"]
-- ["10fieldready11BatchStatusO", "hashValue"]
-- ["10fieldready11BatchStatusO", "init"]
-- ["10fieldready11BatchStatusO", "manufactured"]
-- ["10fieldready11BatchStatusO", "ordered"]
-- ["10fieldready11BatchStatusO", "rawValue"]
-- ["10fieldready11BatchStatusO", "shipped"]
-- ["10fieldready11BatchStatusO", "tested"]
-- ["10fieldready11BatchStatusO", "textRepresentation"]
-- ["10fieldready11BatchStatusO", "unknown"]
+- ["10FieldTrack9BatchItemV", "BatchResponse"]
+- ["10FieldTrack9BatchItemV", "Date"]
+- ["10FieldTrack9BatchItemV", "Int"]
+- ["10FieldTrack9BatchItemV", "String"]
+- ["10FieldTrack9BatchItemV", "airtableID"]
+- ["10FieldTrack9BatchItemV", "batchNum"]
+- ["10FieldTrack9BatchItemV", "createdTime"]
+- ["10FieldTrack9BatchItemV", "customerName"]
+- !private ["10FieldTrack9BatchItemV", "init"]
+- !private ["10FieldTrack9BatchItemV", "originalData"]
+- ["10FieldTrack9BatchItemV", "productName"]
+- ["10FieldTrack9BatchItemV", "quantity"]
+- ["10FieldTrack13BatchResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV", "Codable"]
+- ["10FieldTrack13BatchResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV", "Date"]
+- ["10FieldTrack13BatchResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV", "FieldsItem"]
+- ["10FieldTrack13BatchResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV", "Int"]
+- ["10FieldTrack13BatchResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV", "String"]
+- ["10FieldTrack13BatchResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV", "createdTime"]
+- ["10FieldTrack13BatchResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV", "deinit"]
+- ["10FieldTrack13BatchResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV", "encode"]
+- ["10FieldTrack13BatchResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV", "fields"]
+- ["10FieldTrack13BatchResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV", "id"]
+- ["10FieldTrack13BatchResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV", "init"]
+- ["10FieldTrack11BatchStatusO", "=="]
+- ["10FieldTrack11BatchStatusO", "RawValue"]
+- ["10FieldTrack11BatchStatusO", "String"]
+- ["10FieldTrack11BatchStatusO", "_Default_RawValue"]
+- ["10FieldTrack11BatchStatusO", "_rawHashValue"]
+- ["10FieldTrack11BatchStatusO", "airtableRepresentation"]
+- ["10FieldTrack11BatchStatusO", "completedRepresentation"]
+- ["10FieldTrack11BatchStatusO", "deinit"]
+- ["10FieldTrack11BatchStatusO", "delivered"]
+- ["10FieldTrack11BatchStatusO", "followedup"]
+- ["10FieldTrack11BatchStatusO", "hash"]
+- ["10FieldTrack11BatchStatusO", "hashValue"]
+- ["10FieldTrack11BatchStatusO", "init"]
+- ["10FieldTrack11BatchStatusO", "manufactured"]
+- ["10FieldTrack11BatchStatusO", "ordered"]
+- ["10FieldTrack11BatchStatusO", "rawValue"]
+- ["10FieldTrack11BatchStatusO", "shipped"]
+- ["10FieldTrack11BatchStatusO", "tested"]
+- ["10FieldTrack11BatchStatusO", "textRepresentation"]
+- ["10FieldTrack11BatchStatusO", "unknown"]
 - !private ["SK", "append"]
 - !private ["SK", "count"]
 - !private ["SK", "firstIndex"]
@@ -314,33 +314,33 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - ["s23CustomStringConvertibleP", "timeZone"]
 - !private ["s23CustomStringConvertibleP", "url"]
-- ["10fieldready11DataHandlerC", "BatchItem"]
-- !private ["10fieldready11DataHandlerC", "BatchResponse"]
-- ["10fieldready11DataHandlerC", "Data"]
-- !private ["10fieldready11DataHandlerC", "DateFormatter"]
-- !private ["10fieldready11DataHandlerC", "DispatchQueue"]
-- ["10fieldready11DataHandlerC", "Error"]
-- !private ["10fieldready11DataHandlerC", "JSONDecoder"]
-- !private ["10fieldready11DataHandlerC", "JSONEncoder"]
-- ["10fieldready11DataHandlerC", "Result"]
-- ["10fieldready11DataHandlerC", "String"]
-- ["10fieldready11DataHandlerC", "TrackingItem"]
-- !private ["10fieldready11DataHandlerC", "TrackingResponse"]
-- ["10fieldready11DataHandlerC", "TrackingSubmission"]
-- ["10fieldready11DataHandlerC", "URL"]
-- !private ["10fieldready11DataHandlerC", "URLComponents"]
-- !private ["10fieldready11DataHandlerC", "URLQueryItem"]
-- !private ["10fieldready11DataHandlerC", "URLRequest"]
-- !private ["10fieldready11DataHandlerC", "URLSession"]
-- !private ["10fieldready11DataHandlerC", "UTF8"]
-- ["10fieldready11DataHandlerC", "Void"]
-- ["10fieldready11DataHandlerC", "deinit"]
-- ["10fieldready11DataHandlerC", "downloadURL"]
-- ["10fieldready11DataHandlerC", "getBatch"]
-- ["10fieldready11DataHandlerC", "getTrackingForBatch"]
-- ["10fieldready11DataHandlerC", "init"]
-- !private ["10fieldready11DataHandlerC", "print"]
-- ["10fieldready11DataHandlerC", "submitTracking"]
+- ["10FieldTrack11DataHandlerC", "BatchItem"]
+- !private ["10FieldTrack11DataHandlerC", "BatchResponse"]
+- ["10FieldTrack11DataHandlerC", "Data"]
+- !private ["10FieldTrack11DataHandlerC", "DateFormatter"]
+- !private ["10FieldTrack11DataHandlerC", "DispatchQueue"]
+- ["10FieldTrack11DataHandlerC", "Error"]
+- !private ["10FieldTrack11DataHandlerC", "JSONDecoder"]
+- !private ["10FieldTrack11DataHandlerC", "JSONEncoder"]
+- ["10FieldTrack11DataHandlerC", "Result"]
+- ["10FieldTrack11DataHandlerC", "String"]
+- ["10FieldTrack11DataHandlerC", "TrackingItem"]
+- !private ["10FieldTrack11DataHandlerC", "TrackingResponse"]
+- ["10FieldTrack11DataHandlerC", "TrackingSubmission"]
+- ["10FieldTrack11DataHandlerC", "URL"]
+- !private ["10FieldTrack11DataHandlerC", "URLComponents"]
+- !private ["10FieldTrack11DataHandlerC", "URLQueryItem"]
+- !private ["10FieldTrack11DataHandlerC", "URLRequest"]
+- !private ["10FieldTrack11DataHandlerC", "URLSession"]
+- !private ["10FieldTrack11DataHandlerC", "UTF8"]
+- ["10FieldTrack11DataHandlerC", "Void"]
+- ["10FieldTrack11DataHandlerC", "deinit"]
+- ["10FieldTrack11DataHandlerC", "downloadURL"]
+- ["10FieldTrack11DataHandlerC", "getBatch"]
+- ["10FieldTrack11DataHandlerC", "getTrackingForBatch"]
+- ["10FieldTrack11DataHandlerC", "init"]
+- !private ["10FieldTrack11DataHandlerC", "print"]
+- ["10FieldTrack11DataHandlerC", "submitTracking"]
 - !private ["10Foundation12DataProtocolP", "append"]
 - !private ["10Foundation12DataProtocolP", "count"]
 - !private ["10Foundation12DataProtocolP", "firstIndex"]
@@ -508,36 +508,36 @@ depends-member:
 - !private ["s26ExpressibleByStringLiteralP", "split"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "split"]
-- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V", "BatchNum"]
-- ["10fieldready18TrackingSubmissionV10FieldsItemV", "BatchNum"]
-- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V", "BatchNumLookup"]
-- ["10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V", "Batch_Num"]
-- ["10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V", "Customer"]
-- ["10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V", "Int"]
-- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V", "Location"]
-- ["10fieldready18TrackingSubmissionV10FieldsItemV", "Location"]
-- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V", "Notes"]
-- ["10fieldready18TrackingSubmissionV10FieldsItemV", "Notes"]
-- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V", "Person"]
-- ["10fieldready18TrackingSubmissionV10FieldsItemV", "Person"]
-- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V", "PersonName"]
-- ["10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V", "Product_Name"]
-- ["10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V", "Quantity"]
-- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V", "Status"]
-- ["10fieldready18TrackingSubmissionV10FieldsItemV", "Status"]
-- ["10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V", "String"]
-- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V", "String"]
-- ["10fieldready18TrackingSubmissionV10FieldsItemV", "String"]
-- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V", "TrackingID"]
-- ["10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V", "deinit"]
-- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V", "deinit"]
-- ["10fieldready18TrackingSubmissionV10FieldsItemV", "deinit"]
-- ["10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V", "encode"]
-- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V", "encode"]
-- ["10fieldready18TrackingSubmissionV10FieldsItemV", "encode"]
-- ["10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V", "init"]
-- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V", "init"]
-- ["10fieldready18TrackingSubmissionV10FieldsItemV", "init"]
+- ["10FieldTrack16TrackingResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV06FieldsL0V", "BatchNum"]
+- ["10FieldTrack18TrackingSubmissionV10FieldsItemV", "BatchNum"]
+- ["10FieldTrack16TrackingResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV06FieldsL0V", "BatchNumLookup"]
+- ["10FieldTrack13BatchResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV06FieldsL0V", "Batch_Num"]
+- ["10FieldTrack13BatchResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV06FieldsL0V", "Customer"]
+- ["10FieldTrack13BatchResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV06FieldsL0V", "Int"]
+- ["10FieldTrack16TrackingResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV06FieldsL0V", "Location"]
+- ["10FieldTrack18TrackingSubmissionV10FieldsItemV", "Location"]
+- ["10FieldTrack16TrackingResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV06FieldsL0V", "Notes"]
+- ["10FieldTrack18TrackingSubmissionV10FieldsItemV", "Notes"]
+- ["10FieldTrack16TrackingResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV06FieldsL0V", "Person"]
+- ["10FieldTrack18TrackingSubmissionV10FieldsItemV", "Person"]
+- ["10FieldTrack16TrackingResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV06FieldsL0V", "PersonName"]
+- ["10FieldTrack13BatchResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV06FieldsL0V", "Product_Name"]
+- ["10FieldTrack13BatchResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV06FieldsL0V", "Quantity"]
+- ["10FieldTrack16TrackingResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV06FieldsL0V", "Status"]
+- ["10FieldTrack18TrackingSubmissionV10FieldsItemV", "Status"]
+- ["10FieldTrack13BatchResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV06FieldsL0V", "String"]
+- ["10FieldTrack16TrackingResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV06FieldsL0V", "String"]
+- ["10FieldTrack18TrackingSubmissionV10FieldsItemV", "String"]
+- ["10FieldTrack16TrackingResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV06FieldsL0V", "TrackingID"]
+- ["10FieldTrack13BatchResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV06FieldsL0V", "deinit"]
+- ["10FieldTrack16TrackingResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV06FieldsL0V", "deinit"]
+- ["10FieldTrack18TrackingSubmissionV10FieldsItemV", "deinit"]
+- ["10FieldTrack13BatchResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV06FieldsL0V", "encode"]
+- ["10FieldTrack16TrackingResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV06FieldsL0V", "encode"]
+- ["10FieldTrack18TrackingSubmissionV10FieldsItemV", "encode"]
+- ["10FieldTrack13BatchResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV06FieldsL0V", "init"]
+- ["10FieldTrack16TrackingResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV06FieldsL0V", "init"]
+- ["10FieldTrack18TrackingSubmissionV10FieldsItemV", "init"]
 - !private ["SF", "init"]
 - ["So11NSFormatterC", "Calendar"]
 - ["So11NSFormatterC", "DateFormatter"]
@@ -807,45 +807,45 @@ depends-member:
 - !private ["7Combine15TopLevelDecoderP", "init"]
 - !private ["7Combine15TopLevelEncoderP", "encode"]
 - !private ["7Combine15TopLevelEncoderP", "init"]
-- ["10fieldready12TrackingItemV", "BatchItem"]
-- ["10fieldready12TrackingItemV", "BatchStatus"]
-- ["10fieldready12TrackingItemV", "CLLocationCoordinate2D"]
-- !private ["10fieldready12TrackingItemV", "CLLocationDegrees"]
-- ["10fieldready12TrackingItemV", "Date"]
-- !private ["10fieldready12TrackingItemV", "Double"]
-- ["10fieldready12TrackingItemV", "String"]
-- ["10fieldready12TrackingItemV", "TrackingResponse"]
-- ["10fieldready12TrackingItemV", "airtableID"]
-- ["10fieldready12TrackingItemV", "batchNum"]
-- ["10fieldready12TrackingItemV", "comments"]
-- ["10fieldready12TrackingItemV", "createdTime"]
-- ["10fieldready12TrackingItemV", "init"]
-- ["10fieldready12TrackingItemV", "location"]
-- !private ["10fieldready12TrackingItemV", "originalData"]
-- ["10fieldready12TrackingItemV", "personName"]
-- ["10fieldready12TrackingItemV", "status"]
-- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "BatchStatus"]
-- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "Codable"]
-- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "Date"]
-- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "FieldsItem"]
-- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "String"]
-- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "createdTime"]
-- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "deinit"]
-- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "encode"]
-- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "fields"]
-- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "getStatus"]
-- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "id"]
-- ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "init"]
-- !private ["10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV", "print"]
-- ["10fieldready18TrackingSubmissionV", "BatchStatus"]
-- ["10fieldready18TrackingSubmissionV", "CLLocationCoordinate2D"]
-- ["10fieldready18TrackingSubmissionV", "Codable"]
-- ["10fieldready18TrackingSubmissionV", "FieldsItem"]
-- ["10fieldready18TrackingSubmissionV", "String"]
-- ["10fieldready18TrackingSubmissionV", "deinit"]
-- ["10fieldready18TrackingSubmissionV", "encode"]
-- ["10fieldready18TrackingSubmissionV", "fields"]
-- ["10fieldready18TrackingSubmissionV", "init"]
+- ["10FieldTrack12TrackingItemV", "BatchItem"]
+- ["10FieldTrack12TrackingItemV", "BatchStatus"]
+- ["10FieldTrack12TrackingItemV", "CLLocationCoordinate2D"]
+- !private ["10FieldTrack12TrackingItemV", "CLLocationDegrees"]
+- ["10FieldTrack12TrackingItemV", "Date"]
+- !private ["10FieldTrack12TrackingItemV", "Double"]
+- ["10FieldTrack12TrackingItemV", "String"]
+- ["10FieldTrack12TrackingItemV", "TrackingResponse"]
+- ["10FieldTrack12TrackingItemV", "airtableID"]
+- ["10FieldTrack12TrackingItemV", "batchNum"]
+- ["10FieldTrack12TrackingItemV", "comments"]
+- ["10FieldTrack12TrackingItemV", "createdTime"]
+- ["10FieldTrack12TrackingItemV", "init"]
+- ["10FieldTrack12TrackingItemV", "location"]
+- !private ["10FieldTrack12TrackingItemV", "originalData"]
+- ["10FieldTrack12TrackingItemV", "personName"]
+- ["10FieldTrack12TrackingItemV", "status"]
+- ["10FieldTrack16TrackingResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV", "BatchStatus"]
+- ["10FieldTrack16TrackingResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV", "Codable"]
+- ["10FieldTrack16TrackingResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV", "Date"]
+- ["10FieldTrack16TrackingResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV", "FieldsItem"]
+- ["10FieldTrack16TrackingResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV", "String"]
+- ["10FieldTrack16TrackingResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV", "createdTime"]
+- ["10FieldTrack16TrackingResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV", "deinit"]
+- ["10FieldTrack16TrackingResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV", "encode"]
+- ["10FieldTrack16TrackingResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV", "fields"]
+- ["10FieldTrack16TrackingResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV", "getStatus"]
+- ["10FieldTrack16TrackingResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV", "id"]
+- ["10FieldTrack16TrackingResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV", "init"]
+- !private ["10FieldTrack16TrackingResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV", "print"]
+- ["10FieldTrack18TrackingSubmissionV", "BatchStatus"]
+- ["10FieldTrack18TrackingSubmissionV", "CLLocationCoordinate2D"]
+- ["10FieldTrack18TrackingSubmissionV", "Codable"]
+- ["10FieldTrack18TrackingSubmissionV", "FieldsItem"]
+- ["10FieldTrack18TrackingSubmissionV", "String"]
+- ["10FieldTrack18TrackingSubmissionV", "deinit"]
+- ["10FieldTrack18TrackingSubmissionV", "encode"]
+- ["10FieldTrack18TrackingSubmissionV", "fields"]
+- ["10FieldTrack18TrackingSubmissionV", "init"]
 - !private ["10Foundation3URLV", "init"]
 - !private ["10Foundation13URLComponentsV", "init"]
 - !private ["10Foundation13URLComponentsV", "queryItems"]
@@ -979,9 +979,9 @@ depends-member:
 depends-nominal:
 - !private "s18AdditiveArithmeticP"
 - !private "Sa"
-- "10fieldready9BatchItemV"
-- "10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV"
-- "10fieldready11BatchStatusO"
+- "10FieldTrack9BatchItemV"
+- "10FieldTrack13BatchResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV"
+- "10FieldTrack11BatchStatusO"
 - !private "SK"
 - !private "SB"
 - !private "So22CLLocationCoordinate2DV"
@@ -994,7 +994,7 @@ depends-nominal:
 - "s28CustomDebugStringConvertibleP"
 - "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- "10fieldready11DataHandlerC"
+- "10FieldTrack11DataHandlerC"
 - !private "10Foundation12DataProtocolP"
 - !private "10Foundation11JSONDecoderC20DateDecodingStrategyO"
 - "So15NSDateFormatterC"
@@ -1015,33 +1015,33 @@ depends-nominal:
 - !private "s32ExpressibleByStringInterpolationP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
-- "10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V"
-- "10fieldready18TrackingSubmissionV10FieldsItemV"
-- "10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V"
-- "10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V"
-- "10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V"
-- "10fieldready18TrackingSubmissionV10FieldsItemV"
-- "10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V"
-- "10fieldready18TrackingSubmissionV10FieldsItemV"
-- "10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V"
-- "10fieldready18TrackingSubmissionV10FieldsItemV"
-- "10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V"
-- "10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V"
-- "10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V"
-- "10fieldready18TrackingSubmissionV10FieldsItemV"
-- "10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V"
-- "10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V"
-- "10fieldready18TrackingSubmissionV10FieldsItemV"
-- "10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V"
-- "10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V"
-- "10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V"
-- "10fieldready18TrackingSubmissionV10FieldsItemV"
-- "10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V"
-- "10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V"
-- "10fieldready18TrackingSubmissionV10FieldsItemV"
-- "10fieldready13BatchResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V"
-- "10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV06FieldsM0V"
-- "10fieldready18TrackingSubmissionV10FieldsItemV"
+- "10FieldTrack16TrackingResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV06FieldsL0V"
+- "10FieldTrack18TrackingSubmissionV10FieldsItemV"
+- "10FieldTrack16TrackingResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV06FieldsL0V"
+- "10FieldTrack13BatchResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV06FieldsL0V"
+- "10FieldTrack16TrackingResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV06FieldsL0V"
+- "10FieldTrack18TrackingSubmissionV10FieldsItemV"
+- "10FieldTrack16TrackingResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV06FieldsL0V"
+- "10FieldTrack18TrackingSubmissionV10FieldsItemV"
+- "10FieldTrack16TrackingResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV06FieldsL0V"
+- "10FieldTrack18TrackingSubmissionV10FieldsItemV"
+- "10FieldTrack16TrackingResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV06FieldsL0V"
+- "10FieldTrack13BatchResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV06FieldsL0V"
+- "10FieldTrack16TrackingResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV06FieldsL0V"
+- "10FieldTrack18TrackingSubmissionV10FieldsItemV"
+- "10FieldTrack13BatchResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV06FieldsL0V"
+- "10FieldTrack16TrackingResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV06FieldsL0V"
+- "10FieldTrack18TrackingSubmissionV10FieldsItemV"
+- "10FieldTrack16TrackingResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV06FieldsL0V"
+- "10FieldTrack13BatchResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV06FieldsL0V"
+- "10FieldTrack16TrackingResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV06FieldsL0V"
+- "10FieldTrack18TrackingSubmissionV10FieldsItemV"
+- "10FieldTrack13BatchResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV06FieldsL0V"
+- "10FieldTrack16TrackingResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV06FieldsL0V"
+- "10FieldTrack18TrackingSubmissionV10FieldsItemV"
+- "10FieldTrack13BatchResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV06FieldsL0V"
+- "10FieldTrack16TrackingResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV06FieldsL0V"
+- "10FieldTrack18TrackingSubmissionV10FieldsItemV"
 - !private "SF"
 - "So11NSFormatterC"
 - "SH"
@@ -1088,9 +1088,9 @@ depends-nominal:
 - "10Foundation8TimeZoneV"
 - !private "7Combine15TopLevelDecoderP"
 - !private "7Combine15TopLevelEncoderP"
-- "10fieldready12TrackingItemV"
-- "10fieldready16TrackingResponse33_D7E4CD3A81A20218CCD3A725EB4E9422LLV0B6ItemOGV"
-- "10fieldready18TrackingSubmissionV"
+- "10FieldTrack12TrackingItemV"
+- "10FieldTrack16TrackingResponse33_B22926AA078BB30EE9883B713E2FE535LLV0C6ItemOGV"
+- "10FieldTrack18TrackingSubmissionV"
 - !private "10Foundation3URLV"
 - !private "10Foundation13URLComponentsV"
 - !private "10Foundation12URLQueryItemV"

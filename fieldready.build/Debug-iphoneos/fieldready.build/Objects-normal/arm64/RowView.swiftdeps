@@ -2,9 +2,9 @@
 provides-top-level:
 - "RowView"
 provides-nominal:
-- "10fieldready7RowViewC"
+- "10FieldTrack7RowViewC"
 provides-member:
-- ["10fieldready7RowViewC", ""]
+- ["10FieldTrack7RowViewC", ""]
 provides-dynamic-lookup:
 - "bottomLineView"
 - "checkmarkView"
@@ -12,14 +12,18 @@ provides-dynamic-lookup:
 - "contentView"
 - "iconView"
 - "setCompleted"
+- "setRotated"
 - "titleView"
 - "topLineView"
 depends-top-level:
+- !private "+"
 - "AssignmentPrecedence"
 - "Bool"
 - !private "BooleanLiteralType"
 - !private "Bundle"
+- !private "CGAffineTransform"
 - "CGRect"
+- !private "FloatLiteralType"
 - "NSCoder"
 - "RowView"
 - !private "StringLiteralType"
@@ -28,11 +32,14 @@ depends-top-level:
 - "UILabel"
 - "UIView"
 depends-member:
+- !private ["s18AdditiveArithmeticP", "pi"]
 - !private ["So18UIViewAutoresizingV", "flexibleHeight"]
 - !private ["So18UIViewAutoresizingV", "flexibleWidth"]
+- !private ["SB", "pi"]
 - !private ["So8NSBundleC", "loadNibNamed"]
 - !private ["So8NSBundleC", "main"]
 - !private ["So15CALayerDelegateP", "Bundle"]
+- !private ["So15CALayerDelegateP", "CGAffineTransform"]
 - !private ["So15CALayerDelegateP", "UIColor"]
 - ["So15CALayerDelegateP", ""]
 - !private ["So15CALayerDelegateP", "addSubview"]
@@ -50,7 +57,12 @@ depends-member:
 - !private ["So15CALayerDelegateP", "tintColor"]
 - !private ["So15CALayerDelegateP", "titleView"]
 - !private ["So15CALayerDelegateP", "topLineView"]
+- !private ["So15CALayerDelegateP", "transform"]
+- !private ["So17CGAffineTransformV", "identity"]
+- !private ["So17CGAffineTransformV", "init"]
+- !private ["12CoreGraphics7CGFloatV", "pi"]
 - !private ["s7CVarArgP", "Bundle"]
+- !private ["s7CVarArgP", "CGAffineTransform"]
 - !private ["s7CVarArgP", "UIColor"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "addSubview"]
@@ -66,11 +78,15 @@ depends-member:
 - !private ["s7CVarArgP", "isHidden"]
 - !private ["s7CVarArgP", "loadNibNamed"]
 - !private ["s7CVarArgP", "main"]
+- !private ["s7CVarArgP", "pi"]
 - !private ["s7CVarArgP", "textColor"]
 - !private ["s7CVarArgP", "tintColor"]
 - !private ["s7CVarArgP", "titleView"]
 - !private ["s7CVarArgP", "topLineView"]
+- !private ["s7CVarArgP", "transform"]
+- !private ["SL", "pi"]
 - !private ["s28CustomDebugStringConvertibleP", "Bundle"]
+- !private ["s28CustomDebugStringConvertibleP", "CGAffineTransform"]
 - !private ["s28CustomDebugStringConvertibleP", "UIColor"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "addSubview"]
@@ -90,12 +106,16 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "tintColor"]
 - !private ["s28CustomDebugStringConvertibleP", "titleView"]
 - !private ["s28CustomDebugStringConvertibleP", "topLineView"]
+- !private ["s28CustomDebugStringConvertibleP", "transform"]
 - !private ["s17CustomReflectableP", "autoresizingMask"]
 - !private ["s17CustomReflectableP", "frame"]
 - !private ["s17CustomReflectableP", "isHidden"]
+- !private ["s17CustomReflectableP", "pi"]
 - !private ["s17CustomReflectableP", "textColor"]
 - !private ["s17CustomReflectableP", "tintColor"]
+- !private ["s17CustomReflectableP", "transform"]
 - !private ["s23CustomStringConvertibleP", "Bundle"]
+- !private ["s23CustomStringConvertibleP", "CGAffineTransform"]
 - !private ["s23CustomStringConvertibleP", "UIColor"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "addSubview"]
@@ -111,21 +131,32 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "isHidden"]
 - !private ["s23CustomStringConvertibleP", "loadNibNamed"]
 - !private ["s23CustomStringConvertibleP", "main"]
+- !private ["s23CustomStringConvertibleP", "pi"]
 - !private ["s23CustomStringConvertibleP", "textColor"]
 - !private ["s23CustomStringConvertibleP", "tintColor"]
 - !private ["s23CustomStringConvertibleP", "titleView"]
 - !private ["s23CustomStringConvertibleP", "topLineView"]
+- !private ["s23CustomStringConvertibleP", "transform"]
 - !private ["Se", "autoresizingMask"]
 - !private ["Se", "frame"]
+- !private ["Se", "identity"]
+- !private ["Se", "init"]
 - !private ["Se", "isHidden"]
+- !private ["Se", "pi"]
 - !private ["Se", "textColor"]
 - !private ["Se", "tintColor"]
+- !private ["Se", "transform"]
 - !private ["SE", "autoresizingMask"]
 - !private ["SE", "frame"]
+- !private ["SE", "identity"]
+- !private ["SE", "init"]
 - !private ["SE", "isHidden"]
+- !private ["SE", "pi"]
 - !private ["SE", "textColor"]
 - !private ["SE", "tintColor"]
+- !private ["SE", "transform"]
 - !private ["SQ", "Bundle"]
+- !private ["SQ", "CGAffineTransform"]
 - !private ["SQ", "UIColor"]
 - ["SQ", ""]
 - !private ["SQ", "addSubview"]
@@ -139,22 +170,30 @@ depends-member:
 - !private ["SQ", "flexibleWidth"]
 - !private ["SQ", "frame"]
 - !private ["SQ", "iconView"]
+- !private ["SQ", "identity"]
 - !private ["SQ", "init"]
 - !private ["SQ", "isHidden"]
 - !private ["SQ", "loadNibNamed"]
 - !private ["SQ", "main"]
+- !private ["SQ", "pi"]
 - !private ["SQ", "textColor"]
 - !private ["SQ", "tintColor"]
 - !private ["SQ", "titleView"]
 - !private ["SQ", "topLineView"]
+- !private ["SQ", "transform"]
 - !private ["s25ExpressibleByArrayLiteralP", "flexibleHeight"]
 - !private ["s25ExpressibleByArrayLiteralP", "flexibleWidth"]
+- !private ["s25ExpressibleByFloatLiteralP", "pi"]
+- !private ["s27ExpressibleByIntegerLiteralP", "pi"]
 - !private ["s23ExpressibleByNilLiteralP", "autoresizingMask"]
 - !private ["s23ExpressibleByNilLiteralP", "frame"]
 - !private ["s23ExpressibleByNilLiteralP", "isHidden"]
 - !private ["s23ExpressibleByNilLiteralP", "textColor"]
 - !private ["s23ExpressibleByNilLiteralP", "tintColor"]
+- !private ["s23ExpressibleByNilLiteralP", "transform"]
+- !private ["SF", "pi"]
 - !private ["SH", "Bundle"]
+- !private ["SH", "CGAffineTransform"]
 - !private ["SH", "UIColor"]
 - ["SH", ""]
 - !private ["SH", "addSubview"]
@@ -170,11 +209,14 @@ depends-member:
 - !private ["SH", "isHidden"]
 - !private ["SH", "loadNibNamed"]
 - !private ["SH", "main"]
+- !private ["SH", "pi"]
 - !private ["SH", "textColor"]
 - !private ["SH", "tintColor"]
 - !private ["SH", "titleView"]
 - !private ["SH", "topLineView"]
+- !private ["SH", "transform"]
 - !private ["So8NSCodingP", "Bundle"]
+- !private ["So8NSCodingP", "CGAffineTransform"]
 - !private ["So8NSCodingP", "UIColor"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "addSubview"]
@@ -192,11 +234,13 @@ depends-member:
 - !private ["So8NSCodingP", "tintColor"]
 - !private ["So8NSCodingP", "titleView"]
 - !private ["So8NSCodingP", "topLineView"]
+- !private ["So8NSCodingP", "transform"]
 - !private ["So9NSCopyingP", "init"]
 - !private ["So21NSItemProviderReadingP", "init"]
 - !private ["So21NSItemProviderWritingP", "init"]
 - ["So8NSObjectC", "Bool"]
 - !private ["So8NSObjectC", "Bundle"]
+- !private ["So8NSObjectC", "CGAffineTransform"]
 - ["So8NSObjectC", "CGRect"]
 - ["So8NSObjectC", "NSCoder"]
 - !private ["So8NSObjectC", "UIColor"]
@@ -217,11 +261,14 @@ depends-member:
 - !private ["So8NSObjectC", "loadNibNamed"]
 - !private ["So8NSObjectC", "main"]
 - ["So8NSObjectC", "setCompleted"]
+- ["So8NSObjectC", "setRotated"]
 - !private ["So8NSObjectC", "textColor"]
 - !private ["So8NSObjectC", "tintColor"]
 - ["So8NSObjectC", "titleView"]
 - ["So8NSObjectC", "topLineView"]
+- !private ["So8NSObjectC", "transform"]
 - !private ["So8NSObjectP", "Bundle"]
+- !private ["So8NSObjectP", "CGAffineTransform"]
 - !private ["So8NSObjectP", "UIColor"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "addSubview"]
@@ -241,7 +288,9 @@ depends-member:
 - !private ["So8NSObjectP", "tintColor"]
 - !private ["So8NSObjectP", "titleView"]
 - !private ["So8NSObjectP", "topLineView"]
+- !private ["So8NSObjectP", "transform"]
 - !private ["So14NSSecureCodingP", "init"]
+- !private ["Sj", "pi"]
 - !private ["s9OptionSetP", "flexibleHeight"]
 - !private ["s9OptionSetP", "flexibleWidth"]
 - !private ["Sq", "autoresizingMask"]
@@ -249,33 +298,40 @@ depends-member:
 - !private ["Sq", "isHidden"]
 - !private ["Sq", "textColor"]
 - !private ["Sq", "tintColor"]
+- !private ["Sq", "transform"]
 - !private ["SY", "flexibleHeight"]
 - !private ["SY", "flexibleWidth"]
-- ["10fieldready7RowViewC", "Bool"]
-- !private ["10fieldready7RowViewC", "Bundle"]
-- ["10fieldready7RowViewC", "CGRect"]
-- ["10fieldready7RowViewC", "NSCoder"]
-- !private ["10fieldready7RowViewC", "UIColor"]
-- ["10fieldready7RowViewC", "UIImageView"]
-- ["10fieldready7RowViewC", "UILabel"]
-- ["10fieldready7RowViewC", "UIView"]
-- !private ["10fieldready7RowViewC", "addSubview"]
-- ["10fieldready7RowViewC", "bottomLineView"]
-- !private ["10fieldready7RowViewC", "bounds"]
-- ["10fieldready7RowViewC", "checkmarkView"]
-- !private ["10fieldready7RowViewC", "commonInit"]
-- ["10fieldready7RowViewC", "contentView"]
-- ["10fieldready7RowViewC", "deinit"]
-- ["10fieldready7RowViewC", "iconView"]
-- ["10fieldready7RowViewC", "init"]
-- ["10fieldready7RowViewC", "setCompleted"]
-- ["10fieldready7RowViewC", "titleView"]
-- ["10fieldready7RowViewC", "topLineView"]
+- ["10FieldTrack7RowViewC", "Bool"]
+- !private ["10FieldTrack7RowViewC", "Bundle"]
+- !private ["10FieldTrack7RowViewC", "CGAffineTransform"]
+- ["10FieldTrack7RowViewC", "CGRect"]
+- ["10FieldTrack7RowViewC", "NSCoder"]
+- !private ["10FieldTrack7RowViewC", "UIColor"]
+- ["10FieldTrack7RowViewC", "UIImageView"]
+- ["10FieldTrack7RowViewC", "UILabel"]
+- ["10FieldTrack7RowViewC", "UIView"]
+- !private ["10FieldTrack7RowViewC", "addSubview"]
+- ["10FieldTrack7RowViewC", "bottomLineView"]
+- !private ["10FieldTrack7RowViewC", "bounds"]
+- ["10FieldTrack7RowViewC", "checkmarkView"]
+- !private ["10FieldTrack7RowViewC", "commonInit"]
+- ["10FieldTrack7RowViewC", "contentView"]
+- ["10FieldTrack7RowViewC", "deinit"]
+- ["10FieldTrack7RowViewC", "iconView"]
+- ["10FieldTrack7RowViewC", "init"]
+- ["10FieldTrack7RowViewC", "setCompleted"]
+- ["10FieldTrack7RowViewC", "setRotated"]
+- ["10FieldTrack7RowViewC", "titleView"]
+- ["10FieldTrack7RowViewC", "topLineView"]
 - !private ["s10SetAlgebraP", "flexibleHeight"]
 - !private ["s10SetAlgebraP", "flexibleWidth"]
+- !private ["s13SignedNumericP", "pi"]
+- !private ["Sx", "pi"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "isHidden"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "tintColor"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "transform"]
 - !private ["So29UIAccessibilityIdentificationP", "Bundle"]
+- !private ["So29UIAccessibilityIdentificationP", "CGAffineTransform"]
 - !private ["So29UIAccessibilityIdentificationP", "UIColor"]
 - ["So29UIAccessibilityIdentificationP", ""]
 - !private ["So29UIAccessibilityIdentificationP", "addSubview"]
@@ -293,7 +349,9 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "tintColor"]
 - !private ["So29UIAccessibilityIdentificationP", "titleView"]
 - !private ["So29UIAccessibilityIdentificationP", "topLineView"]
+- !private ["So29UIAccessibilityIdentificationP", "transform"]
 - !private ["So12UIAppearanceP", "Bundle"]
+- !private ["So12UIAppearanceP", "CGAffineTransform"]
 - !private ["So12UIAppearanceP", "UIColor"]
 - ["So12UIAppearanceP", ""]
 - !private ["So12UIAppearanceP", "addSubview"]
@@ -311,7 +369,9 @@ depends-member:
 - !private ["So12UIAppearanceP", "tintColor"]
 - !private ["So12UIAppearanceP", "titleView"]
 - !private ["So12UIAppearanceP", "topLineView"]
+- !private ["So12UIAppearanceP", "transform"]
 - !private ["So21UIAppearanceContainerP", "Bundle"]
+- !private ["So21UIAppearanceContainerP", "CGAffineTransform"]
 - !private ["So21UIAppearanceContainerP", "UIColor"]
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "addSubview"]
@@ -329,9 +389,11 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "tintColor"]
 - !private ["So21UIAppearanceContainerP", "titleView"]
 - !private ["So21UIAppearanceContainerP", "topLineView"]
+- !private ["So21UIAppearanceContainerP", "transform"]
 - !private ["So7UIColorC", "init"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "textColor"]
 - !private ["So17UICoordinateSpaceP", "Bundle"]
+- !private ["So17UICoordinateSpaceP", "CGAffineTransform"]
 - !private ["So17UICoordinateSpaceP", "UIColor"]
 - ["So17UICoordinateSpaceP", ""]
 - !private ["So17UICoordinateSpaceP", "addSubview"]
@@ -349,7 +411,9 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "tintColor"]
 - !private ["So17UICoordinateSpaceP", "titleView"]
 - !private ["So17UICoordinateSpaceP", "topLineView"]
+- !private ["So17UICoordinateSpaceP", "transform"]
 - !private ["So13UIDynamicItemP", "Bundle"]
+- !private ["So13UIDynamicItemP", "CGAffineTransform"]
 - !private ["So13UIDynamicItemP", "UIColor"]
 - ["So13UIDynamicItemP", ""]
 - !private ["So13UIDynamicItemP", "addSubview"]
@@ -367,7 +431,9 @@ depends-member:
 - !private ["So13UIDynamicItemP", "tintColor"]
 - !private ["So13UIDynamicItemP", "titleView"]
 - !private ["So13UIDynamicItemP", "topLineView"]
+- !private ["So13UIDynamicItemP", "transform"]
 - !private ["So18UIFocusEnvironmentP", "Bundle"]
+- !private ["So18UIFocusEnvironmentP", "CGAffineTransform"]
 - !private ["So18UIFocusEnvironmentP", "UIColor"]
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "addSubview"]
@@ -385,7 +451,9 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "tintColor"]
 - !private ["So18UIFocusEnvironmentP", "titleView"]
 - !private ["So18UIFocusEnvironmentP", "topLineView"]
+- !private ["So18UIFocusEnvironmentP", "transform"]
 - !private ["So11UIFocusItemP", "Bundle"]
+- !private ["So11UIFocusItemP", "CGAffineTransform"]
 - !private ["So11UIFocusItemP", "UIColor"]
 - ["So11UIFocusItemP", ""]
 - !private ["So11UIFocusItemP", "addSubview"]
@@ -403,7 +471,9 @@ depends-member:
 - !private ["So11UIFocusItemP", "tintColor"]
 - !private ["So11UIFocusItemP", "titleView"]
 - !private ["So11UIFocusItemP", "topLineView"]
+- !private ["So11UIFocusItemP", "transform"]
 - !private ["So20UIFocusItemContainerP", "Bundle"]
+- !private ["So20UIFocusItemContainerP", "CGAffineTransform"]
 - !private ["So20UIFocusItemContainerP", "UIColor"]
 - ["So20UIFocusItemContainerP", ""]
 - !private ["So20UIFocusItemContainerP", "addSubview"]
@@ -421,10 +491,13 @@ depends-member:
 - !private ["So20UIFocusItemContainerP", "tintColor"]
 - !private ["So20UIFocusItemContainerP", "titleView"]
 - !private ["So20UIFocusItemContainerP", "topLineView"]
+- !private ["So20UIFocusItemContainerP", "transform"]
 - !private ["So11UIImageViewC", "isHidden"]
 - !private ["So11UIImageViewC", "tintColor"]
+- !private ["So11UIImageViewC", "transform"]
 - !private ["So7UILabelC", "textColor"]
 - !private ["So24UILargeContentViewerItemP", "Bundle"]
+- !private ["So24UILargeContentViewerItemP", "CGAffineTransform"]
 - !private ["So24UILargeContentViewerItemP", "UIColor"]
 - ["So24UILargeContentViewerItemP", ""]
 - !private ["So24UILargeContentViewerItemP", "addSubview"]
@@ -442,7 +515,9 @@ depends-member:
 - !private ["So24UILargeContentViewerItemP", "tintColor"]
 - !private ["So24UILargeContentViewerItemP", "titleView"]
 - !private ["So24UILargeContentViewerItemP", "topLineView"]
+- !private ["So24UILargeContentViewerItemP", "transform"]
 - !private ["So30UIPasteConfigurationSupportingP", "Bundle"]
+- !private ["So30UIPasteConfigurationSupportingP", "CGAffineTransform"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIColor"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "addSubview"]
@@ -460,8 +535,10 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "tintColor"]
 - !private ["So30UIPasteConfigurationSupportingP", "titleView"]
 - !private ["So30UIPasteConfigurationSupportingP", "topLineView"]
+- !private ["So30UIPasteConfigurationSupportingP", "transform"]
 - ["So11UIResponderC", "Bool"]
 - !private ["So11UIResponderC", "Bundle"]
+- !private ["So11UIResponderC", "CGAffineTransform"]
 - ["So11UIResponderC", "CGRect"]
 - ["So11UIResponderC", "NSCoder"]
 - !private ["So11UIResponderC", "UIColor"]
@@ -480,11 +557,14 @@ depends-member:
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "isHidden"]
 - ["So11UIResponderC", "setCompleted"]
+- ["So11UIResponderC", "setRotated"]
 - !private ["So11UIResponderC", "textColor"]
 - !private ["So11UIResponderC", "tintColor"]
 - ["So11UIResponderC", "titleView"]
 - ["So11UIResponderC", "topLineView"]
+- !private ["So11UIResponderC", "transform"]
 - !private ["So30UIResponderStandardEditActionsP", "Bundle"]
+- !private ["So30UIResponderStandardEditActionsP", "CGAffineTransform"]
 - !private ["So30UIResponderStandardEditActionsP", "UIColor"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "addSubview"]
@@ -502,7 +582,9 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "tintColor"]
 - !private ["So30UIResponderStandardEditActionsP", "titleView"]
 - !private ["So30UIResponderStandardEditActionsP", "topLineView"]
+- !private ["So30UIResponderStandardEditActionsP", "transform"]
 - !private ["So18UITraitEnvironmentP", "Bundle"]
+- !private ["So18UITraitEnvironmentP", "CGAffineTransform"]
 - !private ["So18UITraitEnvironmentP", "UIColor"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "addSubview"]
@@ -520,7 +602,9 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "tintColor"]
 - !private ["So18UITraitEnvironmentP", "titleView"]
 - !private ["So18UITraitEnvironmentP", "topLineView"]
+- !private ["So18UITraitEnvironmentP", "transform"]
 - !private ["So23UIUserActivityRestoringP", "Bundle"]
+- !private ["So23UIUserActivityRestoringP", "CGAffineTransform"]
 - !private ["So23UIUserActivityRestoringP", "UIColor"]
 - ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "addSubview"]
@@ -538,8 +622,10 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "tintColor"]
 - !private ["So23UIUserActivityRestoringP", "titleView"]
 - !private ["So23UIUserActivityRestoringP", "topLineView"]
+- !private ["So23UIUserActivityRestoringP", "transform"]
 - ["So6UIViewC", "Bool"]
 - !private ["So6UIViewC", "Bundle"]
+- !private ["So6UIViewC", "CGAffineTransform"]
 - ["So6UIViewC", "CGRect"]
 - ["So6UIViewC", "NSCoder"]
 - !private ["So6UIViewC", "UIColor"]
@@ -559,12 +645,17 @@ depends-member:
 - ["So6UIViewC", "init"]
 - !private ["So6UIViewC", "isHidden"]
 - ["So6UIViewC", "setCompleted"]
+- ["So6UIViewC", "setRotated"]
 - !private ["So6UIViewC", "textColor"]
 - !private ["So6UIViewC", "tintColor"]
 - ["So6UIViewC", "titleView"]
 - ["So6UIViewC", "topLineView"]
+- !private ["So6UIViewC", "transform"]
+- !private ["s15_CVarArgAlignedP", "pi"]
+- !private ["s22_CVarArgPassedAsDoubleP", "pi"]
 - !private ["s26_ExpressibleByColorLiteralP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Bundle"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CGAffineTransform"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addSubview"]
@@ -584,7 +675,9 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "tintColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "titleView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "topLineView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "transform"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Bundle"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "CGAffineTransform"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIColor"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "addSubview"]
@@ -604,12 +697,18 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "tintColor"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "titleView"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "topLineView"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "transform"]
 - !private ["s21_ObjectiveCBridgeableP", "autoresizingMask"]
 - !private ["s21_ObjectiveCBridgeableP", "frame"]
+- !private ["s21_ObjectiveCBridgeableP", "identity"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "isHidden"]
+- !private ["s21_ObjectiveCBridgeableP", "pi"]
 - !private ["s21_ObjectiveCBridgeableP", "textColor"]
 - !private ["s21_ObjectiveCBridgeableP", "tintColor"]
+- !private ["s21_ObjectiveCBridgeableP", "transform"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "Bundle"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "CGAffineTransform"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "UIColor"]
 - ["s38__DefaultCustomPlaygroundQuickLookableP", ""]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "addSubview"]
@@ -627,11 +726,17 @@ depends-member:
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "tintColor"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "titleView"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "topLineView"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "transform"]
 depends-nominal:
+- !private "s18AdditiveArithmeticP"
 - !private "So18UIViewAutoresizingV"
+- !private "SB"
 - !private "So8NSBundleC"
 - "So15CALayerDelegateP"
+- !private "So17CGAffineTransformV"
+- !private "12CoreGraphics7CGFloatV"
 - "s7CVarArgP"
+- !private "SL"
 - "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
@@ -639,7 +744,10 @@ depends-nominal:
 - !private "SE"
 - "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
+- !private "SF"
 - "SH"
 - "So8NSCodingP"
 - !private "So9NSCopyingP"
@@ -648,11 +756,14 @@ depends-nominal:
 - "So8NSObjectC"
 - "So8NSObjectP"
 - !private "So14NSSecureCodingP"
+- !private "Sj"
 - !private "s9OptionSetP"
 - !private "Sq"
 - !private "SY"
-- "10fieldready7RowViewC"
+- "10FieldTrack7RowViewC"
 - !private "s10SetAlgebraP"
+- !private "s13SignedNumericP"
+- !private "Sx"
 - !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
 - "So29UIAccessibilityIdentificationP"
 - "So12UIAppearanceP"
@@ -673,6 +784,8 @@ depends-nominal:
 - "So18UITraitEnvironmentP"
 - "So23UIUserActivityRestoringP"
 - "So6UIViewC"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
 - !private "s26_ExpressibleByColorLiteralP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "10Foundation37_KeyValueCodingAndObservingPublishingP"
@@ -724,4 +837,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "032b57279410352ba2210d080a8b0267"
+interface-hash: "f1adeef0d4434321c4b3e67914361606"

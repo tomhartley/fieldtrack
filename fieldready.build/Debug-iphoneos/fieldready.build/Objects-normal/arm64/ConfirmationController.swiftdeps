@@ -2,9 +2,9 @@
 provides-top-level:
 - "ConfirmationController"
 provides-nominal:
-- "10fieldready22ConfirmationControllerC"
+- "10FieldTrack22ConfirmationControllerC"
 provides-member:
-- ["10fieldready22ConfirmationControllerC", ""]
+- ["10FieldTrack22ConfirmationControllerC", ""]
 provides-dynamic-lookup:
 - "cancelButton"
 - "completionHandler"
@@ -37,8 +37,8 @@ depends-member:
 - !private ["So22UIViewAnimationOptionsV", "autoreverse"]
 - !private ["So22UIViewAnimationOptionsV", "curveEaseInOut"]
 - !private ["So22UIViewAnimationOptionsV", "repeat"]
-- !private ["10fieldready11BatchStatusO", "completedRepresentation"]
-- ["10fieldready11BatchStatusO", "unknown"]
+- !private ["10FieldTrack11BatchStatusO", "completedRepresentation"]
+- ["10FieldTrack11BatchStatusO", "unknown"]
 - !private ["So15CALayerDelegateP", "animate"]
 - !private ["So15CALayerDelegateP", "becomeFirstResponder"]
 - !private ["So15CALayerDelegateP", "text"]
@@ -59,28 +59,28 @@ depends-member:
 - !private ["s7CVarArgP", "titleLabel"]
 - !private ["s7CVarArgP", "transform"]
 - !private ["s7CVarArgP", "viewDidLoad"]
-- ["10fieldready22ConfirmationControllerC", "BatchStatus"]
-- ["10fieldready22ConfirmationControllerC", "Bool"]
-- !private ["10fieldready22ConfirmationControllerC", "CGAffineTransform"]
-- ["10fieldready22ConfirmationControllerC", "String"]
-- ["10fieldready22ConfirmationControllerC", "UILabel"]
-- ["10fieldready22ConfirmationControllerC", "UITextView"]
-- ["10fieldready22ConfirmationControllerC", "UIView"]
-- ["10fieldready22ConfirmationControllerC", "Void"]
-- ["10fieldready22ConfirmationControllerC", "cancelButton"]
-- ["10fieldready22ConfirmationControllerC", "completionHandler"]
-- ["10fieldready22ConfirmationControllerC", "confirmButton"]
-- ["10fieldready22ConfirmationControllerC", "deinit"]
-- !private ["10fieldready22ConfirmationControllerC", "dismiss"]
-- ["10fieldready22ConfirmationControllerC", "init"]
-- !private ["10fieldready22ConfirmationControllerC", "isModalInPresentation"]
-- ["10fieldready22ConfirmationControllerC", "pulseView"]
-- ["10fieldready22ConfirmationControllerC", "setStatus"]
-- !private ["10fieldready22ConfirmationControllerC", "status"]
-- !private ["10fieldready22ConfirmationControllerC", "textView"]
-- ["10fieldready22ConfirmationControllerC", "titleLabel"]
-- ["10fieldready22ConfirmationControllerC", "viewDidLoad"]
-- ["10fieldready22ConfirmationControllerC", "viewWillAppear"]
+- ["10FieldTrack22ConfirmationControllerC", "BatchStatus"]
+- ["10FieldTrack22ConfirmationControllerC", "Bool"]
+- !private ["10FieldTrack22ConfirmationControllerC", "CGAffineTransform"]
+- ["10FieldTrack22ConfirmationControllerC", "String"]
+- ["10FieldTrack22ConfirmationControllerC", "UILabel"]
+- ["10FieldTrack22ConfirmationControllerC", "UITextView"]
+- ["10FieldTrack22ConfirmationControllerC", "UIView"]
+- ["10FieldTrack22ConfirmationControllerC", "Void"]
+- ["10FieldTrack22ConfirmationControllerC", "cancelButton"]
+- ["10FieldTrack22ConfirmationControllerC", "completionHandler"]
+- ["10FieldTrack22ConfirmationControllerC", "confirmButton"]
+- ["10FieldTrack22ConfirmationControllerC", "deinit"]
+- !private ["10FieldTrack22ConfirmationControllerC", "dismiss"]
+- ["10FieldTrack22ConfirmationControllerC", "init"]
+- !private ["10FieldTrack22ConfirmationControllerC", "isModalInPresentation"]
+- ["10FieldTrack22ConfirmationControllerC", "pulseView"]
+- ["10FieldTrack22ConfirmationControllerC", "setStatus"]
+- !private ["10FieldTrack22ConfirmationControllerC", "status"]
+- !private ["10FieldTrack22ConfirmationControllerC", "textView"]
+- ["10FieldTrack22ConfirmationControllerC", "titleLabel"]
+- ["10FieldTrack22ConfirmationControllerC", "viewDidLoad"]
+- ["10FieldTrack22ConfirmationControllerC", "viewWillAppear"]
 - !private ["s28CustomDebugStringConvertibleP", "CGAffineTransform"]
 - !private ["s28CustomDebugStringConvertibleP", "UIView"]
 - ["s28CustomDebugStringConvertibleP", ""]
@@ -498,11 +498,11 @@ depends-member:
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "transform"]
 depends-nominal:
 - !private "So22UIViewAnimationOptionsV"
-- "10fieldready11BatchStatusO"
+- "10FieldTrack11BatchStatusO"
 - !private "So15CALayerDelegateP"
 - !private "So17CGAffineTransformV"
 - "s7CVarArgP"
-- "10fieldready22ConfirmationControllerC"
+- "10FieldTrack22ConfirmationControllerC"
 - "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"

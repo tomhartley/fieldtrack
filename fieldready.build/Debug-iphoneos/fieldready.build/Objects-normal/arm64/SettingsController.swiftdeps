@@ -2,9 +2,9 @@
 provides-top-level:
 - "SettingsController"
 provides-nominal:
-- "10fieldready18SettingsControllerC"
+- "10FieldTrack18SettingsControllerC"
 provides-member:
-- ["10fieldready18SettingsControllerC", ""]
+- ["10FieldTrack18SettingsControllerC", ""]
 provides-dynamic-lookup:
 - "confirmButton"
 - "savePersonValue"
@@ -345,20 +345,20 @@ depends-member:
 - !private ["Sq", "center"]
 - !private ["Sq", "layer"]
 - !private ["Sq", "text"]
-- ["10fieldready18SettingsControllerC", "Bool"]
-- !private ["10fieldready18SettingsControllerC", "CASpringAnimation"]
-- !private ["10fieldready18SettingsControllerC", "CGPoint"]
-- ["10fieldready18SettingsControllerC", "UITextField"]
-- !private ["10fieldready18SettingsControllerC", "UserDefaults"]
-- ["10fieldready18SettingsControllerC", "confirmButton"]
-- ["10fieldready18SettingsControllerC", "deinit"]
-- !private ["10fieldready18SettingsControllerC", "dismiss"]
-- ["10fieldready18SettingsControllerC", "init"]
-- !private ["10fieldready18SettingsControllerC", "isModalInPresentation"]
-- ["10fieldready18SettingsControllerC", "savePersonValue"]
-- ["10fieldready18SettingsControllerC", "textField"]
-- ["10fieldready18SettingsControllerC", "viewDidAppear"]
-- ["10fieldready18SettingsControllerC", "viewDidLoad"]
+- ["10FieldTrack18SettingsControllerC", "Bool"]
+- !private ["10FieldTrack18SettingsControllerC", "CASpringAnimation"]
+- !private ["10FieldTrack18SettingsControllerC", "CGPoint"]
+- ["10FieldTrack18SettingsControllerC", "UITextField"]
+- !private ["10FieldTrack18SettingsControllerC", "UserDefaults"]
+- ["10FieldTrack18SettingsControllerC", "confirmButton"]
+- ["10FieldTrack18SettingsControllerC", "deinit"]
+- !private ["10FieldTrack18SettingsControllerC", "dismiss"]
+- ["10FieldTrack18SettingsControllerC", "init"]
+- !private ["10FieldTrack18SettingsControllerC", "isModalInPresentation"]
+- ["10FieldTrack18SettingsControllerC", "savePersonValue"]
+- ["10FieldTrack18SettingsControllerC", "textField"]
+- ["10FieldTrack18SettingsControllerC", "viewDidAppear"]
+- ["10FieldTrack18SettingsControllerC", "viewDidLoad"]
 - !private ["So29UIAccessibilityIdentificationP", "becomeFirstResponder"]
 - !private ["So29UIAccessibilityIdentificationP", "center"]
 - !private ["So29UIAccessibilityIdentificationP", "layer"]
@@ -647,7 +647,7 @@ depends-nominal:
 - "So8NSObjectP"
 - !private "So14NSSecureCodingP"
 - !private "Sq"
-- "10fieldready18SettingsControllerC"
+- "10FieldTrack18SettingsControllerC"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"

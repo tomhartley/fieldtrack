@@ -193,9 +193,11 @@ struct BatchItem {
 class DataHandler: NSObject {
 	
 	func submitTracking(tracking: TrackingSubmission, completion: @escaping (Result<TrackingItem, Error>) -> Void) {
-		var request = URLRequest(url: URL(string: "https://api.airtable.com/v0/***REMOVED***/Tracking")!)
+		let dbID = "***REMOVED***"
+		var request = URLRequest(url: URL(string: "https://api.airtable.com/v0/" + dbID + "/Tracking")!)
 		request.httpMethod = "POST"
-		request.setValue("Bearer ***REMOVED***", forHTTPHeaderField: "Authorization")
+		let apiKey = "***REMOVED***"
+		request.setValue("Bearer " + apiKey, forHTTPHeaderField: "Authorization")
 		request.setValue("application/json", forHTTPHeaderField: "Content-Type")
 		let jsonData = try! JSONEncoder().encode(tracking)
 		let x = String.init(decoding: jsonData, as: UTF8.self)

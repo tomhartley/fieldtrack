@@ -42,11 +42,19 @@ class RowView: UIView {
 		contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
 	}
 
+	func setRotated(rotated: Bool) {
+		if (rotated) {
+			checkmarkView.transform = CGAffineTransform(rotationAngle: .pi+0.01);
+		} else {
+			checkmarkView.transform = CGAffineTransform.identity
+		}
+	}
+	
 	func setCompleted(completed: Bool) {
 		if completed {
 			checkmarkView.isHidden = false
 			titleView.textColor = UIColor.init(named: "FRPurple")
-			iconView.tintColor = UIColor.init(named: "FRPurple")
+			iconView.tintColor = UIColor.init(named: "FRLightPurple")
 			//leave the line views as is... we don't know where this sits in relation
 		} else {
 			checkmarkView.isHidden = true

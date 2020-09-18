@@ -41,7 +41,7 @@
 		E2911ADF2503DF0900112C8D /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 		E2911AE12503F4B600112C8D /* DetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
 		E2911AE32503F4CE00112C8D /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
-		E2D5C93D24ED28DD00B5CBD1 /* fieldready.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fieldready.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2D5C93D24ED28DD00B5CBD1 /* FieldTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FieldTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D5C94024ED28DD00B5CBD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2D5C94224ED28DD00B5CBD1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E2D5C94424ED28DD00B5CBD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 		E2D5C93E24ED28DD00B5CBD1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E2D5C93D24ED28DD00B5CBD1 /* fieldready.app */,
+				E2D5C93D24ED28DD00B5CBD1 /* FieldTrack.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,7 +151,7 @@
 			);
 			name = fieldready;
 			productName = fieldready;
-			productReference = E2D5C93D24ED28DD00B5CBD1 /* fieldready.app */;
+			productReference = E2D5C93D24ED28DD00B5CBD1 /* FieldTrack.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -415,7 +415,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tl.hr.fieldready;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FieldTrack;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -437,7 +437,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tl.hr.fieldready;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FieldTrack;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

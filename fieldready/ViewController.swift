@@ -98,6 +98,7 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate, UINa
 		let id = x.string(forKey: "personID")
 		if (id == nil || id == "") {
 			let settings = SettingsController()
+			settings.modalPresentationCapturesStatusBarAppearance = false
 			self.present(settings, animated: false, completion: nil)
 		}
 	}
@@ -148,8 +149,18 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate, UINa
 		UIView.animate(withDuration: 0.25) {
 			self.detailView.isHidden = false
 			self.detailView.alpha = 1.0
+			self.rowViews[forRow].setRotated(rotated: true)
 		}
 	} //refactored
+	
+	func hideRow(rowID : Int, animated: Bool) {
+		self.rowViews[rowID].setRotated(rotated: false)
+		self.detailView.isHidden = true
+		self.detailView.alpha = 0.0
+		if (!animated) {
+			self.stackView.removeArrangedSubview(self.detailView)
+		}
+	}
 	
 	//Responder for the tap gesture recognizer to unfold or fold the detail view
 	@objc func rowTapped(recognizer: UITapGestureRecognizer) {
@@ -164,11 +175,10 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate, UINa
 			} else { //type C
 				shouldUnfold = true
 			}
-			
+			let rowLoc = detailLocation!
 			detailLocation = nil
 			UIView.animate(withDuration: 0.25, animations: {
-				self.detailView.isHidden = true
-				self.detailView.alpha = 0.0
+				self.hideRow(rowID: rowLoc, animated: true)
 			}) { (completed) in
 				self.stackView.removeArrangedSubview(self.detailView)
 				if (shouldUnfold) {
@@ -225,7 +235,7 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate, UINa
 		//called when the tracking data gets updates
 		if let batch = batchItem {
 			self.productName.text = batch.productName
-			self.batchQuantity.text = String(batch.quantity)
+			self.batchQuantity.text = "x " + String(batch.quantity)
 			self.batchCustomer.text = batch.customerName
 			self.batchNum.text = batch.batchNum
 		}
@@ -306,7 +316,11 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate, UINa
 				detailView.mapView.isHidden = true
 				detailView.locationLabel.isHidden = true
 			}
-			detailView.commentsLabel.text = "Note: " + unwrapped.comments
+			if (unwrapped.comments != "") {
+				detailView.commentsLabel.text = "Note: " + unwrapped.comments
+			} else {
+				detailView.commentsLabel.isHidden = true
+			}
 		}
 	}
 	
@@ -318,6 +332,7 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate, UINa
 				return //no can do
 			}
 			let confController = ConfirmationController()
+			confController.modalPresentationCapturesStatusBarAppearance = false
 			if (self.locationManager.location == nil) {
 				confController.pulseView.isHidden = true
 			}
@@ -350,6 +365,7 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate, UINa
 	
 	@IBAction func openSettings(_ sender: Any) {
 		let settings = SettingsController()
+		settings.modalPresentationCapturesStatusBarAppearance = false
 		self.present(settings, animated: true, completion: nil)
 	}
 	
@@ -360,7 +376,8 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate, UINa
 		readerVC.delegate = self
 
 	  // Presents the readerVC as modal form sheet
-		readerVC.modalPresentationStyle = .formSheet
+		//readerVC.modalPresentationStyle = .formSheet
+		readerVC.modalPresentationCapturesStatusBarAppearance = false
 	 
 		present(readerVC, animated: true, completion: nil)
 	}
@@ -379,6 +396,9 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate, UINa
 		moveTwoViews(visible: false, animated: false)
 		helpView.isHidden = true
 		loadingView.alpha = 1.0
+		if let dL = detailLocation {
+			self.hideRow(rowID: dL, animated: false)
+		}
 		dismiss(animated: true, completion: nil)
 	}
 

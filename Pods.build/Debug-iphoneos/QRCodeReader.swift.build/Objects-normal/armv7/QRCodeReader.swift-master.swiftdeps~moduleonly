@@ -1,6 +1,6 @@
-version: "Apple Swift version 5.2.2 (swiftlang-1103.0.32.6 clang-1103.0.32.51)"
-options: "fd42d4488a2a18503cb3a688fe0ed456"
-build_time: [1599322968, 235998000]
+version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+options: "60a3f6ab7a733e83930894733f042513"
+build_time: [1600362842, 820563000]
 inputs:
   "/Users/tom/Documents/Field Ready/App/fieldready/Pods/QRCodeReader.swift/Sources/QRCodeReader.swift": [1597833942, 413517574]
   "/Users/tom/Documents/Field Ready/App/fieldready/Pods/QRCodeReader.swift/Sources/QRCodeReaderResult.swift": [1597833942, 414411636]
