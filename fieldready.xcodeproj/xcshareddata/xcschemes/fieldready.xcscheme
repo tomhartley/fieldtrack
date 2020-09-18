@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E2D5C93C24ED28DD00B5CBD1"
-               BuildableName = "fieldready.app"
+               BuildableName = "FieldTrack.app"
                BlueprintName = "fieldready"
                ReferencedContainer = "container:fieldready.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E2D5C93C24ED28DD00B5CBD1"
-            BuildableName = "fieldready.app"
+            BuildableName = "FieldTrack.app"
             BlueprintName = "fieldready"
             ReferencedContainer = "container:fieldready.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E2D5C93C24ED28DD00B5CBD1"
-            BuildableName = "fieldready.app"
+            BuildableName = "FieldTrack.app"
             BlueprintName = "fieldready"
             ReferencedContainer = "container:fieldready.xcodeproj">
          </BuildableReference>

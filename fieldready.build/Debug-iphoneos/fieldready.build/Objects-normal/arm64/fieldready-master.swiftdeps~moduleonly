@@ -1,9 +1,9 @@
 version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
 options: "e119892a0bd21e1030cd9bad9f0ffc5c"
-build_time: [1600417904, 432032000]
+build_time: [1600419068, 257442000]
 inputs:
   "/Users/tom/Documents/Field Ready/App/fieldready/fieldready/SettingsController.swift": [1599751656, 645675234]
-  "/Users/tom/Documents/Field Ready/App/fieldready/fieldready/DataHandler.swift": [1600417894, 158194507]
+  "/Users/tom/Documents/Field Ready/App/fieldready/fieldready/DataHandler.swift": !private [1600419068, 167091713]
   "/Users/tom/Documents/Field Ready/App/fieldready/fieldready/RowView.swift": [1600032056, 472986460]
   "/Users/tom/Documents/Field Ready/App/fieldready/fieldready/ViewController.swift": [1600096572, 790966978]
   "/Users/tom/Documents/Field Ready/App/fieldready/fieldready/DetailView.swift": [1600095913, 629377784]
