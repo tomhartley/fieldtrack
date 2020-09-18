@@ -9,6 +9,10 @@
 import UIKit
 import CoreLocation
 
+#error("Please add your Airtable API key and database ID below then delete this line.")
+let apiKey = ""
+let dbID = ""
+
 extension DateFormatter {
   static let iso8601Full: DateFormatter = {
     let formatter = DateFormatter()
@@ -193,9 +197,6 @@ struct BatchItem {
 class DataHandler: NSObject {
 	
 	func submitTracking(tracking: TrackingSubmission, completion: @escaping (Result<TrackingItem, Error>) -> Void) {
-		#error("Please add your Airtable API key and database ID below then delete this line.")
-		let apiKey = ""
-		let dbID = ""
 		var request = URLRequest(url: URL(string: "https://api.airtable.com/v0/" + dbID + "/Tracking")!)
 		request.httpMethod = "POST"
 		request.setValue("Bearer " + apiKey, forHTTPHeaderField: "Authorization")
@@ -237,7 +238,7 @@ class DataHandler: NSObject {
 	func downloadURL(url: URL, completion: @escaping (Result<Data, Error>) -> Void) {
 		var request = URLRequest(url: url)
 		request.httpMethod = "GET"
-		request.setValue("Bearer ***REMOVED***", forHTTPHeaderField: "Authorization")
+		request.setValue("Bearer " + apiKey, forHTTPHeaderField: "Authorization")
 		let task = URLSession.shared.dataTask(with: request) { data, response, error in
 			guard let data = data, error == nil else {
 				print(error?.localizedDescription ?? "No data")
@@ -257,7 +258,7 @@ class DataHandler: NSObject {
 	
 	//Get tracking items for a particular batch
 	func getTrackingForBatch(batchno : String, completion: @escaping (Result<[TrackingItem], Error>) -> Void) {
-		let url = URL(string: "https://api.airtable.com/v0/***REMOVED***/Tracking")!
+		let url = URL(string: "https://api.airtable.com/v0/" + dbID + "/Tracking")!
 		var components = URLComponents(url: url, resolvingAgainstBaseURL: false)!
 		components.queryItems = [
 			URLQueryItem(name: "filterByFormula", value: "{BatchNumLookup} = '" + batchno + "'")
@@ -289,7 +290,7 @@ class DataHandler: NSObject {
 
 	//Get tracking items for a particular batch
 	func getBatch(batchno : String, completion: @escaping (Result<BatchItem, Error>) -> Void) {
-		let url = URL(string: "https://api.airtable.com/v0/***REMOVED***/Batches")!
+		let url = URL(string: "https://api.airtable.com/v0/" + dbID + "/Batches")!
 		var components = URLComponents(url: url, resolvingAgainstBaseURL: false)!
 		components.queryItems = [
 			URLQueryItem(name: "filterByFormula", value: "{Batch_Num} = '" + batchno + "'")
